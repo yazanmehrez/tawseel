@@ -17,7 +17,6 @@ export class AppService {
         const browserLang = localStorage.getItem('language');
         translate.use(browserLang.match(/en|ar/) ? browserLang : 'ar');
         this.language.next(browserLang);
-        console.log(browserLang);
     }
 
     /* Switch Language */
