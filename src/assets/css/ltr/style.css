@@ -61,25 +61,29 @@ label {
     margin: 0;
 }
 
+* {
+    outline: 0;
+}
+
 .navbar-nav {
-    float: right;
     margin: 0;
 }
 
 .navbar-default {
+    position: relative;
     background-color: #ffffff;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
 .nav_top_fx_w3ls_agileinfo {
     margin: 0 auto;
-    width: 88%;
-    padding: 1.4em 0;
+    width: 93%;
+    padding: 0.5em 0;
 }
 
 .navbar-brand {
@@ -104,7 +108,7 @@ label {
     color: #111;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
     padding: 7px 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -112,11 +116,11 @@ label {
     font-weight: 600;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     color: #27292b;
 }
 
-.dropdown-menu>li>a {
+.dropdown-menu > li > a {
     display: block;
     padding: 10px 20px;
     clear: both;
@@ -126,8 +130,8 @@ label {
     letter-spacing: 1px;
 }
 
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
     color: #262626;
     text-decoration: none;
     background-color: #c3e6f3;
@@ -142,11 +146,13 @@ a.request {
     margin-top: 0.4em;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #27292b;
     background-color: #f8d231;
+    border-radius: 20px;
+    box-shadow: 1px 2px 0px #fff;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -851,12 +857,14 @@ ol.carousel-indicators.two {
     #quote-carousel .carousel-indicators {
         bottom: -20px !important;
     }
+
     #quote-carousel .carousel-indicators li {
         display: inline-block;
         margin: 0px 5px;
         width: 15px;
         height: 15px;
     }
+
     #quote-carousel .carousel-indicators li.active {
         margin: 0px 5px;
         width: 20px;
@@ -1006,26 +1014,28 @@ button.btn1:hover {
     background: #ff3c41;
 }
 
-@media(max-width:640px) {
+@media (max-width: 640px) {
     .error-404 h4 {
         font-size: 9em;
     }
 }
 
-@media(max-width:600px) {
+@media (max-width: 600px) {
     .error-404 h4 {
         font-size: 6em;
     }
+
     a.b-home {
         padding: 0.6em 1em;
         margin-top: 1em;
     }
 }
 
-@media(max-width:480px) {
+@media (max-width: 480px) {
     .error-404 h4 {
         font-size: 5em;
     }
+
     .error-404 p {
         font-size: 0.8em;
         letter-spacing: 5px;
@@ -1535,214 +1545,264 @@ p.copy-right a:hover {
 
 /*--responsive--*/
 
-@media(max-width:1440px){
-	h3.tittle-w3ls {
+@media (max-width: 1440px) {
+    h3.tittle-w3ls {
         font-size: 2.5em;
     }
-    .banner_bottom,.highlight,.banner_bottom,.blog_sec,.tesimonials {
-        padding:6em 0;
+
+    .banner_bottom, .highlight, .banner_bottom, .blog_sec, .tesimonials {
+        padding: 6em 0;
     }
 }
-@media(max-width:1280px){
-	.carousel-caption h2, .carousel-caption h3 {
+
+@media (max-width: 1280px) {
+    .carousel-caption h2, .carousel-caption h3 {
         font-size: 3.5em;
     }
+
     .carousel-caption {
         min-height: 630px !important;
         padding-top: 17em;
         text-align: center;
     }
+
     .banner_bottom_left h4 {
         font-size: 1.2em;
     }
 }
-@media(max-width:1080px){
-    .banner_bottom,.highlight,.banner_bottom,.blog_sec,.tesimonials {
-        padding:5em 0;
+
+@media (max-width: 1080px) {
+    .banner_bottom, .highlight, .banner_bottom, .blog_sec, .tesimonials {
+        padding: 5em 0;
     }
-    .navbar-nav>li>a {
+
+    .navbar-nav > li > a {
         padding: 7px 15px;
     }
+
     .top-buttons {
         margin: 2em auto 0;
         width: 29%;
     }
+
     .banner_bottom_left h4 {
         font-size: 1em;
     }
+
     p {
         letter-spacing: 1px;
         font-size: 0.9em;
     }
+
     .banner_bottom_in {
         margin: 0 auto;
         width: 87%;
     }
+
     .test_img_info {
         width: 70%;
     }
+
     .test_img_info {
         width: 70%;
     }
+
     .inner_sec_info_wthree_agile {
         margin-top: 3em;
     }
+
     .newsletter_w3ls_agileits {
         padding: 3em 1em;
     }
 }
-@media(max-width:1050px){
+
+@media (max-width: 1050px) {
     .banner-btm-inner {
         flex: 1;
         padding: 4em 2em;
     }
+
     .footer {
         padding: 3em 0;
     }
+
     .carousel-indicators {
         bottom: 14%;
         left: 50%;
     }
+
     #quote-carousel .carousel-indicators {
         left: 40%;
         top: auto;
         bottom: -26px;
     }
 }
-@media(max-width:1024px){
-	.nav_top_fx_w3ls_agileinfo {
-        width: 95%;
-        padding: 1.4em 0;
+
+@media (max-width: 1024px) {
+    .nav_top_fx_w3ls_agileinfo {
+        width: 93%;
+        padding: 0.5em 0;
     }
+
     .carousel-caption h2, .carousel-caption h3 {
         font-size: 3em;
         letter-spacing: 1px;
     }
+
     .banner-btm-inner h6 a {
         letter-spacing: 1px;
     }
 }
-@media(max-width:991px){
-	.carousel-caption p {
+
+@media (max-width: 991px) {
+    .carousel-caption p {
         letter-spacing: 6px;
         font-size: 1em;
         margin: 1em 0 1em 0;
     }
+
     .top-buttons {
         margin: 2em auto 0;
         width: 37%;
     }
+
     .carousel-caption {
         min-height: 584px !important;
         padding-top: 15em;
         text-align: center;
     }
-    .ser-first-grid{
+
+    .ser-first-grid {
         margin-bottom: 1em;
     }
+
     .error-404 p {
         font-size: 0.9em;
         letter-spacing: 5px;
         margin: 0em 0 2em 0;
     }
+
     .error-404 form {
         margin: 0 auto;
         width: 60%;
         text-align: center;
     }
+
     .logo-w3layouts-agileits h1 a {
         font-size: 1em;
     }
-    .navbar-nav>li>a {
+
+    .navbar-nav > li > a {
         padding: 7px 20px;
         letter-spacing: 1px;
         font-size: 0.75em;
         font-weight: 600;
     }
+
     .help_full img, .help_full img {
         width: 57%;
         margin-bottom: 2em;
     }
+
     .flickr-post ul li {
         margin: 1% 1%;
         width: 15%;
         padding: 4px;
     }
+
     .sign-gd {
         margin: 1em 0;
     }
+
     .sign-gd-two {
         margin-top: 1em;
     }
+
     .footer_inner_info_w3ls_agileits {
         width: 98%;
         margin: 0 auto;
     }
+
     .footer-right {
         padding: 0;
     }
+
     .banner_inner_con {
         min-height: 280px;
     }
+
     .banner_bottom_left {
         margin-bottom: 2em;
     }
+
     h3.tittle-w3ls.we {
         font-size: 2em;
     }
 }
-@media(max-width:900px){
-	.carousel-caption {
+
+@media (max-width: 900px) {
+    .carousel-caption {
         min-height: 565px !important;
         padding-top: 15em;
         text-align: center;
     }
+
     .sign-gd h4, .sign-gd-two h4 {
         font-size: 1.2em;
         margin-bottom: 22px;
         font-weight: 700;
         letter-spacing: 1px;
     }
+
     .newsleft h3 {
         font-size: 20px;
         margin-top: 15px;
         letter-spacing: 1px;
     }
+
     .newsright input[type="email"] {
         padding: 10px 15px;
         width: 69%;
     }
+
     .banner_bottom_left h4 {
         font-size: 1.2em;
     }
 }
-@media(max-width:800px){
-	.carousel-caption h2, .carousel-caption h3 {
+
+@media (max-width: 800px) {
+    .carousel-caption h2, .carousel-caption h3 {
         font-size: 2.5em;
         letter-spacing: 1px;
     }
+
     .banner_bottom, .highlight, .banner_bottom, .blog_sec, .tesimonials {
         padding: 4em 0;
     }
 }
-@media(max-width:768px){
-	
+
+@media (max-width: 768px) {
+
 }
-@media(max-width:767px){
-	.navbar-nav {
+
+@media (max-width: 767px) {
+    .navbar-nav {
         float: none;
         margin: 0;
     }
+
     .nav > li {
         position: relative;
         display: block;
         margin-bottom: 0.5em;
     }
+
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border-color: #e7e7e7;
         background: #e0e0e0;
         margin-top: 1em;
     }
+
     .navbar-toggle {
         position: relative;
         float: right;
@@ -1755,322 +1815,425 @@ p.copy-right a:hover {
         border: 1px solid transparent;
         border-radius: 4px;
     }
+
     .test_img_info {
         width: 100%;
         margin-top: 1em;
         padding: 0;
-    }  
+    }
+
     #quote-carousel .carousel-indicators {
         left: 10%;
         top: auto;
         bottom: -26px;
-    } 
+    }
+
     .news-main {
         margin-top: 1em;
         padding-top: 2em;
     }
+
     h3.tittle-w3ls.three {
         font-size: 1.8em;
     }
+
     .login-form-rec {
         margin: 0 auto;
         width: 50%;
     }
 }
-@media(max-width:736px){
-	.top-buttons {
+
+@media (max-width: 736px) {
+    .top-buttons {
         margin: 2em auto 0;
         width: 39%;
     }
+
     .carousel-caption {
         min-height: 523px !important;
         padding-top: 13em;
         text-align: center;
     }
+
     #quote-carousel .carousel-indicators {
         left: 10%;
         top: auto;
         bottom: -26px;
     }
+
     .carousel-control {
         line-height: 32em;
     }
 }
-@media(max-width:684px){
-	.footer {
+
+@media (max-width: 684px) {
+    .footer {
         padding: 2em 0;
     }
+
     .bnr-button a {
         padding: .8em 1.3em;
         letter-spacing: 2px;
         font-size: 0.7em;
     }
+
     .carousel-caption p {
         letter-spacing: 5px;
         font-size: 0.9em;
         margin: 1em 0 0em 0;
     }
+
     .carousel-caption {
         min-height: 483px !important;
         padding-top: 12em;
         text-align: center;
     }
+
     .banner_inner_con {
         min-height: 243px;
     }
+
     h3.tittle-w3ls.we {
         font-size: 1.8em;
     }
 }
-@media(max-width:667px){
-	.footer {
+
+@media (max-width: 667px) {
+    .footer {
         padding: 2em 0;
     }
+
     .bnr-button a {
         padding: .8em 1.3em;
         letter-spacing: 2px;
         font-size: 0.7em;
     }
+
     .carousel-caption p {
         letter-spacing: 5px;
         font-size: 0.9em;
         margin: 1em 0 0em 0;
     }
+
     .carousel-caption {
         min-height: 483px !important;
         padding-top: 12em;
         text-align: center;
     }
+
     .banner_inner_con {
         min-height: 243px;
     }
+
     h3.tittle-w3ls.we {
         font-size: 1.8em;
     }
 }
-@media(max-width:640px){
-	.top-buttons {
+
+@media (max-width: 640px) {
+    .top-buttons {
         margin: 2em auto 0;
         width: 41%;
     }
+
     .carousel-caption h2, .carousel-caption h3 {
         font-size: 2.3em;
         letter-spacing: 1px;
     }
+
     h3.tittle-w3ls {
         font-size: 2.3em;
     }
+
     .newsleft {
         margin-bottom: 1em;
     }
 }
-@media(max-width:600px){
-	.top-buttons {
+
+@media (max-width: 600px) {
+    .top-buttons {
         margin: 2em auto 0;
         width: 45%;
     }
+
     .carousel-caption {
         min-height: 450px !important;
         padding-top: 11em;
         text-align: center;
     }
+
     .carousel-indicators {
         bottom: 10%;
         left: 50%;
     }
+
     .banner_bottom_in {
         margin: 0 auto;
         width: 90%;
     }
+
     .login-form-rec {
         margin: 0 auto;
         width: 85%;
     }
 }
-@media(max-width:568px){
-	.top-buttons {
+
+@media (max-width: 568px) {
+    .top-buttons {
         margin: 2em auto 0;
         width: 48%;
     }
+
     .carousel-caption h2, .carousel-caption h3 {
         font-size: 2.2em;
         letter-spacing: 1px;
     }
+
     .carousel-caption {
         min-height: 428px !important;
         padding-top: 11em;
         text-align: center;
     }
+
     .carousel-control {
         line-height: 29em;
     }
+
     .banner_bottom, .highlight, .banner_bottom, .blog_sec, .tesimonials {
         padding: 3em 0;
     }
+
     .inner_sec_info_wthree_agile {
         margin-top: 2em;
     }
+
     .error-404 form {
         margin: 0 auto;
         width: 90%;
         text-align: center;
     }
 }
-@media(max-width:480px){
-	.top-buttons {
+
+@media (max-width: 480px) {
+    .top-buttons {
         margin: 2em auto 0;
         width: 54%;
     }
+
     h3.tittle-w3ls {
         font-size: 2em;
     }
+
     .banner-btm-inner {
         flex: 1;
         padding: 2em 1em;
     }
+
     .carousel-caption h2, .carousel-caption h3 {
         font-size: 1.8em;
         letter-spacing: 1px;
     }
+
     .top-buttons {
         margin: 1em auto 0;
         width: 57%;
     }
+
     .carousel-caption {
         min-height: 406px !important;
         padding-top: 11em;
         text-align: center;
     }
+
     #quote-carousel .carousel-indicators {
         left: 19%;
         top: auto;
         bottom: -26px;
     }
+
     .test_img_info p {
         margin-bottom: 1em;
         font-size: 0.85em;
     }
+
     .newsletter_w3ls_agileits {
         padding: 2em 1em;
     }
 }
-@media(max-width:440px){
-	.bnr-button a {
+
+@media (max-width: 440px) {
+    .bnr-button a {
         padding: .6em 1em;
         letter-spacing: 1px;
         font-size: 0.7em;
     }
+
     .logo-w3layouts-agileits h1 a {
         font-size: 0.9em;
     }
+
     .carousel-caption p {
         letter-spacing: 4px;
         font-size: 0.9em;
         margin: 1em 0 0em 0;
     }
+
     h3.tittle-w3ls {
         font-size: 1.8em;
     }
 }
-@media(max-width:414px){
-	.carousel-caption h2, .carousel-caption h3 {
+
+@media (max-width: 414px) {
+    .carousel-caption h2, .carousel-caption h3 {
         font-size: 1.8em;
         letter-spacing: 1px;
     }
-    .banner_bottom_left h4,.ser-first-grid h3 {
+
+    .banner_bottom_left h4, .ser-first-grid h3 {
         font-size: 1.1em;
     }
+
     h3.tittle-w3ls.we {
         font-size: 1.4em;
     }
+
     .help_full img, .help_full img {
         width: 99%;
         margin-bottom: 2em;
     }
+
     .inner_sec_info_wthree_agile {
         margin-top: 1.5em;
     }
+
     .banner_inner_con {
         min-height: 204px;
     }
+
     .banner-btm-inner h6 {
         font-size: 0.9em;
     }
 }
-@media(max-width:412px){
+
+@media (max-width: 412px) {
     .carousel-caption h2, .carousel-caption h3 {
         font-size: 1.7em;
         letter-spacing: 1px;
     }
+
     h3.tittle-w3ls {
         font-size: 1.6em;
     }
 }
-@media(max-width:384px){
-	.top-buttons {
+
+@media (max-width: 384px) {
+    .top-buttons {
         margin: 1em auto 0;
         width: 65%;
     }
+
     .banner_bottom, .highlight, .banner_bottom, .blog_sec, .tesimonials {
         padding: 2em 0;
     }
+
     .carousel-caption {
         min-height: 380px !important;
         padding-top: 10em;
     }
+
     .carousel-control {
         line-height: 24em;
     }
 }
-@media(max-width:375px){
-	.top-buttons {
+
+@media (max-width: 375px) {
+    .top-buttons {
         margin: 1em auto 0;
         width: 65%;
     }
+
     .nav_top_fx_w3ls_agileinfo {
         width: 93%;
         padding: 1.2em 0;
     }
 }
-@media(max-width:320px){
-	.carousel-caption h2, .carousel-caption h3 {
+
+@media (max-width: 320px) {
+    .carousel-caption h2, .carousel-caption h3 {
         font-size: 1.4em;
         letter-spacing: 1px;
     }
+
     .top-buttons {
         margin: 1em auto 0;
         width: 78%;
     }
+
     .carousel-caption {
         min-height: 339px !important;
         padding-top: 9em;
     }
+
     .carousel-indicators {
         bottom: 6%;
         left: 50%;
     }
+
     .ab_button a {
         padding: 0.8em 1.5em;
     }
+
     .banner_bottom_grid_left {
         padding: 0;
     }
+
     .banner_bottom_left h4, .ser-first-grid h3 {
         font-size: 0.95em;
     }
+
     h3.tittle-w3ls.we {
         font-size: 1.2em;
     }
+
     h3.tittle-w3ls {
         font-size: 1.4em;
     }
+
     .banner_inner_con {
         min-height: 165px;
     }
 }
+
 /*--//responsive--*/
 
-.slider-show{
+.slider-show {
     height: 35em;
-    padding: 5rem 0;
+}
+
+.navbar-default {
+    background-color: #b0aeaf;
+    border: 0;
+    margin: 0;
+}
+
+#navbar {
+    float: left;
+    margin-left: 35px;
+}
+
+.navbar .search input {
+    float: right;
+    padding: 5px 15px;
+    border-radius: 25px;
+    margin: 0;
+    border: 0;
+}
+
+.navbar .search i {
+    position: relative;
+    float: right;
+    right: 35px;
+    top: 5px;
+    font-weight: 100;
+    font-size: 20px;
 }

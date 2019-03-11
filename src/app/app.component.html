@@ -14,7 +14,8 @@
 
     <div class="top_header_one">
         <div class="header-one-content">
-            <div>عربي</div>
+            <div *ngIf="_appService.currentLanguage == 'en'" (click)="_appService.switchLanguage('ar')">عربي</div>
+            <div *ngIf="_appService.currentLanguage == 'ar'" (click)="_appService.switchLanguage('en')">English</div>
             |
             <div>
                 <i class="fa fa-lock"></i>
@@ -74,12 +75,45 @@
     <!--</nav>-->
 </div>
 
+<div class="nav">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="nav_top_fx_w3ls_agileinfo">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false"
+                        aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio.html">Projects</a></li>
+                            <li><a href="404.html">Services</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <i class="fa fa-search"></i>
+                <input type="text" id="navbar-search" placeholder="search">
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+</div>
 <div class="slider-show">
-    <app-slider></app-slider>
-    <!--<div style="text-align:center">-->
-    <!--<button (click)="_appService.switchLanguage('ar')">Arabic</button>-->
-    <!--<button (click)="_appService.switchLanguage('en')">English</button>-->
-    <!--</div>-->
+    <app-slideshow></app-slideshow>
 </div>
 
 <div class="join-us-section highlight">
@@ -104,7 +138,6 @@
     </div>
 
 </div>
-
 
 <div class="work-section banner_bottom">
     <div id="work-title">
