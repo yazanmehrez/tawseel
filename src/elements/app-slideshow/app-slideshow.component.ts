@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, Input, OnInit, ViewChild} from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
@@ -8,16 +8,10 @@ import * as $ from 'jquery';
 })
 export class AppSlideshowComponent implements OnInit, AfterViewInit {
     @ViewChild('slideshow') private slideshow: any;
+    @Input() imageUrls;
 
     constructor() {
     }
-
-    imageUrls = [
-        {url: 'assets/images/banner3.jpg', id: 0, title: 'SERVICE', description: 'Services at your doorstp', button: 'Learn More'},
-        {url: 'assets/images/banner2.jpg', id: 1, title: 'PRODUCTS', description: 'PRODUCTS at your doorstp', button: 'Learn More'},
-        {url: 'assets/images/banner1.jpg', id: 2, title: 'OTHER', description: 'OTHER at your doorstp', button: 'Learn More'}
-    ];
-
 
     ngAfterViewInit() {
         $('<i class="fa fa-angle-left custom-arrow prev" id="prevSlide"></i>').insertBefore('.slick-dots li:first-child');

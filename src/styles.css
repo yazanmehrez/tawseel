@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'assets/css/font-awesome.css';
 
-.slideshow-container[_ngcontent-c2] .slick-dots[_ngcontent-c2] li[_ngcontent-c2] button[_ngcontent-c2] {
+.slideshow-container .slick-dots li button {
     width: 10px !important;
     padding: 0 !important;
 }

@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AppService} from './app.service';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
     selector: 'app-root',
@@ -8,7 +9,8 @@ import {AppService} from './app.service';
 })
 export class AppComponent implements OnInit {
 
-    constructor(public _appService: AppService) {
+
+    constructor(public _appService: AppService, public sanitizer: DomSanitizer) {
 
     }
 
