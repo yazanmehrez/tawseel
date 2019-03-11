@@ -1,0 +1,127 @@
+.top_header_one{
+    background-color: #f8d231;
+    height: 35px;
+    text-align: right;
+}
+
+.top_header_one div,i,p{
+    font-size: 10px;
+    display: inline-block;
+    font-weight: 900;
+    margin: 0 3px 3px 3px;
+    color: #000;
+}
+
+.header-one-content{
+    padding: 8px 65px 8px 0;
+}
+
+
+.top_header_tow{
+    height: 90px;
+}
+
+.logo-right{
+    float:right;
+    margin-right: 75px;
+}
+
+.logo-left{
+    float:left;
+    margin-left: 75px;
+}
+
+
+.join-us-section {
+    text-align: center;
+}
+
+.join-us-section p {
+
+}
+
+.user-card div{
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 5px;
+    height: 275px;
+    margin-right: 51px;
+    border-radius: 10px;
+}
+
+#join-title p {
+    z-index: 1;
+    border-bottom: 7px solid #f5e391;
+    line-height: 0.5;
+    padding: 0 5px;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+#join-title, #work-title{
+    margin-bottom: 38px;
+
+}
+
+#work-title p{
+    z-index: 1;
+    border-bottom: 7px solid #f5e391;
+    line-height: 0.5;
+    width: 235px;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.work-section{
+}
+
+.user-card img{
+    margin: 30px auto;
+    display: block;
+    text-align: center;
+    height: 135px;
+}
+
+.user-card{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.user-card p{
+    font-size: 20px;
+    font-weight: unset;
+    color: #494949;
+}
+
+
+.work-section{
+    text-align: center;
+}
+
+.work-card div{
+    text-align: center;
+    display: inline-block;
+}
+
+#service img , #van img , #agent-service img{
+    width: 212px;
+    height: auto;
+    display: block;
+}
+
+.work-card p{
+    display: block;
+    font-size: 20px;
+    color: #a1a1a1;
+    font-weight: 700;
+    display: block;
+}
+
+#van{
+    vertical-align: middle;
+}
+
+#arrow-right , #arrow-left {
+   vertical-align: text-bottom !important;
+}
+

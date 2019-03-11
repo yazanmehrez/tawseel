@@ -1,143 +1,225 @@
 <!--Load Css and JS Files Based On Language-->
 <ng-container *ngIf="_appService.currentLanguage == 'ar'">
-  <link rel="stylesheet" type="text/css" href="/assets/css/rtl/bootstrap-ar.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/rtl/bootstrap-ar.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/rtl/style.css">
 </ng-container>
 
 <ng-container *ngIf="_appService.currentLanguage == 'en'">
-  <link rel="stylesheet" type="text/css" href="/assets/css/ltr/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/ltr/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/ltr/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/ltr/style.css">
 </ng-container>
 
+
 <div class="top_header" id="home">
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="nav_top_fx_w3ls_agileinfo">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                        aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="logo-w3layouts-agileits">
-                    <h1> <a class="navbar-brand" href="index.html"><i class="fa fa-clone" aria-hidden="true"></i> Conceit <span class="desc">For your Business</span></a></h1>
-                </div>
+
+    <div class="top_header_one">
+        <div class="header-one-content">
+            <div>عربي</div>
+            |
+            <div>
+                <i class="fa fa-lock"></i>
+                <p>LOGIN</p>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <div class="nav_right_top">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="request" href="contact.html">Send Request</a></li>
-
-                    </ul>
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="portfolio.html">Projects</a></li>
-                                <li><a href="404.html">Services</a></li>
-
-
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+            |
+            <div>
+                <i class="fa fa-user"></i>
+                <p>REGISTER</p>
             </div>
-            <!--/.nav-collapse -->
         </div>
-    </nav>
+    </div>
+    <div class="top_header_tow">
+        <div class="logo-right"><img src="assets/images/logo-right.PNG" alt=""></div>
+        <div class="logo-left"><img src="assets/images/logo-left.PNG" alt=""></div>
+    </div>
+    <!-- Fixed navbar -->
+    <!--<nav class="navbar navbar-default navbar-fixed-top">-->
+    <!--<div class="nav_top_fx_w3ls_agileinfo">-->
+    <!--<div class="navbar-header">-->
+    <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"-->
+    <!--aria-controls="navbar">-->
+    <!--<span class="sr-only">Toggle navigation</span>-->
+    <!--<span class="icon-bar"></span>-->
+    <!--<span class="icon-bar"></span>-->
+    <!--<span class="icon-bar"></span>-->
+    <!--</button>-->
+    <!--<div class="logo-w3layouts-agileits">-->
+    <!--<h1> <a class="navbar-brand" href="index.html"><i class="fa fa-clone" aria-hidden="true"></i> Conceit <span class="desc">For your Business</span></a></h1>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div id="navbar" class="navbar-collapse collapse">-->
+    <!--<div class="nav_right_top">-->
+    <!--<ul class="nav navbar-nav navbar-right">-->
+    <!--<li><a class="request" href="contact.html">Send Request</a></li>-->
+
+    <!--</ul>-->
+    <!--<ul class="nav navbar-nav">-->
+    <!--<li class="active"><a href="index.html">Home</a></li>-->
+    <!--<li><a href="about.html">About</a></li>-->
+    <!--<li><a href="portfolio.html">Portfolio</a></li>-->
+    <!--<li><a href="contact.html">Contact</a></li>-->
+    <!--<li class="dropdown">-->
+    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+    <!--<ul class="dropdown-menu">-->
+    <!--<li><a href="portfolio.html">Projects</a></li>-->
+    <!--<li><a href="404.html">Services</a></li>-->
+
+
+    <!--</ul>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
+    <!--</div>-->
+    <!--</nav>-->
 </div>
 
 <div class="slider-show">
     <app-slider></app-slider>
-    <div style="text-align:center">
-        <button (click)="_appService.switchLanguage('ar')">Arabic</button>
-        <button (click)="_appService.switchLanguage('en')">English</button>
+    <!--<div style="text-align:center">-->
+    <!--<button (click)="_appService.switchLanguage('ar')">Arabic</button>-->
+    <!--<button (click)="_appService.switchLanguage('en')">English</button>-->
+    <!--</div>-->
+</div>
+
+<div class="join-us-section highlight">
+    <div id="join-title">
+        <p>Join Us</p>
+        <div></div>
+    </div>
+    <div class="user-card">
+        <div>
+            <img src="assets/images/investor.PNG" alt="">
+            <p>Are you an Investor?</p>
+        </div>
+        <div>
+            <img src="assets/images/agent.PNG" alt="">
+            <p>Are you an Agent?</p>
+        </div>
+
+        <div>
+            <img src="assets/images/customer.PNG" alt="">
+            <p>Are you an Customer?</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="work-section banner_bottom">
+    <div id="work-title">
+        <p>How it works</p>
+    </div>
+    <div class="work-card">
+
+        <div id="service">
+            <img src="assets/images/service.PNG" alt="">
+            <p>Apply for service</p>
+            <p>online</p>
+        </div>
+        <div id="arrow-left">
+            <img src="assets/images/arrow-left.PNG" alt="">
+        </div>
+        <div id="van">
+
+            <img src="assets/images/van.PNG" alt="">
+            <p>van comes to</p>
+            <p style="font-size: 30px;
+    color: #f6d232;margin-top: -8px;">location</p>
+
+        </div>
+        <div id="arrow-right">
+            <img src="assets/images/arrow-right.PNG" alt="">
+        </div>
+        <div id="agent-service">
+            <img src="assets/images/agent-service.PNG" alt="">
+            <p>Agent serves the</p>
+            <p>customer</p>
+        </div>
+
     </div>
 </div>
 
 <div class="banner_bottom">
     <div class="container">
-    <h3 class="tittle-w3ls">About Us</h3>
-    <div class="inner_sec_info_wthree_agile">
-        <div class="help_full">
+        <h3 class="tittle-w3ls">About Us</h3>
+        <div class="inner_sec_info_wthree_agile">
+            <div class="help_full">
 
-            <div class="col-md-6 banner_bottom_grid help">
-                <img src="assets/images/ab.png" alt=" " class="img-responsive">
+                <div class="col-md-6 banner_bottom_grid help">
+                    <img src="assets/images/ab.png" alt=" " class="img-responsive">
+                </div>
+                <div class="col-md-6 banner_bottom_left">
+                    <h4>Working to build a better web design</h4>
+                    <p>Pellentesque convallis diam consequat magna vulputate malesuada. Cras a ornare elit. Nulla
+                        viverra pharetra sem, eget
+                        pulvinar neque pharetra ac.</p>
+                    <p>Lorem Ipsum convallis diam consequat magna vulputate malesuada. Cras a ornare elit. Nulla viverra
+                        pharetra sem, eget
+                        pulvinar neque pharetra ac.</p>
+                    <div class="ab_button">
+                        <a class="btn btn-primary btn-lg hvr-underline-from-left" href="single.html" role="button">Read
+                            More </a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="col-md-6 banner_bottom_left">
-                <h4>Working to build a better web design</h4>
-                <p>Pellentesque convallis diam consequat magna vulputate malesuada. Cras a ornare elit. Nulla viverra pharetra sem, eget
-                    pulvinar neque pharetra ac.</p>
-                <p>Lorem Ipsum convallis diam consequat magna vulputate malesuada. Cras a ornare elit. Nulla viverra pharetra sem, eget
-                    pulvinar neque pharetra ac.</p>
-                <div class="ab_button">
-                    <a class="btn btn-primary btn-lg hvr-underline-from-left" href="single.html" role="button">Read More </a>
+        </div>
+        <div class="news-main">
+            <div class="col-md-4 banner_bottom_left">
+                <div class="banner_bottom_pos">
+                    <div class="banner_bottom_pos_grid">
+                        <div class="col-xs-3 banner_bottom_grid_left">
+                            <div class="banner_bottom_grid_left_grid">
+                                <span class="fa fa-laptop" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-9 banner_bottom_grid_right">
+                            <h4>Digital Solutions</h4>
+                            <p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 banner_bottom_left">
+                <div class="banner_bottom_pos">
+                    <div class="banner_bottom_pos_grid">
+                        <div class="col-xs-3 banner_bottom_grid_left">
+                            <div class="banner_bottom_grid_left_grid">
+                                <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-9 banner_bottom_grid_right">
+                            <h4>Live Website Builder</h4>
+                            <p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 banner_bottom_left">
+                <div class="banner_bottom_pos">
+                    <div class="banner_bottom_pos_grid">
+                        <div class="col-xs-3 banner_bottom_grid_left">
+                            <div class="banner_bottom_grid_left_grid">
+                                <span class="fa fa-list" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-9 banner_bottom_grid_right">
+                            <h4>Creative Strategy</h4>
+                            <p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
-    <div class="news-main">
-        <div class="col-md-4 banner_bottom_left">
-            <div class="banner_bottom_pos">
-                <div class="banner_bottom_pos_grid">
-                    <div class="col-xs-3 banner_bottom_grid_left">
-                        <div class="banner_bottom_grid_left_grid">
-                            <span class="fa fa-laptop" aria-hidden="true"></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-9 banner_bottom_grid_right">
-                        <h4>Digital Solutions</h4>
-                        <p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
-
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 banner_bottom_left">
-            <div class="banner_bottom_pos">
-                <div class="banner_bottom_pos_grid">
-                    <div class="col-xs-3 banner_bottom_grid_left">
-                        <div class="banner_bottom_grid_left_grid">
-                            <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-9 banner_bottom_grid_right">
-                        <h4>Live Website Builder</h4>
-                        <p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
-
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 banner_bottom_left">
-            <div class="banner_bottom_pos">
-                <div class="banner_bottom_pos_grid">
-                    <div class="col-xs-3 banner_bottom_grid_left">
-                        <div class="banner_bottom_grid_left_grid">
-                            <span class="fa fa-list" aria-hidden="true"></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-9 banner_bottom_grid_right">
-                        <h4>Creative Strategy</h4>
-                        <p>Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
-
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
 </div>
 
 <div class="highlight">
@@ -176,7 +258,8 @@
     <div class="banner_bottom_in">
         <h3 class="tittle-w3ls we">We provide high quality and cost effective offshore web development services.</h3>
 
-        <p>Lorem ipsum dolor sit amet, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        <p>Lorem ipsum dolor sit amet, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis
             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 
@@ -219,7 +302,7 @@
         <div class="col-md-9 footer-right">
             <div class="sign-grds">
                 <div class="col-md-4 sign-gd">
-                    <h4>Latest <span>Info</span> </h4>
+                    <h4>Latest <span>Info</span></h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -231,15 +314,24 @@
                 <div class="col-md-3 sign-gd flickr-post">
                     <h4>Our <span>Works</span></h4>
                     <ul>
-                        <li><a href="single.html"><img src="assets/images/g1.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="assets/images/g2.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="assets/images/g3.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="assets/images/g4.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="assets/images/g5.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="assets/images/g6.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="assets/images/g7.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="assets/images/g8.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="assets/images/g4.jpg" alt=" " class="img-responsive" /></a></li>
+                        <li><a href="single.html"><img src="assets/images/g1.jpg" alt=" " class="img-responsive"/></a>
+                        </li>
+                        <li><a href="single.html"><img src="assets/images/g2.jpg" alt=" " class="img-responsive"/></a>
+                        </li>
+                        <li><a href="single.html"><img src="assets/images/g3.jpg" alt=" " class="img-responsive"/></a>
+                        </li>
+                        <li><a href="single.html"><img src="assets/images/g4.jpg" alt=" " class="img-responsive"/></a>
+                        </li>
+                        <li><a href="single.html"><img src="assets/images/g5.jpg" alt=" " class="img-responsive"/></a>
+                        </li>
+                        <li><a href="single.html"><img src="assets/images/g6.jpg" alt=" " class="img-responsive"/></a>
+                        </li>
+                        <li><a href="single.html"><img src="assets/images/g7.jpg" alt=" " class="img-responsive"/></a>
+                        </li>
+                        <li><a href="single.html"><img src="assets/images/g8.jpg" alt=" " class="img-responsive"/></a>
+                        </li>
+                        <li><a href="single.html"><img src="assets/images/g4.jpg" alt=" " class="img-responsive"/></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-5 sign-gd-two">
@@ -253,7 +345,7 @@
                                 <h6>Phone Number</h6>
                                 <p>+1 234 567 8901</p>
                             </div>
-                            <div class="clearfix"> </div>
+                            <div class="clearfix"></div>
                         </div>
                         <div class="address-grid">
                             <div class="address-left">
@@ -263,7 +355,7 @@
                                 <h6>Email Address</h6>
                                 <p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
                             </div>
-                            <div class="clearfix"> </div>
+                            <div class="clearfix"></div>
                         </div>
                         <div class="address-grid">
                             <div class="address-left">
@@ -275,7 +367,7 @@
 
                                 </p>
                             </div>
-                            <div class="clearfix"> </div>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
@@ -284,6 +376,7 @@
             </div>
         </div>
         <div class="clearfix"></div>
-        <p class="copy-right">&copy 2018 Conceit. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+        <p class="copy-right">&copy 2018 Conceit. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a>
+        </p>
     </div>
 </div>
