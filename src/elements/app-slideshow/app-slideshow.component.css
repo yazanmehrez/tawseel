@@ -1,0 +1,47 @@
+::ng-deep .slideshow-container .slick-dots li button {
+    width: 10px !important;
+    padding: 0 !important;
+}
+
+::ng-deep .custom-arrow {
+    vertical-align: sub;
+    color: #fff;
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+::ng-deep .slick-active button {
+    --dot-color: #f8d231 !important;
+}
+
+::ng-deep .slider-title {
+    color: #fff;
+    z-index: 5;
+    font-size: 50px;
+    top: 100px;
+    left: 75px;
+    position: absolute;
+    border-bottom: 5px solid yellow;
+    line-height: 0.9;
+    width: 35px;
+}
+
+::ng-deep .slider-description {
+    color: #fff;
+    z-index: 5;
+    font-size: 30px;
+    width: 230px;
+    font-weight: 100;
+    top: 170px;
+    line-height: 1;
+    left: 75px;
+    position: absolute;
+}
+
+::ng-deep .slider-button {
+    top: 260px;
+    left: 75px;
+    position: absolute;
+}
+

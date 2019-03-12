@@ -1,0 +1,25 @@
+<swiper class="swiper-container pb-5" [config]="config" (indexChange)="getIndex($event)"
+        fxFlex="auto">
+    <div *ngFor="let slide of slides; let i = index;" class="swiper-slide">
+        <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+            <mat-card class="top-offer-card">
+                <img mat-card-image [src]="slide.url"
+                     alt="Photo of a Shiba Inu">
+                <div class="pointer"></div>
+            </mat-card>
+        </div>
+    </div>
+</swiper>
+
+<mat-card class="information-container">
+    <mat-card-content>
+        <h3 class="text-grey-darken3 font-size-28 bold text-center"> {{slides[indexInformation].title}}</h3>
+        <p class="text-grey-darken1 font-size-16 text-center" [innerHTML]="slides[indexInformation].desc"></p>
+        <div class="divider"></div>
+    </mat-card-content>
+    <mat-card-actions>
+        <div class="d-flex flex-row row-hl justify-content-center">
+            <button>learn more</button>
+        </div>
+    </mat-card-actions>
+</mat-card>

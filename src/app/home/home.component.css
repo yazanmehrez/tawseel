@@ -16,12 +16,13 @@
     border-radius: 10px;
 }
 
-#join-title p, #work-title p {
+.yellow-title p {
     border-bottom: 7px solid #f5e391;
     line-height: 0.5;
     padding: 0 5px;
     font-size: 33px;
     font-weight: 600;
+    margin-bottom: 25px;
     display: inline-block;
 }
 
@@ -78,3 +79,6 @@
     vertical-align: text-bottom !important;
 }
 
+.swipe-container {
+    padding: 0 50px;
+}
