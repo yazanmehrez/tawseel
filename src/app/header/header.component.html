@@ -2,9 +2,6 @@
 
   <div class="top_header_one">
     <div class="header-one-content">
-      <div *ngIf="_appService.currentLanguage == 'en'" (click)="_appService.switchLanguage('ar')">عربي</div>
-      <div *ngIf="_appService.currentLanguage == 'ar'" (click)="_appService.switchLanguage('en')">English</div>
-      |
       <div>
         <i class="fa fa-lock"></i>
         <p>LOGIN</p>
@@ -43,7 +40,7 @@
           <li><a href="contact.html">Contact</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-               aria-expanded="false">Dropdown <span class="caret"></span></a>
+               aria-expanded="false">Dropdown <span class="fa fa-angle-down"></span></a>
             <ul class="dropdown-menu">
               <li><a href="portfolio.html">Projects</a></li>
               <li><a href="404.html">Services</a></li>
@@ -54,6 +51,24 @@
       <div class="search">
         <i class="fa fa-search"></i>
         <input type="text" id="navbar-search" placeholder="search">
+       <ul class="nav navbar-nav lang-switch">
+         <li class="dropdown">
+           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false"
+              *ngIf="_appService.currentLanguage == 'ar'">
+             عربي <span class="fa fa-angle-down"></span>
+           </a>
+           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false"
+              *ngIf="_appService.currentLanguage == 'en'">
+             English <span class="fa fa-angle-down"></span>
+           </a>
+           <ul class="dropdown-menu lang-options">
+             <li><a *ngIf="_appService.currentLanguage == 'en'" (click)="_appService.switchLanguage('ar')">عربي</a></li>
+             <li><a *ngIf="_appService.currentLanguage == 'ar'" (click)="_appService.switchLanguage('en')">English</a></li>
+           </ul>
+         </li>
+       </ul>
       </div>
       <!--/.nav-collapse -->
     </div>

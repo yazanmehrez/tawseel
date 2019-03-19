@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {AppService} from './app.service';
-import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
     selector: 'app-root',
@@ -9,8 +8,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class AppComponent implements OnInit {
 
-
-    constructor(public _appService: AppService, public sanitizer: DomSanitizer) {
+    constructor(public _appService: AppService) {
 
     }
 
@@ -18,6 +16,7 @@ export class AppComponent implements OnInit {
         this._appService.language.subscribe(language => {
             this._appService.currentLanguage = language === 'en' ? 'en' : 'ar';
         });
+        $('#styles').remove();
     }
 }
 

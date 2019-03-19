@@ -59,8 +59,8 @@
 }
 
 #service img, #van img, #agent-service img {
-    width: 212px;
-    height: auto;
+    width: auto;
+    height: 219px;
     display: block;
 }
 

@@ -7,7 +7,7 @@
 
 .swiper-slide {
     filter: grayscale(1);
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .swiper-slide:not(.swiper-slide-active) {
@@ -25,13 +25,3 @@
     border-radius: 15px;
 }
 
-.pointer {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #2e302b;
-    position: relative;
-    top: -16px;
-    left: 35%;
-}

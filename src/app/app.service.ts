@@ -1,4 +1,4 @@
-import {Injectable, ViewChild} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {BehaviorSubject} from 'rxjs';
 
@@ -21,6 +21,7 @@ export class AppService {
 
     /* Switch Language */
     switchLanguage(language: string) {
+        $('.dropdown-menu').removeClass('show');
         this.translate.use(language);
         if (language === 'en') {
             this.language.next('en');
