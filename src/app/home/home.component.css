@@ -82,3 +82,28 @@
 .swipe-container {
     padding: 0 50px;
 }
+
+
+
+.about{
+ text-align: center;
+}
+
+.about-right{
+    margin-top: -93px;
+}
+
+.about-left{
+    padding: 63px 30px;
+}
+
+
+
+.read-more button{
+    background-color: #e1bb36;
+    height: 50px;
+    width: 172px;
+    border-radius: 41px;
+    font-size: 13px;
+    font-weight: 600;
+}
