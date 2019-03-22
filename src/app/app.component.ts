@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AppService} from './app.service';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
     selector: 'app-root',
@@ -16,6 +17,7 @@ export class AppComponent implements OnInit {
         this._appService.language.subscribe(language => {
             this._appService.currentLanguage = language === 'en' ? 'en' : 'ar';
         });
+
         $('#styles').remove();
     }
 }

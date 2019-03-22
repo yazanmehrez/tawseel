@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "sf-compact-display-regular";
+    src: url("../fonts/SF-Compact-Display-Regular.otf") format("opentype"),
+    url("../fonts/SF-Compact-Display-Regular.otf") format("woff");
+}
+
+@font-face {
+    font-family: "sf-compact-display-medium";
+    src: url("../fonts/SF-Compact-Display-Meduim.otf") format("opentype"),
+    url("../fonts/SF-Compact-Display-Meduim.otf") format("woff");
+}
+
+@font-face {
+    font-family: "sf-compact-display-bold";
+    src: url("../fonts/SF-Compact-Display-Bold.otf") format("opentype"),
+    url("../fonts/SF-Compact-Display-Bold.otf") format("woff");
+}
+
+@font-face {
+    font-family: "dubai-bold";
+    src: url("../fonts/Dubai-Bold.ttf") format("opentype"),
+    url("../fonts/Dubai-Bold.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "dubai-regular";
+    src: url("../fonts/Dubai-regular.ttf") format("opentype"),
+    url("../fonts/Dubai-regular.ttf") format("woff");
+}

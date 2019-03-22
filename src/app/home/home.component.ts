@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
     selector: 'app-home',
@@ -12,10 +13,12 @@ export class HomeComponent implements OnInit {
         {url: 'assets/images/banner1.jpg', id: 2, title: 'OTHER', description: 'OTHER at your doorstp', button: 'Learn More'}
     ];
 
-    constructor() {
+    constructor(private translateService: TranslateService) {
     }
 
     ngOnInit() {
-
+        this.translateService.onLangChange.subscribe(lang => {
+            console.log(lang);
+        });
     }
 }

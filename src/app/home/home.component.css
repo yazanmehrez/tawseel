@@ -11,19 +11,21 @@
     display: inline-block;
     background-color: #fff;
     padding: 0 5px;
-    height: 275px;
+    height: 340px;
+    width: 352px;
     margin-right: 51px;
     border-radius: 10px;
 }
 
 .yellow-title p {
-    border-bottom: 7px solid #f5e391;
+    border-bottom: 7px solid #f6e392;
     line-height: 0.5;
     padding: 0 5px;
     font-size: 33px;
-    font-weight: 600;
-    margin-bottom: 25px;
+    color: #494949;
+    margin-bottom: 35px;
     display: inline-block;
+    font-family: 'sf-compact-display-bold', sans-serif;
 }
 
 #join-title, #work-title {
@@ -33,9 +35,10 @@
 
 .user-card img {
     margin: 30px auto;
+    width: auto;
     display: block;
     text-align: center;
-    height: 135px;
+    height: 165px;
 }
 
 .user-card {
@@ -44,9 +47,10 @@
 }
 
 .user-card p {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: unset;
     color: #494949;
+    font-family: 'sf-compact-display-medium', sans-serif;
 }
 
 .work-section {
@@ -83,27 +87,35 @@
     padding: 0 50px;
 }
 
-
-
-.about{
- text-align: center;
+.about-right {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
 }
 
-.about-right{
-    margin-top: -93px;
+.about-right img {
+    width: calc(100% - 20px);
 }
 
-.about-left{
-    padding: 63px 30px;
+.about-left {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
+.about {
+    padding: 3em 0;
+}
 
+.work-card p {
+    font-size: 30px;
+    color: #f6d232;
+    line-height: 1;
+    font-family: 'sf-compact-display-bold';
+}
 
-.read-more button{
-    background-color: #e1bb36;
-    height: 50px;
-    width: 172px;
-    border-radius: 41px;
-    font-size: 13px;
-    font-weight: 600;
+.work-card span {
+    color: #a0a0a0;
+    font-size: 20px;
+    font-family: 'sf-compact-display-medium';
 }

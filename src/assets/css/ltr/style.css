@@ -10,7 +10,7 @@ body {
     margin: 0;
     font-size: 100%;
     background: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'sf-compact-display-regular';
 }
 
 body a {
@@ -42,7 +42,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'sf-compact-display-bold', sans-serif;
 }
 
 p {
@@ -118,6 +118,7 @@ label {
 
 .navbar-default .navbar-nav > li > a {
     color: #27292b;
+    font-family: 'dubai-regular';
 }
 
 .dropdown-menu > li > a {
@@ -387,7 +388,7 @@ a.two.scroll {
 }
 
 .banner_bottom {
-    padding: 7em 0;
+    padding: 5em 0;
     text-align: center;
 }
 
@@ -595,7 +596,7 @@ h3.tittle-w3ls.cen {
 }
 
 .highlight {
-    padding: 7em 0;
+    padding: 5em 0;
     background: #f7f7f7;
 }
 
@@ -2248,4 +2249,29 @@ p.copy-right a:hover {
 
 .lang-options {
     cursor: pointer;
+}
+
+.read-more button {
+    background-color: #e1bb36;
+    box-shadow: 4px 6px 0px #e0e0cf;
+    height: 50px;
+    width: 190px;
+    border-radius: 41px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.read-more button img {
+    float: right;
+    margin-right: 10px;
+    height: 40px;
+}
+
+.read-more button span {
+    font-size: 15px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 40px;
+    font-family: 'sf-compact-display-medium';
 }
