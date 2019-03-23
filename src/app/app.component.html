@@ -1,14 +1,7 @@
-<!--Load Css and JS Files Based On Language-->
-<ng-container *ngIf="_appService.currentLanguage == 'ar'">
-    <link rel="stylesheet" type="text/css" href="/assets/css/rtl/bootstrap-ar.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/rtl/style.css">
+<ng-container>
+    <link rel="stylesheet" type="text/css" [href]="sanitizer.bypassSecurityTrustResourceUrl(styles.bootstrap)">
+    <link rel="stylesheet" type="text/css" [href]="sanitizer.bypassSecurityTrustResourceUrl(styles.style)">
 </ng-container>
-
-<ng-container *ngIf="_appService.currentLanguage == 'en'">
-    <link rel="stylesheet" type="text/css" href="/assets/css/ltr/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/ltr/style.css">
-</ng-container>
-
 
 <app-header></app-header>
 

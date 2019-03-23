@@ -24,6 +24,6 @@
 
 @font-face {
     font-family: "dubai-regular";
-    src: url("../fonts/Dubai-regular.ttf") format("opentype"),
-    url("../fonts/Dubai-regular.ttf") format("woff");
+    src: url("../fonts/Dubai-Regular.ttf") format("opentype"),
+    url("../fonts/Dubai-Regular.ttf") format("woff");
 }
