@@ -11,6 +11,8 @@ import {HomeComponent} from './home/home.component';
 import {AppSwiperComponent} from '../elements/app-swiper/app-swiper.component';
 import {SWIPER_CONFIG, SwiperConfigInterface, SwiperModule} from 'ngx-swiper-wrapper';
 import {MatCardModule} from '@angular/material';
+import { AppXgalleryComponent } from '../elements/app-xgallery/app-xgallery.component';
+import {SafePipe} from '../pipes/safeURLs.pipe';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -25,7 +27,9 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         HeaderComponent,
         FooterComponent,
         HomeComponent,
-        AppSwiperComponent
+        AppSwiperComponent,
+        AppXgalleryComponent,
+        SafePipe
     ],
     imports: [
         BrowserModule,

@@ -111,11 +111,61 @@
     font-size: 30px;
     color: #f6d232;
     line-height: 1;
-    font-family: 'sf-compact-display-bold';
+    font-family: 'sf-compact-display-bold', sans-serif;
 }
 
 .work-card span {
     color: #a0a0a0;
     font-size: 20px;
-    font-family: 'sf-compact-display-medium';
+    font-family: 'sf-compact-display-medium', sans-serif;
+}
+
+.complaints, .suggestion {
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.info {
+    padding: 25px;
+    text-align: left;
+    margin: 0 25px;
+}
+
+.line {
+    border-right: 5px solid #e8e8e8;
+}
+
+/*.complaints:after {*/
+/*content: '';*/
+/*border-right: 50px solid #fff;*/
+/*}*/
+
+.col-m {
+    display: inline-block;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-60 {
+    width: 60%;
+    vertical-align: text-bottom;
+}
+
+.slider-insta img {
+    width: 350px;
+    height: 275px;
+}
+
+.com-sug {
+    margin: 45px;
+}
+
+.icon {
+    background: gray;
 }

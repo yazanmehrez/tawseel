@@ -1,6 +1,6 @@
 <ng-container>
-    <link rel="stylesheet" type="text/css" [href]="sanitizer.bypassSecurityTrustResourceUrl(styles.bootstrap)">
-    <link rel="stylesheet" type="text/css" [href]="sanitizer.bypassSecurityTrustResourceUrl(styles.style)">
+    <link rel="stylesheet" type="text/css" [href]="styles.bootstrap | safe: 'resourceUrl'">
+    <link rel="stylesheet" type="text/css" [href]="styles.style | safe: 'resourceUrl'">
 </ng-container>
 
 <app-header></app-header>

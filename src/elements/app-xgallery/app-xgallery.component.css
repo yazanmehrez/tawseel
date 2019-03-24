@@ -1,0 +1,9 @@
+.items img {
+    width: 340px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.controls img{
+    cursor: pointer;
+}
