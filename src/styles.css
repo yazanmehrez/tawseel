@@ -15,3 +15,27 @@
 ::-webkit-scrollbar-thumb:window-inactive {
     background: #e3bd34;
 }
+.read-more button {
+    background-color: #e1bb36;
+    box-shadow: 4px 6px 0px #e0e0cf;
+    height: 50px;
+    width: 190px;
+    border-radius: 41px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.read-more button img {
+    float: right;
+    margin-right: 10px;
+    height: 40px;
+}
+
+.read-more button span {
+    font-size: 15px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 40px;
+    font-family: 'sf-compact-display-medium';
+}

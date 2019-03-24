@@ -1496,10 +1496,10 @@ a.pinterest .front {
 p.copy-right {
     color: #848484;
     text-align: center;
-    margin-top: 55px;
     font-size: 14px;
-    border-top: 1px solid #0e0e0e;
-    padding-top: 3em;
+    margin: 5px 0;
+    height: 100px;
+    padding: 1em;
 }
 
 p.copy-right a {

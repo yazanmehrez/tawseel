@@ -25,6 +25,7 @@
     border-bottom: 5px solid yellow;
     line-height: 0.9;
     width: 35px;
+    font-family: 'sf-compact-display-heavy', sans-serif;
 }
 
 ::ng-deep .slider-description {
@@ -36,6 +37,7 @@
     top: 170px;
     line-height: 1;
     left: 75px;
+    text-align: left;
     position: absolute;
 }
 
@@ -45,3 +47,11 @@
     position: absolute;
 }
 
+::ng-deep .learn-more {
+    z-index: 5;
+    width: 230px;
+    top: 255px;
+    left: 50px;
+    color: #000;
+    position: absolute;
+}

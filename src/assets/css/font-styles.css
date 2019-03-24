@@ -17,6 +17,12 @@
 }
 
 @font-face {
+    font-family: "sf-compact-display-heavy";
+    src: url("../fonts/SF-Compact-Display-Heavy.otf") format("opentype"),
+    url("../fonts/SF-Compact-Display-Heavy.otf") format("woff");
+}
+
+@font-face {
     font-family: "dubai-bold";
     src: url("../fonts/Dubai-Bold.ttf") format("opentype"),
     url("../fonts/Dubai-Bold.ttf") format("woff");

@@ -29,7 +29,7 @@ export class AppSlideshowComponent implements OnInit, AfterViewInit {
             $(this).removeAttr('title');
             $('<div><span class="slider-title">' + self.imageUrls[index].title + '</span></div>').appendTo(this);
             $('<div><span class="slider-description">' + self.imageUrls[index].description + '</span></div>').appendTo(this);
-            $('<div><button class="slider-button">' + self.imageUrls[index].button + '</button></div>').appendTo(this);
+            $('<div><div class="read-more learn-more"><button><span>Learn More</span><img src="assets/images/arrow-read-more.png"></button></div></div>').appendTo(this);
         });
     }
 
