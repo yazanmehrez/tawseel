@@ -1,6 +1,9 @@
 <div class="xgallery">
     <div class="items">
-        <img [src]="images[index].url">
+        <ng-container *ngFor="let img of images; let i = index">
+            <img  *ngIf="i == index" [src]="img.url" [@fadeInOut]>
+        </ng-container>
+
     </div>
     <div class="controls">
         <img [src]="index == 0 ? 'assets/images/left-disable.png' : 'assets/images/left-active.png'"

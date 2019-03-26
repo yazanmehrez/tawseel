@@ -33,3 +33,8 @@
     src: url("../fonts/Dubai-Regular.ttf") format("opentype"),
     url("../fonts/Dubai-Regular.ttf") format("woff");
 }
+@font-face {
+    font-family: "ultra-light";
+    src: url("../fonts/GE_SS_Text_UltraLight.otf") format("opentype"),
+    url("../fonts/GE_SS_Text_UltraLight.otf") format("woff");
+}

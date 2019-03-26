@@ -94,35 +94,68 @@
     <div class="col-m col-40 line">
         <div class="com-sug">
             <div class="complaints" [style.background-image]="'url(assets/images/complaints.png)'"
-                 [style.background-repeat]="'no-repeat'">
-                <div class="info">
-                    <h2>Complaints</h2>
-                    <p>Tell us about your complaint</p>
-                    <span>read more</span>
+                 [style.background-repeat]="'no-repeat'" [style.background-size]="'contain'">
+                <div class="info-card">
+                    <h1>Complaints</h1>
+                    <p class="b-par">Tell us about your complaint</p>
+                    <span class="w-more">read more <i class="fa fa-long-arrow-right"></i></span>
                 </div>
             </div>
             <div class="suggestion" [style.background-image]="'url(assets/images/suggestions.png)'"
-                 [style.background-repeat]="'no-repeat'">
-                <div class="info">
-                    <h2>Complaints</h2>
-                    <p>Tell us about your complaint</p>
-                    <span>read more</span>
+                 [style.background-repeat]="'no-repeat'" [style.background-size]="'contain'">
+                <div class="info-card">
+                    <h1>Suggestion</h1>
+                    <p class="b-par">Tell us about your suggestion</p>
+                    <span class="w-more">read more <i class="fa fa-long-arrow-right"></i></span>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-m col-60">
+    <div class="col-m col-60" style="vertical-align: top;">
         <div class="col-m col-50">
-            <div>Instagram</div>
+            <div class="head">
+                <img src="assets/images/instagram.png" alt="">
+                <h5 class="t">Instagram</h5>
+            </div>
             <div class="slider-insta">
                 <app-xgallery [images]="sliderData"></app-xgallery>
             </div>
         </div>
-        <div class="col-m col-50">
-            <div>Instagram</div>
-            <div class="slider-insta">
-                <img src="assets/images/banner1.jpg">
-            </div>
+        <div class="col-m col-50" style="vertical-align: bottom;">
+           <ng-container>
+               <div class="head">
+                   <img src="assets/images/facebook.png" alt="">
+                   <h5 class="t">Facebook</h5>
+               </div>
+               <div class="slider-facebook">
+                   <i class="fa fa-play-circle-o"></i>
+                   <div class="videos">
+                       <div class="overlay"></div>
+                       <img src="assets/images/banner1.jpg">
+                   </div>
+               </div>
+               <div class="info">
+                   <img src="assets/images/logo.png" alt="tawseel">
+                   <div class="semi">
+                       <h4>TAWSEEL-UAE</h4>
+                       <h4 class="ar med">ساعة واحدة</h4>
+                       <img src="assets/images/like.png" alt="like">
+                   </div>
+                   <div class="details">
+                       <h4 class="ar">وفد من الداخلية يزور اليابان</h4>
+                       <h4>Taw-Seel Delegation Visit Japan</h4>
+                   </div>
+               </div>
+               <div class="controls">
+                   <div class="dot active"></div>
+                   <div class="dot"></div>
+                   <div class="dot"></div>
+                   <div class="dot"></div>
+                   <div class="dot"></div>
+                   <div class="dot"></div>
+                   <div class="dot"></div>
+               </div>
+           </ng-container>
         </div>
     </div>
 </div>

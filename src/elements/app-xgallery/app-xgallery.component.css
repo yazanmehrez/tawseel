@@ -2,8 +2,10 @@
     width: 340px;
     height: 270px;
     object-fit: cover;
+    border-radius: 15px;
 }
 
-.controls img{
+.controls img {
     cursor: pointer;
+    margin: 20px 10px;
 }

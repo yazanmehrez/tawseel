@@ -65,6 +65,10 @@ label {
     outline: 0;
 }
 
+.ar {
+    font-family: ultra-light, sans-serif !important;
+}
+
 .navbar-nav {
     margin: 0;
 }
@@ -101,6 +105,10 @@ label {
 
 .navbar-default .navbar-brand {
     color: #111;
+}
+
+.li li{
+    cursor: pointer;
 }
 
 .logo-w3layouts-agileits h1 a {
@@ -2274,4 +2282,26 @@ p.copy-right a:hover {
     margin-top: 8px;
     margin-left: 40px;
     font-family: 'sf-compact-display-medium';
+}
+
+.im-t img {
+    height: 270px;
+    width: 100%;
+}
+
+.sec-y{
+    padding: 80px 75px 50px 75px;
+    text-align: left;
+}
+
+
+.yellow-title p {
+    border-bottom: 7px solid #f6e392;
+    line-height: 0.5;
+    padding: 0 5px;
+    font-size: 60px;
+    color: #494949;
+    margin-bottom: 35px;
+    display: inline-block;
+    font-family: 'sf-compact-display-bold', sans-serif;
 }
