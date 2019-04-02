@@ -1,8 +1,8 @@
 <swiper class="swiper-container" [config]="config" (indexChange)="getIndex($event)" [index]="2" id="slider">
-    <div *ngFor="let slide of slides; let i = index" class="swiper-slide" [id]="i">
+    <div *ngFor="let slide of imageUrls; let i = index" class="swiper-slide" [id]="i">
         <div>
             <mat-card class="card-content">
-                <img mat-card-image [src]="slide.url">
+                <img mat-card-image [src]="slide?.FullUrl">
             </mat-card>
         </div>
     </div>
@@ -10,8 +10,8 @@
 
 <mat-card class="information-container">
     <mat-card-content>
-        <h3 class="text-grey-darken3 font-size-28 bold text-center"> {{slides[indexInformation].title}}</h3>
-        <p class="text-grey-darken1 font-size-16 text-center" [innerHTML]="slides[indexInformation].desc"></p>
+        <h3 class="text-grey-darken3 font-size-28 bold text-center"> {{imageUrls[indexInformation]?.Title}}</h3>
+        <p class="text-grey-darken1 font-size-16 text-center" [innerHTML]="imageUrls[indexInformation]?.Description"></p>
         <div class="divider"></div>
     </mat-card-content>
     <mat-card-actions>

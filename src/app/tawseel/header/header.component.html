@@ -34,23 +34,21 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav li">
-                    <li routerLinkActive="active" [routerLink]="'/home'"><a>HOME</a></li>
-                    <li routerLinkActive="active" [routerLink]="'/about-us'"><a>ABOUT TAW-SEEL</a></li>
-                    <li class="dropdown" routerLinkActive="active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">JOIN US <span class="fa fa-angle-down"></span></a>
-                        <ul class="dropdown-menu">
-                            <li routerLinkActive="active" [routerLink]="'/investor'"><a>INVESTOR</a></li>
-                            <li routerLinkActive="active" [routerLink]="'/our-customer'"><a>OUR CUSTOMERS</a></li>
-                            <li routerLinkActive="active" [routerLink]="'/customer-registration'"><a>CUSTOMER
-                                REGISTRATION</a></li>
-                        </ul>
-                    </li>
-                    <li routerLinkActive="active" [routerLink]="'/mediat-center'"><a>MEDIA CENTER</a></li>
-                    <li routerLinkActive="active" [routerLink]="'/our-services'"><a>OUR SERVICES</a></li>
-                    <li routerLinkActive="active" [routerLink]="'/contact-us'"><a>CONTACT-US</a></li>
-                    <li routerLinkActive="active" [routerLink]="'/terms-conditions'"><a>TERMS & CONDITIONS</a></li>
-
+                    <ng-container *ngFor="let nav of navbar; let i = index">
+                        <li *ngIf="navbar[i]['RelatedEntities'] == ''" routerLinkActive="active"
+                            [routerLink]="'/' + nav.Description" (click)="goToRoute()">
+                            <a>{{nav.Title}}</a>
+                        </li>
+                        <li *ngIf="navbar[i]['RelatedEntities'] != ''" class="dropdown" routerLinkActive="active">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">{{nav.Title}} <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li *ngFor="let snav of nav.RelatedEntities" (click)="goToRoute()"
+                                    [routerLink]="'/' + snav.Description"><a>{{snav.Title}}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ng-container>
                 </ul>
             </div>
             <div class="search">

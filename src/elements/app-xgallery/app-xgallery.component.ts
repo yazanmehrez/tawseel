@@ -15,7 +15,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
     ]
 })
 export class AppXgalleryComponent implements OnInit {
-    @Input() images: any;
+    @Input() imageUrls: any;
     index;
     lastIndex;
 
@@ -32,7 +32,7 @@ export class AppXgalleryComponent implements OnInit {
 
     ngOnInit() {
         this.index = 0;
-        this.lastIndex = this.images.length - 1;
+        this.lastIndex = this.imageUrls.length - 1;
     }
 
 }

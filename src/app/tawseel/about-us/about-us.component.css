@@ -1,0 +1,24 @@
+.sec-y {
+    padding: 80px 75px 0 0;
+}
+
+.card .yellow-title {
+    text-align: center;
+}
+
+.yellow-title p {
+    margin: 35px 0;
+}
+
+.mobile-mohre {
+    display: none;
+}
+
+@media (max-width: 664px) {
+    .mobile-mohre {
+        display: block;
+    }
+    .desktop-mohre {
+        display: none;
+    }
+}

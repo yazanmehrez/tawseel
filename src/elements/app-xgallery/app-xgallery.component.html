@@ -1,7 +1,7 @@
 <div class="xgallery">
     <div class="items">
-        <ng-container *ngFor="let img of images; let i = index">
-            <img  *ngIf="i == index" [src]="img.url" [@fadeInOut]>
+        <ng-container *ngFor="let img of imageUrls; let i = index">
+            <img  *ngIf="i == index" [src]="img.FullUrl" [@fadeInOut]>
         </ng-container>
 
     </div>

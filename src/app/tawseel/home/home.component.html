@@ -1,5 +1,5 @@
-<div class="slider-show" *ngIf="sliderData">
-    <app-slideshow [imageUrls]="sliderData"></app-slideshow>
+<div class="slider-show" *ngIf="appendSlider">
+    <app-slideshow [imageUrls]="mainSlider"></app-slideshow>
 </div>
 
 <div class="join-us-section highlight">
@@ -52,7 +52,6 @@
     </div>
 </div>
 
-
 <div class="about highlight">
     <div class="about-left">
         <div class="yellow-title">
@@ -80,18 +79,17 @@
     </div>
 </div>
 
-
 <div class="banner_bottom">
     <div class="yellow-title">
         <p>Latest News</p>
     </div>
     <div>
-        <app-swiper></app-swiper>
+        <app-swiper *ngIf="appendNews" [imageUrls]="newsSlider"></app-swiper>
     </div>
 </div>
 
 <div class="social highlight">
-    <div class="col-m col-40 line">
+    <div class="col-m col-40 line complaints-mobile">
         <div class="com-sug">
             <div class="complaints" [style.background-image]="'url(assets/images/complaints.png)'"
                  [style.background-repeat]="'no-repeat'" [style.background-size]="'contain'">
@@ -111,51 +109,48 @@
             </div>
         </div>
     </div>
-    <div class="col-m col-60" style="vertical-align: top;">
-        <div class="col-m col-50">
+    <div class="col-m col-60 ins-fac" style="vertical-align: top;">
+        <div class="col-m col-50 ins">
             <div class="head">
                 <img src="assets/images/instagram.png" alt="">
                 <h5 class="t">Instagram</h5>
             </div>
             <div class="slider-insta">
-                <app-xgallery [images]="sliderData"></app-xgallery>
+                <app-xgallery *ngIf="appendXslider" [imageUrls]="xSlider"></app-xgallery>
             </div>
         </div>
-        <div class="col-m col-50" style="vertical-align: bottom;">
-           <ng-container>
-               <div class="head">
-                   <img src="assets/images/facebook.png" alt="">
-                   <h5 class="t">Facebook</h5>
-               </div>
-               <div class="slider-facebook">
-                   <i class="fa fa-play-circle-o"></i>
-                   <div class="videos">
-                       <div class="overlay"></div>
-                       <img src="assets/images/banner1.jpg">
-                   </div>
-               </div>
-               <div class="info">
-                   <img src="assets/images/logo.png" alt="tawseel">
-                   <div class="semi">
-                       <h4>TAWSEEL-UAE</h4>
-                       <h4 class="ar med">ساعة واحدة</h4>
-                       <img src="assets/images/like.png" alt="like">
-                   </div>
-                   <div class="details">
-                       <h4 class="ar">وفد من الداخلية يزور اليابان</h4>
-                       <h4>Taw-Seel Delegation Visit Japan</h4>
-                   </div>
-               </div>
-               <div class="controls">
-                   <div class="dot active"></div>
-                   <div class="dot"></div>
-                   <div class="dot"></div>
-                   <div class="dot"></div>
-                   <div class="dot"></div>
-                   <div class="dot"></div>
-                   <div class="dot"></div>
-               </div>
-           </ng-container>
+        <div class="col-m col-50 fac" style="vertical-align: bottom;">
+            <ng-container *ngFor="let vid of videoSlider; let i = index">
+                <div *ngIf="i == videoIndex" [@fadeInOut]>
+                    <div class="head">
+                        <img src="assets/images/facebook.png" alt="">
+                        <h5 class="t">Facebook</h5>
+                    </div>
+                    <div class="slider-facebook">
+                        <i class="fa fa-play-circle-o"></i>
+                        <div class="videos">
+                            <div class="overlay"></div>
+                            <img [src]="vid.FullUrl">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="assets/images/logo.png" alt="tawseel">
+                        <div class="semi">
+                            <h4>TAWSEEL-UAE</h4>
+                            <h4 class="ar med">ساعة واحدة</h4>
+                            <img src="assets/images/like.png" alt="like">
+                        </div>
+                        <div class="details">
+                            <h4 class="ar">وفد من الداخلية يزور اليابان</h4>
+                            <h4>Taw-Seel Delegation Visit Japan</h4>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+            <div class="controls">
+                <div *ngFor="let dot of videoSlider; let i = index" class="dot" (click)="videoIndex = i"
+                     [ngClass]="videoIndex == i ? 'active' : ''"></div>
+            </div>
         </div>
     </div>
 </div>

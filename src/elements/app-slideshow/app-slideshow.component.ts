@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, Input, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, Input, ViewChild} from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
@@ -6,7 +6,7 @@ import * as $ from 'jquery';
     templateUrl: './app-slideshow.component.html',
     styleUrls: ['./app-slideshow.component.css']
 })
-export class AppSlideshowComponent implements OnInit, AfterViewInit {
+export class AppSlideshowComponent implements AfterViewInit {
     @ViewChild('slideshow') private slideshow: any;
     @Input() imageUrls;
 
@@ -24,17 +24,11 @@ export class AppSlideshowComponent implements OnInit, AfterViewInit {
         $('#prevSlide').on('click', function (event) {
             self.slideshow.onSlide(-1);
         });
-
         $('.slideshow-container .slides').each(function (index) {
             $(this).removeAttr('title');
-            $('<div><span class="slider-title">' + self.imageUrls[index].title + '</span></div>').appendTo(this);
-            $('<div><span class="slider-description">' + self.imageUrls[index].description + '</span></div>').appendTo(this);
+            $('<div><span class="slider-title">' + self.imageUrls[index].Title + '</span></div>').appendTo(this);
+            $('<div><span class="slider-description">' + self.imageUrls[index].Description + '</span></div>').appendTo(this);
             $('<div><div class="read-more learn-more"><button><span>Learn More</span><img src="assets/images/arrow-read-more.png"></button></div></div>').appendTo(this);
         });
     }
-
-
-    ngOnInit() {
-    }
-
 }

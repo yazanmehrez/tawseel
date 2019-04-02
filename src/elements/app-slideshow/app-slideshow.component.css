@@ -37,6 +37,7 @@
     top: 170px;
     line-height: 1;
     left: 75px;
+    padding: 10px 0;
     text-align: left;
     position: absolute;
 }
@@ -50,7 +51,7 @@
 ::ng-deep .learn-more {
     z-index: 5;
     width: 230px;
-    top: 255px;
+    top: 300px;
     left: 50px;
     color: #000;
     position: absolute;

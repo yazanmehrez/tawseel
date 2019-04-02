@@ -1,0 +1,30 @@
+.yellow-title {
+    text-align: left;
+}
+
+.step {
+    margin: 15px 0;
+}
+
+.steps p {
+    display: inline;
+}
+
+.th {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0.2;
+}
+
+.th p {
+    width: 90%;
+}
+
+@media (max-width: 664px) {
+    .mobile-mohre {
+        display: block;
+    }
+    .desktop-mohre {
+        display: none;
+    }
+}
