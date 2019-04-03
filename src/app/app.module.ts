@@ -1,7 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
-import {TranslateModule} from '@ngx-translate/core';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {AppSliderComponent} from '../elements/app-slider/app-slider.component';
 import {AppSlideshowComponent} from '../elements/app-slideshow/app-slideshow.component';
 import {SlideshowModule} from 'ng-simple-slideshow';
@@ -27,15 +27,20 @@ import {FormsExamplesComponent} from '../elements/forms-examples/forms-examples.
 import {BsDatepickerModule, BsDropdownModule, DatepickerModule} from 'ngx-bootstrap';
 import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {NgProgressModule} from '@ngx-progressbar/core';
 import {NgProgressHttpModule} from '@ngx-progressbar/http';
 import {DeviceDetectorModule} from 'ngx-device-detector';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
     slidesPerView: 'auto'
 };
+
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http);
+}
 
 @NgModule({
     declarations: [
@@ -70,7 +75,13 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         BsDatepickerModule.forRoot(),
         BsDropdownModule.forRoot(),
         DatepickerModule.forRoot(),
-        TranslateModule.forRoot(),
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
         NgProgressModule.withConfig({
             spinner: false,
             color: '#000'

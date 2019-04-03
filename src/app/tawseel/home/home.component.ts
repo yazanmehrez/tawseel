@@ -54,9 +54,7 @@ export class HomeComponent implements OnInit {
 
 
     ngOnInit() {
-        // this.translateService.onLangChange.subscribe(lang => {
-        //     console.log(lang);
-        // });
+
 
         this.getMainSliderData();
         this.getHomePageData();

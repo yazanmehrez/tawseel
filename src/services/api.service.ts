@@ -35,7 +35,7 @@ export class ApiService {
         return this.http.get(
             this.apiURL + 'TawseelTacsoft/Services/'
             + ServiceName + '/' + Type + '?WebsiteID=1&LanguageID='
-            + '1' + '&uniqueName=' + data, {
+            + lang + '&uniqueName=' + data, {
                 headers: headers
             }).pipe(map(res => res));
     }
@@ -48,7 +48,7 @@ export class ApiService {
         return this.http.get(
             this.apiURL + 'TawseelTacsoft/Services/'
             + ServiceName + '/' + Type + '?WebsiteID=1&LanguageID='
-            + '1' + '&uniqueName=' + data, {
+            + lang + '&uniqueName=' + data, {
                 headers: headers
             }).pipe(map(res => res));
     }
@@ -61,7 +61,7 @@ export class ApiService {
         return this.http.get(
             this.apiURL + 'TawseelTacsoft/Services/'
             + ServiceName + '/' + Type + '?WebsiteID=1&LanguageID='
-            + '1' + '&uniqueName=' + data, {
+            + lang + '&uniqueName=' + data, {
                 headers: headers
             }).pipe(map(res => res));
     }

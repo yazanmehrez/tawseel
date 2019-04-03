@@ -2419,3 +2419,7 @@ p.copy-right a:hover {
 .slideshow-container .slick-dots {
     direction: ltr;
 }
+
+.swiper-container {
+    direction: ltr;
+}

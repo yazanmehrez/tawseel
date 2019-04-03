@@ -2414,3 +2414,7 @@ p.copy-right a:hover {
 .section {
     padding: 7em 0;
 }
+
+.swiper-container{
+    direction: ltr;
+}
