@@ -29,5 +29,20 @@ export class DataService {
             environment.API_Generic_Content.GetGenericContentByUniqueName);
     }
 
+
+    getAboutservice(): Observable<Object> {
+        return this.api.getMainSlider('about',
+            environment.API_Generic_Content.ServiceName,
+            environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
+    }
+
+
+
+    getCustomerService(): Observable<Object> {
+        return this.api.getMainSlider('our.customers',
+            environment.API_Generic_Content.ServiceName,
+            environment.API_Generic_Content.GetGenericContentByUniqueName);
+    }
+
 }
 

@@ -4,20 +4,20 @@
 
 <div class="join-us-section highlight">
     <div class="yellow-title">
-        <p>Join Us</p>
+        <p>{{'JoinUs' | translate}}</p>
     </div>
     <div class="user-card">
         <div>
             <img src="assets/images/investor.PNG" alt="">
-            <p>Are you an Investor?</p>
+            <p>{{'_AreYouInvestor' | translate}}</p>
         </div>
         <div>
             <img src="assets/images/agent.PNG" alt="">
-            <p>Are you an Agent?</p>
+            <p>{{'_AreYouAgent' | translate}}</p>
         </div>
         <div>
             <img src="assets/images/customer.PNG" alt="">
-            <p>Are you an Customer?</p>
+            <p>{{'_AreYouCustomer' | translate}}</p>
         </div>
     </div>
 
@@ -25,29 +25,29 @@
 
 <div class="banner_bottom">
     <div class="yellow-title">
-        <p>How it works</p>
+        <p>{{'_HowItWorks' | translate}}</p>
     </div>
     <div class="work-card">
         <div id="service">
             <img src="assets/images/service.PNG" alt="">
-            <span>Apply for service</span>
-            <p>online</p>
+            <span>{{'_ApplyForService' | translate}}</span>
+            <p>{{'_Online' | translate}}</p>
         </div>
         <div id="arrow-left">
             <img src="assets/images/arrow-left.PNG" alt="">
         </div>
         <div id="van">
             <img src="assets/images/van.PNG" alt="">
-            <span>van comes to</span>
-            <p>location</p>
+            <span>{{'_VanComesTo' | translate}}</span>
+            <p>{{'_Location' | translate}}</p>
         </div>
         <div id="arrow-right">
             <img src="assets/images/arrow-right.PNG" alt="">
         </div>
         <div id="agent-service">
             <img src="assets/images/agent-service.PNG" alt="">
-            <span>Agent serves the</span>
-            <p>customer</p>
+            <span>{{'_AgentServes' | translate}}</span>
+            <p>{{'_Customer' | translate}}</p>
         </div>
     </div>
 </div>
@@ -55,7 +55,7 @@
 <div class="about highlight">
     <div class="about-left">
         <div class="yellow-title">
-            <p>About Taw-Sell</p>
+            <p>{{'_About' | translate}}</p>
         </div>
         <div>
             <p>
@@ -69,7 +69,7 @@
         </div>
         <div class="read-more">
             <button style="margin: 15px 0;">
-                <span>Read More</span>
+                <span>{{'_ReadMore' | translate }}</span>
                 <img src="assets/images/arrow-read-more.png" alt=""></button>
         </div>
     </div>
@@ -81,7 +81,7 @@
 
 <div class="banner_bottom">
     <div class="yellow-title">
-        <p>Latest News</p>
+        <p>{{'_LatestNews' | translate}}</p>
     </div>
     <div>
         <app-swiper *ngIf="appendNews" [imageUrls]="newsSlider"></app-swiper>
@@ -94,18 +94,18 @@
             <div class="complaints" [style.background-image]="'url(assets/images/complaints.png)'"
                  [style.background-repeat]="'no-repeat'" [style.background-size]="'contain'">
                 <div class="info-card">
-                    <h1>Complaints</h1>
-                    <p class="b-par">Tell us about your complaint</p>
-                    <span class="w-more">read more <i
+                    <h1>{{'_Complaints' | translate}}</h1>
+                    <p class="b-par">{{'_TellUsAboutYourComplaint' | translate}}</p>
+                    <span class="w-more">{{'_ReadMore' | translate | lowercase}} <i
                             [ngClass]="_appService.currentLanguage == 'en' ? 'fa fa-long-arrow-right' : 'fa fa-long-arrow-left'"></i></span>
                 </div>
             </div>
             <div class="suggestion" [style.background-image]="'url(assets/images/suggestions.png)'"
                  [style.background-repeat]="'no-repeat'" [style.background-size]="'contain'">
                 <div class="info-card">
-                    <h1>Suggestion</h1>
-                    <p class="b-par">Tell us about your suggestion</p>
-                    <span class="w-more">read more <i [ngClass]="_appService.currentLanguage == 'en' ? 'fa fa-long-arrow-right' : 'fa fa-long-arrow-left'"></i></span>
+                    <h1>{{'_Suggestion' | translate}}</h1>
+                    <p class="b-par">{{'_TellUsAboutYourSuggestion' | translate}}</p>
+                    <span class="w-more">{{'_ReadMore' | translate | lowercase}} <i [ngClass]="_appService.currentLanguage == 'en' ? 'fa fa-long-arrow-right' : 'fa fa-long-arrow-left'"></i></span>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
         <div class="col-m col-50 ins">
             <div class="head">
                 <img src="assets/images/instagram.png" alt="">
-                <h5 class="t">Instagram</h5>
+                <h5 class="t">{{'_Instagram' | translate}}</h5>
             </div>
             <div class="slider-insta">
                 <app-xgallery *ngIf="appendXslider" [imageUrls]="xSlider"></app-xgallery>
@@ -125,7 +125,7 @@
                 <div *ngIf="i == videoIndex" [@fadeInOut]>
                     <div class="head">
                         <img src="assets/images/facebook.png" alt="">
-                        <h5 class="t">Facebook</h5>
+                        <h5 class="t">{{'_Facebook' | translate}}</h5>
                     </div>
                     <div class="slider-facebook">
                         <i class="fa fa-play-circle-o"></i>

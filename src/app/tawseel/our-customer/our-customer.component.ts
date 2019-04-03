@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
+import {AppService} from '../../app.service';
 
 @Component({
   selector: 'app-our-customer',
@@ -7,9 +9,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurCustomerComponent implements OnInit {
 
-  constructor() { }
+  public customer: any;
 
-  ngOnInit() {
-  }
+    constructor(private translateService: TranslateService, public _appService: AppService) {
+    }
+    getAboutData() {
+        this._appService.api.getCustomerService().subscribe(response => {
+
+          this.customer = response['payload'][0];
+
+            // response['payload'].forEach(item => {
+                // if (item.UniqueName == 'who.we.are') {
+                //     this.about = item;
+                //
+                // } else if (item.UniqueName == 'your.fast.way.for.mohre.services') {
+                //     this.services = item;
+                //
+                // }
+            // });
+
+        });
+    }
+
+    ngOnInit() {
+        this.getAboutData();
+    }
 
 }

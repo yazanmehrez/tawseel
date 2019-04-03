@@ -89,6 +89,7 @@ app-home .info-card {
     padding: 25px;
     text-align: right;
     margin: 0 25px;
+    transform: scaleX(-1);
 }
 
 .about-right img {

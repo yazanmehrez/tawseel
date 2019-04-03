@@ -1,22 +1,21 @@
 <div class="im-t image-title">
     <img src="assets/images/investor-title.png" alt="">
-    <span>About&nbsp;TAWSEEL</span>
+    <span>{{'_AboutTawseel' | translate | uppercase}}</span>
 </div>
-<app-breadcrumb [Breadcrumb]="['Home','JOIN US', 'Our Customers']"></app-breadcrumb>
+<app-breadcrumb [Breadcrumb]="['_Home','_JoinUs', '_OurCustomers']"></app-breadcrumb>
 
 <div class="container-equal">
-    <div class="yellow-title"><p>Our Customer</p></div>
+    <div class="yellow-title"><p>{{customer.Title}}</p></div>
     <div>
-        <img src="assets/images/our-customers.png" width="100%">
+        <img [src]="customer.MainImageFullURL" width="100%">
     </div>
 
     <div class="section steps-s">
        <div class="desktop-mohre">
            <div class="col-70 col-m" style="padding-right: 75px; vertical-align: middle;">
-               <div class="yellow-title"><p>Step to request service</p></div>
+               <div class="yellow-title"><p [innerHtml]="customer.Description"></p></div>
                <div class="mohre sec-x">
-                   <p>You can order the service through the Smartphone application for a delivery service or through the
-                       call center 8008585. This requires:</p>
+                   <p [innerHtml]="customer.Content"></p>
 
                    <div class="steps">
                        <div class="step">
@@ -24,7 +23,7 @@
                                <span class="numbering">1</span>
                            </div>
                            <div class="th">
-                               <p>To be registered in the "delivery" </p>
+                               <p [innerHtml]="customer.RelatedEntities[0].Title"> </p>
                            </div>
                        </div>
                        <div class="step">
@@ -32,26 +31,24 @@
                                <span class="numbering">2</span>
                            </div>
                            <div class="th">
-                               <p>Bring the free smartphone application for a delivery service if you want to request
-                                   service through your smartphone.</p>
+                               <p [innerHtml]="customer.RelatedEntities[1].Title"></p>
                            </div>
                        </div>
                    </div>
                </div>
            </div>
            <div class="col-30 col-m" style="text-align:right;margin-top: -30px;">
-               <img src="assets/images/ou1.png" style="width: 100%;">
+               <img [src]="customer.RelatedEntities[0].FullUrl" style="width: 100%;">
            </div>
        </div>
         <div class="mobile-mohre">
             <div class="first">
-                <img src="assets/images/ou1.png" style="width: 50%;">
+                <img [src]="customer.RelatedEntities[0].FullUrl" style="width: 50%;">
             </div>
             <div class="second">
-                <div class="yellow-title"><p>Step to request service</p></div>
+                <div class="yellow-title"><p [innerHtml]="customer.Description"></p></div>
                 <div class="mohre sec-x">
-                    <p>You can order the service through the Smartphone application for a delivery service or through the
-                        call center 8008585. This requires:</p>
+                    <p [innerHtml]="customer.content"></p>
 
                     <div class="steps">
                         <div class="step">
@@ -59,7 +56,7 @@
                                 <span class="numbering">1</span>
                             </div>
                             <div class="th">
-                                <p>To be registered in the "delivery" </p>
+                                <p [innerHtml]="customer.RelatedEntities[0].Title"> </p>
                             </div>
                         </div>
                         <div class="step">
@@ -67,8 +64,8 @@
                                 <span class="numbering">2</span>
                             </div>
                             <div class="th">
-                                <p>Bring the free smartphone application for a delivery service if you want to request
-                                    service through your smartphone.</p>
+                                <p [innerHtml]="customer.RelatedEntities[1].Title"></p>
+
                             </div>
                         </div>
                     </div>
@@ -79,6 +76,6 @@
     </div>
 
     <div class="yellow-title sec-b">
-        <p>BACK</p>
+        <p>{{'_Back' | translate}}</p>
     </div>
 </div>

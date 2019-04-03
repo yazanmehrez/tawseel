@@ -1,30 +1,43 @@
 <div class="im-t image-title">
     <img src="assets/images/investor-title.png" alt="">
-    <span>JOIN&nbsp;US</span>
+    <span>{{'_JoinUs' | translate | uppercase}}</span>
 </div>
-<app-breadcrumb [Breadcrumb]="['Home','Join Us', 'Our Customer','Customer Registration']"></app-breadcrumb>
+<app-breadcrumb [Breadcrumb]="['_Home','_JoinUs', '_OurCustomers','_CustomerRegistration']"></app-breadcrumb>
 <div class="container-equal">
 
-    <div class="yellow-title"><p>Customer Registration</p></div>
+    <div class="yellow-title"><p>{{"_CustomerRegistration" | translate}}</p></div>
+    <!--"_Agree":"موافق",-->
+    <!--"_NameEnglish":"الاسم بالانكليزي",-->
+    <!--"_NameArabic":"الاسم بالعربي",-->
+    <!--"_Phone":"رقم الهاتف",-->
+    <!--"_Birth":"تاريخ الميلاد",-->
+    <!--"EmarateID":"المعرف الاماراتي",-->
+    <!--"E-mail":"الاميل",-->
+    <!--"_Password":"كلمة السر",-->
+    <!--"_SecurityQuestion":"السؤال السري 1",-->
+    <!--"_Answer1":"الجواب 1",-->
+    <!--"_Answer2":"الجواب 2",-->
+    <!--"_DisclaimentStatment":"بيان إخلاء المسؤولية",-->
+    <!--"_NotRobot":"اثبت انك لست رجل آلي"-->
 
     <div class="registration-form">
         <div class="container">
             <div class="col-sm-6">
                 <div class="item">
                     <label>
-                        <span>Name in English</span>
+                        <span>{{'_NameEnglish' | translate}}</span>
                         <input type="text">
                     </label>
                 </div>
                 <div class="item">
                     <label>
-                        <span>Name in English</span>
+                        <span>{{'_NameArabic' | translate}}</span>
                         <input type="text">
                     </label>
                 </div>
                 <div class="item">
                     <label>
-                        <span>Name in English</span>
+                        <span>{{'_Phone' | translate}}</span>
                     </label>
                     <div class="btn-group" dropdown>
                         <button id="button-basic" dropdownToggle type="button" class="dropdown-toggle"
@@ -44,7 +57,7 @@
                 </div>
                 <div class="item">
                     <label>
-                        <span>Name in English</span>
+                        <span>{{'_Phone' | translate}}</span>
                         <span class="input25">00971</span>
                         <input type="text" class="input70">
                     </label>
@@ -59,7 +72,7 @@
                 </div>
                 <div class="item">
                     <label>
-                        <span>Name in English</span>
+                        <span>{{'_Birth' | translate}}</span>
                         <span class="fa fa-calendar"></span>
                         <input type="text"
                                class="form-control"
@@ -74,19 +87,31 @@
             <div class="col-sm-6">
                 <div class="item">
                     <label>
-                        <span>Name in English</span>
+                        <span>{{'_SecurityQuestion' | translate}}</span>
                         <input type="text">
                     </label>
                 </div>
                 <div class="item">
                     <label>
-                        <span>Name in English</span>
+                        <span>{{'_Answer2' | translate}}</span>
                         <input type="text">
                     </label>
                 </div>
                 <div class="item">
                     <label>
-                        <span>Name in English</span>
+                        <span>{{'_SecurityQuestion2' | translate}}</span>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="item">
+                    <label>
+                        <span>{{'_Answer1' | translate}}</span>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="item">
+                    <label>
+                        <span>{{'_DisclaimentStatment' | translate}}</span>
                         <textarea style="height: 120px; resize: none;"></textarea>
                     </label>
                 </div>
@@ -94,15 +119,15 @@
                     <img [src]="agree ? 'assets/images/agree-enable.png' : 'assets/images/agree-disable.png'"
                          style="cursor: pointer"
                          (click)="agree = !agree">
-                    <span class="iagree">I Agree</span>
+                    <span class="iagree">{{'_Agree' | translate}}</span>
                 </div>
                 <div class="item">
                     <label>
-                        <span>Name in English</span>
+                        <span>{{'_NotRobot' | translate}}</span>
                     </label>
                     <app-captcha></app-captcha>
                     <label style="margin-top: 35px;">
-                        <span>Please enter the captcha</span>
+                        <span>{{'_EnterCaptcha' | translate}}</span>
                         <input type="text">
                     </label>
                 </div>

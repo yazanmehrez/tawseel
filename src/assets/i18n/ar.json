@@ -1,5 +1,75 @@
 {
   "_Home": "الرئيسية",
   "_Login":"تسجيل دخول",
-  "_Register":"تسجيل"
+  "_Register":"تسجيل",
+  "_Search":"بحث",
+  "_JoinUs": "انضم لنا",
+  "_AreYouInvestor": "هل أنت مستثمر؟",
+  "_AreYouAgent": "هل أنت وكيل؟",
+  "_AreYouCustomer": "هل أنت عميل؟",
+  "_HowItWorks": "كيف تعمل",
+  "_ApplyForService": "طلب الحصول على الخدمة",
+  "_Online": "عبر الانترنت",
+  "_VanComesTo": "فان يأتي الى ",
+  "_Location": "الموقع",
+  "_AgentServes": "وكيل يخدم ",
+  "_Customer": "العميل",
+  "_ReadMore": "قراءة المزيد",
+  "_LatestNews": "آخر الأخبار",
+  "_LearnMore": "تعلم المزيد",
+  "_About": "عن توصيل",
+  "_SmartApps": "التطبيقات الذكية :",
+  "_ForSmartService": "للخدمات الذكية",
+  "_WorkTiming": "توقيت العمل",
+  "_SundayToThursday": "من الأحد إلى الخميس",
+  "_QuickLinks": "روابط سريعة",
+  "_FollowUs": "تابعنا",
+  "_Time": " 7:30 صباحا - 2:30 مساءً",
+  "_TellUsAboutYourComplaint":"أخبرنا عن شكواك",
+  "_TellUsAboutYourSuggestion":"أخبرنا عن اقتراحك",
+  "_Suggestion":"اقتراح",
+  "_Complaints":"شكاوي",
+  "_Instagram":"انستغرام",
+  "_Facebook":"فيسبوك",
+  "_TotalVisitor":"تم آخر تحديث لصفحة في: 24 أغسطس 2016 في الساعة 10:38 | إجمالي الزوار: 3434256",
+  "_Offer":"أفضل عرض لهذا الموقع في دقة الشاشة 1024 × 764 يدعم مايكروسوفت انترنيت اكسبلورر 9.0+ ، فايرفوكس 2.0+ ، سافاري 4.0+ ، اوبرا 6.0+ ، كروم",
+  "_CopyRight":" © حقوق حقوق النشر لعام 2019 محفوظة",
+  "_Back":"رجوع",
+  "_Investor":"المستثمر",
+  "_PrivacyStatment":"سياسة الخصوصية",
+  "_FAQ":"الأسئلة الشائعة",
+  "_Services":"خدمات",
+  "_AboutUs":"حولنا",
+  "_AboutTawseel":"عن توصيل",
+  "_OurCustomers":"عملاؤنا",
+  "_AboutTaw-Seel":"عن توصيل",
+  "_CustomerRegistration":"تسجيل العملاء",
+  "_EnterCaptcha":"الرجاء ادخال المحارف في الصورة",
+  "_Agree":"موافق",
+  "_NameEnglish":"الاسم بالانكليزي",
+  "_NameArabic":"الاسم بالعربي",
+  "_Phone":"رقم الهاتف",
+  "_Birth":"تاريخ الميلاد",
+  "EmarateID":"المعرف الاماراتي",
+  "E-mail":"الاميل",
+  "_Password":"كلمة السر",
+  "_SecurityQuestion":"السؤال السري 1",
+  "_Answer1":"الجواب 1",
+  "_Answer2":"الجواب 2",
+  "_DisclaimentStatment":"بيان إخلاء المسؤولية",
+  "_NotRobot":"اثبت انك لست رجل آلي",
+  "_SecurityQuestion2":"السؤال السري 2"
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
