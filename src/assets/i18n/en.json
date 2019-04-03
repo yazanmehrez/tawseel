@@ -55,6 +55,7 @@
   "EmarateID":"Emirates ID",
   "E-mail":"E-mail ID",
   "_Password":"Password",
+  "_ConfirmPassword":"confirm Password",
   "_SecurityQuestion":"Security Question 1",
   "_SecurityQuestion2":"Security Question 2",
   "_Answer1":"Answer 1",

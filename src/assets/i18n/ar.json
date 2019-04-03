@@ -53,6 +53,8 @@
   "EmarateID":"المعرف الاماراتي",
   "E-mail":"الاميل",
   "_Password":"كلمة السر",
+  "_ConfirmPassword":"تأكيد كلمة السر",
+
   "_SecurityQuestion":"السؤال السري 1",
   "_Answer1":"الجواب 1",
   "_Answer2":"الجواب 2",

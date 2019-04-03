@@ -39,29 +39,29 @@
                     <label>
                         <span>{{'_Phone' | translate}}</span>
                     </label>
-                    <div class="btn-group" dropdown>
-                        <button id="button-basic" dropdownToggle type="button" class="dropdown-toggle"
-                                aria-controls="dropdown-basic">
-                            Button dropdown <span class="fa fa-angle-down"></span>
-                        </button>
-                        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
-                            role="menu" aria-labelledby="button-basic">
-                            <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-                            <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-                            <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li class="divider dropdown-divider"></li>
-                            <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <!--<div class="btn-group" dropdown>-->
+                        <!--<button id="button-basic" dropdownToggle type="button" class="dropdown-toggle"-->
+                                <!--aria-controls="dropdown-basic">-->
+                            <!--Button dropdown <span class="fa fa-angle-down"></span>-->
+                        <!--</button>-->
+                        <!--<ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"-->
+                            <!--role="menu" aria-labelledby="button-basic">-->
+                            <!--<li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>-->
+                            <!--<li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>-->
+                            <!--<li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>-->
+                            <!--<li class="divider dropdown-divider"></li>-->
+                            <!--<li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
                 </div>
                 <div class="item">
-                    <label>
-                        <span>{{'_Phone' | translate}}</span>
-                        <span class="input25">00971</span>
-                        <input type="text" class="input70">
-                    </label>
-                    <span class="hint">(OTP will be sent to this mobile number)</span>
+                    <!--<label>-->
+                        <!--<span>{{'_Phone' | translate}}</span>-->
+                        <!--<span class="input25">00971</span>-->
+                        <!--<input type="text" class="input70">-->
+                    <!--</label>-->
+                    <!--<span class="hint">(OTP will be sent to this mobile number)</span>-->
                 </div> <div class="item">
                     <label>
                         <span>Name in English</span>
@@ -80,6 +80,30 @@
                                [bsConfig]="bsConfig"
                                bsDatepicker [(bsValue)]="myDateValue">
 
+                    </label>
+                </div>
+                <div class="item">
+                    <label>
+                        <span>{{'EmarateID' | translate}}</span>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="item">
+                    <label>
+                        <span>{{'E-mail' | translate}}</span>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="item">
+                    <label>
+                        <span>{{'_Password' | translate}}</span>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="item">
+                    <label>
+                        <span>{{'_ConfirmPassword' | translate}}</span>
+                        <input type="text">
                     </label>
                 </div>
 
