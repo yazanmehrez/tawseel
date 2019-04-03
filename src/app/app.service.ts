@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {BehaviorSubject} from 'rxjs';
-import {ApiService} from '../services/api.service';
 import {DataService} from '../services/data.service';
 
 @Injectable({
@@ -12,6 +11,8 @@ export class AppService {
     currentLanguage: string;
 
     constructor(private translate: TranslateService, public api: DataService) {
+
+        /** Language Configurations **/
         if (!localStorage.getItem('language')) {
             localStorage.setItem('language', 'en');
         }
@@ -22,14 +23,9 @@ export class AppService {
 
     /* Switch Language */
     switchLanguage(language: string) {
+        localStorage.setItem('language', language);
         $('.dropdown-menu').removeClass('show');
         this.translate.use(language);
-        if (language === 'en') {
-            this.language.next('en');
-            localStorage.setItem('language', language);
-        } else if (language === 'ar') {
-            this.language.next('ar');
-            localStorage.setItem('language', language);
-        }
+        this.language.next(language);
     }
 }
