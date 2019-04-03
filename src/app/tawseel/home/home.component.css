@@ -87,7 +87,7 @@
     cursor: pointer;
 }
 
-.fa-long-arrow-right {
+.fa-long-arrow-right,.fa-long-arrow-left {
     margin: 0 5px;
 }
 

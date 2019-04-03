@@ -96,7 +96,8 @@
                 <div class="info-card">
                     <h1>Complaints</h1>
                     <p class="b-par">Tell us about your complaint</p>
-                    <span class="w-more">read more <i class="fa fa-long-arrow-right"></i></span>
+                    <span class="w-more">read more <i
+                            [ngClass]="_appService.currentLanguage == 'en' ? 'fa fa-long-arrow-right' : 'fa fa-long-arrow-left'"></i></span>
                 </div>
             </div>
             <div class="suggestion" [style.background-image]="'url(assets/images/suggestions.png)'"
@@ -104,7 +105,7 @@
                 <div class="info-card">
                     <h1>Suggestion</h1>
                     <p class="b-par">Tell us about your suggestion</p>
-                    <span class="w-more">read more <i class="fa fa-long-arrow-right"></i></span>
+                    <span class="w-more">read more <i [ngClass]="_appService.currentLanguage == 'en' ? 'fa fa-long-arrow-right' : 'fa fa-long-arrow-left'"></i></span>
                 </div>
             </div>
         </div>

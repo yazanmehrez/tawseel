@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
+import {AppService} from '../../app/app.service';
 
 @Component({
     selector: 'app-xgallery',
@@ -19,7 +20,7 @@ export class AppXgalleryComponent implements OnInit {
     index;
     lastIndex;
 
-    constructor() {
+    constructor(public _appService: AppService) {
     }
 
     next() {

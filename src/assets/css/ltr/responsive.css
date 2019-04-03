@@ -123,7 +123,7 @@
         font-size: 18px;
     }
 
-    app-home .fa-long-arrow-right {
+    app-home .fa-long-arrow-right, app-home .fa-long-arrow-left {
         border: none;
         padding: 0;
     }
@@ -168,6 +168,8 @@
         top: 50%;
         left: 50%;
         cursor: pointer;
+        -webkit-transform: translate(-100%, -60%);
+        -ms-transform: translate(-100%, -60%);
         transform: translate(-100%, -60%);
     }
 
@@ -1771,6 +1773,8 @@
     }
 
     #arrow-right {
+        -webkit-transform: rotate(-90deg) scaleX(-1);
+        -ms-transform: rotate(-90deg) scaleX(-1);
         transform: rotate(-90deg) scaleX(-1);
         display: block;
         margin-left: 140px;

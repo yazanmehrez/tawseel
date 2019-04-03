@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
     xSlider = [];
     videoSlider = [];
 
-    constructor(private translateService: TranslateService, private _appService: AppService) {
+    constructor(private translateService: TranslateService, public _appService: AppService) {
     }
 
     getMainSliderData() {

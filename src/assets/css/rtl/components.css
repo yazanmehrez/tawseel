@@ -1,7 +1,16 @@
 /*
+ - Header
  - Footer
  - Home
+ - About Us
+ - Customer Registration
+ - BreadCrumb
  */
+
+/*Header*/
+.top_header_two {
+    height: 90px;
+}
 
 /*Footer*/
 app-footer .top-footer .col-md-3 {
@@ -44,6 +53,21 @@ app-footer .item .time {
     margin: 0 0 0 10px;
 }
 
+.footer_tawseel img {
+    display: block;
+    margin: 10px 0;
+}
+
+.item.quick-links {
+    padding: 30px;
+    width: 15%;
+}
+
+.top-footer {
+    background-color: #b0afaf;
+    height: 200px;
+}
+
 /*Home*/
 app-home .user-card div {
     display: inline-block;
@@ -65,6 +89,16 @@ app-home .info-card {
     padding: 25px;
     text-align: right;
     margin: 0 25px;
+}
+
+.about-right img {
+    width: calc(100% - 20px);
+}
+
+.about-left {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 app-home .line {
@@ -91,13 +125,12 @@ app-home .user-card {
 app-home .xgallery .items img {
     width: 340px;
     height: 270px;
+    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 15px;
 }
 
 app-home .slider-facebook .overlay {
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
     border-radius: 15px;
     position: absolute;
     width: 350px;
@@ -108,8 +141,6 @@ app-home .slider-facebook .overlay {
 }
 
 app-home .slider-facebook img {
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
     border-radius: 15px;
     width: 350px;
     height: 170px;
@@ -124,9 +155,186 @@ app-home .slider-facebook .fa-play-circle-o {
     top: 50%;
     right: 50%;
     cursor: pointer;
+    -webkit-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
     transform: translate(50%, -50%);
 }
 
 app-home .yellow-title {
     text-align: center;
+}
+
+app-home .user-card p {
+    font-size: 25px;
+    font-weight: normal;
+    color: #494949;
+    font-family: 'sf-compact-display-medium', sans-serif;
+}
+
+#service img, #van img, #agent-service img {
+    width: auto;
+    height: 219px;
+    display: block;
+}
+
+.work-card p {
+    font-size: 30px;
+    color: #f6d232;
+    line-height: 1;
+    font-family: 'sf-compact-display-bold', sans-serif;
+}
+
+.work-card span {
+    color: #a0a0a0;
+    font-size: 20px;
+    font-family: 'sf-compact-display-medium', sans-serif;
+}
+
+.complaints, .suggestion {
+    margin: 25px;
+    border-radius: 10px;
+    transform: scaleX(-1);
+}
+
+.b-par {
+    color: #000;
+    font-size: 13px;
+}
+
+app-home .head .t {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+#arrow-right, #arrow-left {
+    vertical-align: text-bottom !important;
+}
+
+.head img {
+    width: 25px;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.info img[alt='tawseel'] {
+    width: 50px;
+    height: auto;
+    vertical-align: sub;
+    margin: 0 10px;
+}
+
+.info img[alt='like'] {
+    width: 75px;
+    height: auto;
+    cursor: pointer;
+}
+
+/*About Us*/
+app-about-us .card .item {
+    margin: 0 25px;
+}
+
+/*Customer Registration*/
+.input25 {
+    border-radius: 20px;
+    border: none;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 45px;
+    width: 25% !important;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    -webkit-box-shadow: -1px 2px 1px #e0d7d7;
+    box-shadow: -1px 2px 1px #e0d7d7;
+    background: #fff;
+    display: inline-block !important;
+}
+
+.input70 {
+    border-radius: 20px;
+    border: none;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 45px;
+    width: 70% !important;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+#arrow-right img {
+    transform: rotate(1deg) scaleX(-1);
+}
+
+#arrow-left img {
+    transform: rotate(0deg) scaleX(-1);
+}
+
+app-slideshow .slideshow-container .slick-dots li button {
+    width: 10px !important;
+    padding: 0 !important;
+}
+
+app-slideshow .custom-arrow {
+    vertical-align: sub;
+    color: #fff;
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+app-slideshow .slick-active button {
+    --dot-color: #f8d231 !important;
+}
+
+app-slideshow .slider-title {
+    color: #fff;
+    z-index: 5;
+    font-size: 50px;
+    top: 100px;
+    right: 75px;
+    position: absolute;
+    border-bottom: 5px solid yellow;
+    line-height: 0.9;
+    width: 35px;
+    font-family: 'sf-compact-display-heavy', sans-serif;
+}
+
+app-slideshow .slider-description {
+    color: #fff;
+    z-index: 5;
+    font-size: 30px;
+    width: 230px;
+    font-weight: 100;
+    top: 170px;
+    line-height: 1;
+    right: 75px;
+    padding: 10px 0;
+    text-align: right;
+    position: absolute;
+}
+
+app-slideshow .slider-button {
+    top: 260px;
+    right: 75px;
+    position: absolute;
+}
+
+app-slideshow .learn-more {
+    z-index: 5;
+    width: 230px;
+    top: 300px;
+    right: 50px;
+    color: #000;
+    position: absolute;
+}
+
+/*BreadCrumb*/
+
+.print-share {
+    float: left;
+}
+
+.flow {
+    text-align: right;
 }

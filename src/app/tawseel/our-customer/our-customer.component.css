@@ -1,6 +1,3 @@
-.yellow-title {
-    text-align: left;
-}
 
 .step {
     margin: 15px 0;
@@ -20,10 +17,15 @@
     width: 90%;
 }
 
+.mobile-mohre {
+    display: none;
+}
+
 @media (max-width: 664px) {
     .mobile-mohre {
         display: block;
     }
+
     .desktop-mohre {
         display: none;
     }

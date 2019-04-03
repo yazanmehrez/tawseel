@@ -7,6 +7,7 @@
 
 html,
 body {
+    direction: rtl;
     margin: 0;
     font-size: 100%;
     background: #fff;
@@ -2260,10 +2261,6 @@ p.copy-right a:hover {
     font-size: 17px;
 }
 
-.search {
-    direction: rtl;
-}
-
 .lang-switch {
     float: left;
     border: 1px solid white;
@@ -2288,16 +2285,16 @@ p.copy-right a:hover {
 }
 
 .read-more button img {
-    float: left;
-    margin-left: 10px;
+    float: right;
+    margin-right: 10px;
     height: 40px;
 }
 
 .read-more button span {
     font-size: 15px;
-    float: right;
+    float: left;
     margin-top: 8px;
-    margin-right: 40px;
+    margin-left: 40px;
     font-family: 'sf-compact-display-medium';
 }
 
@@ -2417,4 +2414,8 @@ p.copy-right a:hover {
 
 .section {
     padding: 7em 0;
+}
+
+.slideshow-container .slick-dots {
+    direction: ltr;
 }
