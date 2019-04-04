@@ -32,6 +32,7 @@ import {NgProgressModule} from '@ngx-progressbar/core';
 import {NgProgressHttpModule} from '@ngx-progressbar/http';
 import {DeviceDetectorModule} from 'ngx-device-detector';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {NoBreakSpace} from '../pipes/nbsp.pipe';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -53,6 +54,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         AppSwiperComponent,
         AppXgalleryComponent,
         SafePipe,
+        NoBreakSpace,
         TawseelComponent,
         InvestorComponent,
         AboutUsComponent,

@@ -54,10 +54,7 @@ export class HomeComponent implements OnInit {
 
 
     ngOnInit() {
-
-
         this.getMainSliderData();
         this.getHomePageData();
-
     }
 }

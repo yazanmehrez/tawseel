@@ -33,7 +33,6 @@ export class CaptchaComponent implements OnInit {
             }
         }
         this.toSpeak = captcha.join('');
-        console.log(this.toSpeak);
 
         const canv = document.createElement('canvas');
         canv.id = 'captcha';
