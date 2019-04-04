@@ -18,9 +18,7 @@ export class OurCustomerComponent implements OnInit {
     }
     getAboutData() {
         this._appService.api.getCustomerService().subscribe(response => {
-
           this.customer = response['payload'][0];
-
         });
     }
 

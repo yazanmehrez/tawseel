@@ -12,10 +12,6 @@ label {
     width: 100%;
 }
 
-.item {
-    padding: 10px;
-    text-align: left;
-}
 
 .item label span {
     display: block;

@@ -32,7 +32,6 @@ export class HomeComponent implements OnInit {
                 public _appService: AppService,
     ) {
         this.translateService.onLangChange.subscribe(lang => {
-            // this._appService.switch_lang = lang.lang;
             this.getMainSliderData();
             this.getHomePageData();
             this.getAboutData();
@@ -41,6 +40,7 @@ export class HomeComponent implements OnInit {
 
 
     getMainSliderData() {
+        this.appendSlider = false;
         this._appService.api.getMainSliderService().subscribe(response => {
             this.mainSlider = response['payload'][0]['RelatedEntities'];
             this.mainSlider.forEach(item => {
@@ -52,6 +52,8 @@ export class HomeComponent implements OnInit {
     }
 
     getHomePageData() {
+        this.appendNews = false;
+        this.appendXslider = false;
         this._appService.api.getHomePageService().subscribe(response => {
             this.newsSlider = response['payload'][0]['RelatedEntities'];
             this.xSlider = response['payload'][1]['RelatedEntities'];
@@ -66,17 +68,12 @@ export class HomeComponent implements OnInit {
     getAboutData() {
         this._appService.api.getAboutDataHome().subscribe(response => {
             this.about = response['payload'][0];
-
         });
     }
 
-
     ngOnInit() {
-
-
         this.getMainSliderData();
         this.getHomePageData();
         this.getAboutData();
-
     }
 }

@@ -2418,3 +2418,12 @@ p.copy-right a:hover {
 .swiper-container{
     direction: ltr;
 }
+
+app-customer-registration .item label span {
+    text-align: right;
+}
+
+app-customer-registration .item {
+    padding: 10px;
+    text-align: left;
+}
