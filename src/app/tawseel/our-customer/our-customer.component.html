@@ -23,7 +23,7 @@
                                <span class="numbering">1</span>
                            </div>
                            <div class="th">
-                               <p [innerHtml]="customer.RelatedEntities[0].Title"> </p>
+                               <p [innerHtml]="customer?.RelatedEntities[0].Title"> </p>
                            </div>
                        </div>
                        <div class="step">
@@ -31,24 +31,24 @@
                                <span class="numbering">2</span>
                            </div>
                            <div class="th">
-                               <p [innerHtml]="customer.RelatedEntities[1].Title"></p>
+                               <p [innerHtml]="customer?.RelatedEntities[1].Title"></p>
                            </div>
                        </div>
                    </div>
                </div>
            </div>
            <div class="col-30 col-m" style="text-align:right;margin-top: -30px;">
-               <img [src]="customer.RelatedEntities[0].FullUrl" style="width: 100%;">
+               <img [src]="customer?.RelatedEntities[0].FullUrl" style="width: 100%;">
            </div>
        </div>
         <div class="mobile-mohre">
             <div class="first">
-                <img [src]="customer.RelatedEntities[0].FullUrl" style="width: 50%;">
+                <img [src]="customer?.RelatedEntities[0].FullUrl" style="width: 50%;">
             </div>
             <div class="second">
-                <div class="yellow-title"><p [innerHtml]="customer.Description"></p></div>
+                <div class="yellow-title"><p [innerHtml]="customer?.Description"></p></div>
                 <div class="mohre sec-x">
-                    <p [innerHtml]="customer.content"></p>
+                    <p [innerHtml]="customer?.content"></p>
 
                     <div class="steps">
                         <div class="step">
@@ -56,7 +56,7 @@
                                 <span class="numbering">1</span>
                             </div>
                             <div class="th">
-                                <p [innerHtml]="customer.RelatedEntities[0].Title"> </p>
+                                <p [innerHtml]="customer?.RelatedEntities[0].Title"> </p>
                             </div>
                         </div>
                         <div class="step">
@@ -64,7 +64,7 @@
                                 <span class="numbering">2</span>
                             </div>
                             <div class="th">
-                                <p [innerHtml]="customer.RelatedEntities[1].Title"></p>
+                                <p [innerHtml]="customer?.RelatedEntities[1].Title"></p>
 
                             </div>
                         </div>

@@ -61,7 +61,10 @@
   "_Answer1":"Answer 1",
   "_Answer2":"Answer 2",
   "_DisclaimentStatment":"Disclaiment Statement",
-  "_NotRobot":"Prove you 're not a robot"
+  "_NotRobot":"Prove you 're not a robot",
+  "_SendOTP":"Send OTP",
+  "_PhoneMSG":"(OTP will be sent to this mobile number)"
+
 
 
 

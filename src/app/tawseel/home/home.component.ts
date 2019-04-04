@@ -26,9 +26,19 @@ export class HomeComponent implements OnInit {
     newsSlider = [];
     xSlider = [];
     videoSlider = [];
+    public about: any;
 
-    constructor(private translateService: TranslateService, public _appService: AppService) {
+    constructor(private translateService: TranslateService,
+                public _appService: AppService,
+    ) {
+        this.translateService.onLangChange.subscribe(lang => {
+            // this._appService.switch_lang = lang.lang;
+            this.getMainSliderData();
+            this.getHomePageData();
+            this.getAboutData();
+        });
     }
+
 
     getMainSliderData() {
         this._appService.api.getMainSliderService().subscribe(response => {
@@ -53,8 +63,20 @@ export class HomeComponent implements OnInit {
     }
 
 
+    getAboutData() {
+        this._appService.api.getAboutDataHome().subscribe(response => {
+            this.about = response['payload'][0];
+
+        });
+    }
+
+
     ngOnInit() {
+
+
         this.getMainSliderData();
         this.getHomePageData();
+        this.getAboutData();
+
     }
 }

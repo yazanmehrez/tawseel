@@ -12,21 +12,14 @@ export class OurCustomerComponent implements OnInit {
   public customer: any;
 
     constructor(private translateService: TranslateService, public _appService: AppService) {
+        this.translateService.onLangChange.subscribe(lang => {
+            this.getAboutData();
+        });
     }
     getAboutData() {
         this._appService.api.getCustomerService().subscribe(response => {
 
           this.customer = response['payload'][0];
-
-            // response['payload'].forEach(item => {
-                // if (item.UniqueName == 'who.we.are') {
-                //     this.about = item;
-                //
-                // } else if (item.UniqueName == 'your.fast.way.for.mohre.services') {
-                //     this.services = item;
-                //
-                // }
-            // });
 
         });
     }

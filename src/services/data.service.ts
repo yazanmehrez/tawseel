@@ -31,7 +31,7 @@ export class DataService {
 
 
     getAboutservice(): Observable<Object> {
-        return this.api.getMainSlider('about',
+        return this.api.getHomePage('about',
             environment.API_Generic_Content.ServiceName,
             environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
     }
@@ -40,6 +40,13 @@ export class DataService {
 
     getCustomerService(): Observable<Object> {
         return this.api.getMainSlider('our.customers',
+            environment.API_Generic_Content.ServiceName,
+            environment.API_Generic_Content.GetGenericContentByUniqueName);
+    }
+
+
+    getAboutDataHome(): Observable<Object> {
+        return this.api.getMainSlider('your.fast.way.for.mohre.services',
             environment.API_Generic_Content.ServiceName,
             environment.API_Generic_Content.GetGenericContentByUniqueName);
     }

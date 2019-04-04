@@ -4,7 +4,7 @@
 
 <div class="join-us-section highlight">
     <div class="yellow-title">
-        <p>{{'JoinUs' | translate}}</p>
+        <p>{{'_JoinUs' | translate}}</p>
     </div>
     <div class="user-card">
         <div>
@@ -58,13 +58,8 @@
             <p>{{'_About' | translate}}</p>
         </div>
         <div>
-            <p>
-                About Taw-SellAbout Taw-SellAbout Taw-SellAbout Taw-SellAbout Taw-SellAbout Taw-SellAbout
-                Taw-SellAbout
-                Taw-Sell
-                About Taw-SellAbout Taw-SellAbout Taw-SellAbout Taw-SellAbout Taw-SellAbout Taw-SellAbout
-                Taw-SellAbout
-                Taw-Sell Taw-Sell
+            <p [innerHtml]="about?.Content">
+
             </p>
         </div>
         <div class="read-more">

@@ -13,6 +13,11 @@ export class AboutUsComponent implements OnInit {
 
 
     constructor(private translateService: TranslateService, public _appService: AppService) {
+        this.translateService.onLangChange.subscribe(lang => {
+            // this._appService.switch_lang = lang.lang;
+            this.getAboutData();
+
+        });
     }
 
     getAboutData() {

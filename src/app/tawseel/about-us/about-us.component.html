@@ -94,7 +94,7 @@
 
     <div class="cards-container container-equal">
         <div class="card">
-            <div class="item col-20 col-m" *ngFor="let item of about.RelatedEntities">
+            <div class="item col-20 col-m" *ngFor="let item of about?.RelatedEntities">
                 <img [src]="item.FullUrl" width="80%">
                 <div class="yellow-title">
                     <p>{{item.Title}}</p>
