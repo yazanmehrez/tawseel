@@ -10,7 +10,7 @@
         <!--Desktop View-->
         <div class="desktop-mohre">
             <div class="col-70 col-m f" style="padding-right: 75px;">
-                <div class="yellow-title"><p>{{services.Title}}</p></div>
+                <div class="yellow-title"><p>{{services?.Title}}</p></div>
                 <div class="mohre sec-x" [innerHtml]="services.Content">
                     <!--<p>Tawseel is a mobile service offers the services of Ministry of Human Resources and Emiratisation-->
                         <!--(MOHRE)-->
@@ -30,17 +30,17 @@
                 </div>
             </div>
             <div class="col-30 col-m" style="vertical-align: top; text-align:right;margin-top: -30px;">
-                <img [src]="services.MainImageFullURL" style="width: 100%;">
+                <img [src]="services?.MainImageFullURL" style="width: 100%;">
             </div>
         </div>
 
         <!--Mobile View-->
         <div class="mobile-mohre">
             <div>
-                <img [src]="services.MainImageFullURL" style="width: 70%;">
+                <img [src]="services?.MainImageFullURL" style="width: 70%;">
             </div>
             <div class="f">
-                <div class="yellow-title"><p>{{services.Title}}</p></div>
+                <div class="yellow-title"><p>{{services?.Title}}</p></div>
                 <div class="mohre sec-x" [innerHtml]="services.Content">
                 </div>
             </div>
@@ -51,13 +51,13 @@
         <!--Desktop View-->
         <div class="desktop-mohre">
             <div class="col-30 col-m">
-                <img [src]="about.MainImageFullURL" style="width: 100%;">
+                <img [src]="about?.MainImageFullURL" style="width: 100%;">
             </div>
             <div class="col-70 col-m title-p">
                 <div>
-                    <h3>{{about.Title}}</h3>
+                    <h3>{{about?.Title}}</h3>
                 </div>
-                <p [innerHtml]="about.Content"></p>
+                <p [innerHtml]="about?.Content"></p>
             </div>
         </div>
     </ng-container>
@@ -66,7 +66,7 @@
         <!--Mobile View-->
         <div class="mobile-mohre">
             <div>
-                <img [src]="about.MainImageFullURL" style="width: 70%;">
+                <img [src]="about?.MainImageFullURL" style="width: 70%;">
             </div>
             <div class="title-p">
                 <div>
@@ -82,9 +82,9 @@
             <div class="item col-20 col-m" *ngFor="let item of about?.RelatedEntities">
                 <img [src]="item.FullUrl" width="80%">
                 <div class="yellow-title">
-                    <p>{{item.Title}}</p>
+                    <p>{{item?.Title}}</p>
                 </div>
-                <p [innerHtml]="item.Description">
+                <p [innerHtml]="item?.Description">
                 </p>
             </div>
         </div>

@@ -36,15 +36,15 @@
                 <ul class="nav navbar-nav li">
                     <ng-container *ngFor="let nav of navbar; let i = index">
                         <li *ngIf="navbar[i]['RelatedEntities'] == ''" routerLinkActive="active"
-                            [routerLink]="'/' + nav.Description" (click)="goToRoute()">
-                            <a>{{nav.Title}}</a>
+                            [routerLink]="'/' + nav?.Description" (click)="goToRoute()">
+                            <a>{{nav?.Title}}</a>
                         </li>
                         <li *ngIf="navbar[i]['RelatedEntities'] != ''" class="dropdown" routerLinkActive="active">
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false">{{nav.Title}} <span class="fa fa-angle-down"></span></a>
+                               aria-expanded="false">{{nav?.Title}} <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
-                                <li *ngFor="let snav of nav.RelatedEntities" (click)="goToRoute()"
-                                    [routerLink]="'/' + snav.Description"><a>{{snav.Title}}</a>
+                                <li *ngFor="let snav of nav?.RelatedEntities" (click)="goToRoute()"
+                                    [routerLink]="'/' + snav.Description"><a>{{snav?.Title}}</a>
                                 </li>
                             </ul>
                         </li>

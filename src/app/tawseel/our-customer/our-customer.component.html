@@ -5,15 +5,15 @@
 <app-breadcrumb [Breadcrumb]="['_Home','_JoinUs', '_OurCustomers']"></app-breadcrumb>
 
 <div class="container-equal">
-    <div class="yellow-title"><p>{{customer.Title}}</p></div>
+    <div class="yellow-title"><p>{{customer?.Title}}</p></div>
     <div>
-        <img [src]="customer.MainImageFullURL" width="100%">
+        <img [src]="customer?.MainImageFullURL" width="100%">
     </div>
 
     <div class="section steps-s">
        <div class="desktop-mohre">
            <div class="col-70 col-m" style="padding-right: 75px; vertical-align: middle;">
-               <div class="yellow-title"><p [innerHtml]="customer.Description"></p></div>
+               <div class="yellow-title"><p [innerHtml]="customer?.Description"></p></div>
                <div class="mohre sec-x">
                    <p [innerHtml]="customer.Content"></p>
 

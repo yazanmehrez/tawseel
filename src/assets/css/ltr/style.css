@@ -2420,7 +2420,7 @@ p.copy-right a:hover {
 }
 
 app-customer-registration .item label span {
-    text-align: right;
+    text-align: left;
 }
 
 app-customer-registration .item {
