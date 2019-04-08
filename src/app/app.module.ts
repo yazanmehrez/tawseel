@@ -31,16 +31,18 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {NgProgressModule} from '@ngx-progressbar/core';
 import {NgProgressHttpModule} from '@ngx-progressbar/http';
 import {DeviceDetectorModule} from 'ngx-device-detector';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {NoBreakSpace} from '../pipes/nbsp.pipe';
+import {MultiTranslateHttpLoader} from 'ngx-translate-multi-http-loader';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
     slidesPerView: 'auto'
 };
 
-export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http);
+export function HttpLoaderFactory(httpClient: HttpClient) {
+    return new MultiTranslateHttpLoader(httpClient, [
+        {prefix: './assets/i18n/', suffix: '.json'}
+    ]);
 }
 
 @NgModule({
