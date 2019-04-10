@@ -12,6 +12,8 @@ import {ContactUsComponent} from './tawseel/contact-us/contact-us.component';
 import {MediaCenterComponent} from './tawseel/media-center/media-center.component';
 import {TermsConditionsComponent} from './tawseel/terms-conditions/terms-conditions.component';
 import {FaqComponent} from './tawseel/faq/faq.component';
+import {NewsComponent} from './tawseel/news/news.component';
+import {DetailsComponent} from './tawseel/details/details.component';
 
 const routes: Routes = [
         {
@@ -57,6 +59,14 @@ const routes: Routes = [
                 {
                     path: 'FAQ',
                     component: FaqComponent
+                },
+                {
+                    path: 'news',
+                    component: NewsComponent
+                },
+                {
+                    path: 'details/:id',
+                    component: DetailsComponent
                 },
 
                 {

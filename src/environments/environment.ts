@@ -9,6 +9,16 @@ export const environment = {
         GetGenericContentByCategoryUniqueName: 'GetGenericContentByCategoryUniqueName',
         GetGenericContentByUniqueName: 'GetGenericContentByUniqueName',
     },
+
+    API_News_Content: {
+        ServiceName: 'NewsRestService.svc',
+        GetNewsByUniqueName: 'GetNewsByUniqueName',
+        GetNewsByID: 'GetNewsByID',
+        GetNewsByCategoryUniqueName: 'GetNewsByCategoryUniqueName',
+        GetNewsBySearchPaged: 'GetNewsBySearchPaged'
+
+    },
+
 };
 
 /*

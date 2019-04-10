@@ -39,6 +39,8 @@ import { ContactUsComponent } from './tawseel/contact-us/contact-us.component';
 import { TermsConditionsComponent } from './tawseel/terms-conditions/terms-conditions.component';
 import { FaqComponent } from './tawseel/faq/faq.component';
 import {NgxLoadingModule} from 'ngx-loading';
+import { NewsComponent } from './tawseel/news/news.component';
+import { DetailsComponent } from './tawseel/details/details.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -75,7 +77,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
         OurServicesComponent,
         ContactUsComponent,
         TermsConditionsComponent,
-        FaqComponent
+        FaqComponent,
+        NewsComponent,
+        DetailsComponent
     ],
     imports: [
         BrowserModule,

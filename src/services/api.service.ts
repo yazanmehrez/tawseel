@@ -2,6 +2,7 @@ import {Injectable, isDevMode} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
+import {News} from '../classes/news';
 
 @Injectable({
     providedIn: 'root'
@@ -51,6 +52,33 @@ export class ApiService {
             + lang + '&uniqueName=' + data, {
                 headers: headers
             }).pipe(map(res => res));
+    }
+
+
+    public getNewsPage(news: News, ServiceName: string, Type: string): Observable<any> {
+
+        const headers = new HttpHeaders();
+        const lang = localStorage.getItem('language') === 'en' ? 1 : 2;
+        headers.append('Content-Type',
+            'application/x-www-form-urlencoded;charset=utf-8');
+
+        if (news.keyword) {
+            return this.http.get(
+                this.apiURL + 'TawseelTacsoft/Services/'
+                + ServiceName + '/' + Type + '?websiteID=1&languageID=' + lang + '&PageSize=' + news.pageSize + '&pageNumber=' + news.pageNumber + '&Keyword=' + news.keyword + '&EndDate=' + news.endDate + '&StartDate=' + news.startDate + '&CategoryID=' + news.categoryID, {
+                    headers: headers
+                }).pipe(map(res => res));
+
+        } else {
+
+            return this.http.get(
+                this.apiURL + 'TawseelTacsoft/Services/'
+                + ServiceName + '/' + Type + '?websiteID=1&languageID=' + lang + '&PageSize=' + news.pageSize + '&pageNumber=' + news.pageNumber + '&CategoryID=' + news.categoryID, {
+                    headers: headers
+                }).pipe(map(res => res));
+
+        }
+
     }
 
     getMainSlider(data, ServiceName: string, Type: string): Observable<Object> {
