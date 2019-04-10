@@ -1,0 +1,54 @@
+
+.fa-calendar {
+    display: inline;
+    position: relative;
+    float: right;
+    right: 20px;
+    bottom: 38px;
+    cursor: pointer;
+}
+
+.item {
+    display: inline-block;
+    width: 26%;
+    vertical-align: top;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.filter-search {
+    padding: 45px 5px;
+}
+
+label {
+    width: 100%;
+    margin: 0 5px;
+}
+
+.btn-main {
+    margin: 25px;
+    display: inline-block;
+    color: #fff;
+}
+
+.yellow-title p {
+    margin: 5px 15px 40px;
+}
+
+.news-card {
+    width: 22.90%;
+    padding: 15px;
+    display: inline-block;
+    margin: 15px;
+    background-color: #f5f4f4;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.news-card p {
+    margin-top: 10px;
+}
+
+.container-equal {
+    padding-top: 20px;
+}

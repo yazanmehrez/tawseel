@@ -2347,6 +2347,7 @@ p.copy-right a:hover {
     border: none;
     font-size: 20px;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
@@ -2431,4 +2432,24 @@ app-customer-registration .item label span {
 app-customer-registration .item {
     padding: 10px;
     text-align: right;
+}
+
+.item input, .item select, .item button, .item textarea {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 2px 1px #e0d7d7;
+    padding: 0 25px;
+    line-height: 2.5;
+    height: 45px;
+    width: 100%;
+    font-size: 20px;
+    margin: 5px 0;
+    vertical-align: bottom;
+    background: #fff;
+    text-align: right;
+}
+
+.item label span {
+    display: block;
+    font-size: 20px;
 }

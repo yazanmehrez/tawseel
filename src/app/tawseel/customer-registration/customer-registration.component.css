@@ -13,26 +13,6 @@ label {
 }
 
 
-.item label span {
-    display: block;
-    font-size: 20px;
-}
-
-.item input, .item select, .item button, .item textarea {
-    border-radius: 20px;
-    border: none;
-    box-shadow: 1px 2px 1px #e0d7d7;
-    padding: 0 25px;
-    line-height: 2.5;
-    height: 45px;
-    width: 100%;
-    font-size: 20px;
-    margin: 5px 0;
-    vertical-align: bottom;
-    background: #fff;
-    text-align: left;
-}
-
 .btn-group {
     width: 100%;
     display: block;
@@ -51,10 +31,11 @@ label {
 
 .fa-calendar {
     display: inline;
-    position: absolute;
+    position: relative;
     float: right;
-    right: 45px;
-    bottom: 30px;
+    right: 20px;
+    bottom: 38px;
+    cursor: pointer;
 }
 
 .hint {

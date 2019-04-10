@@ -1,12 +1,101 @@
 <div class="im-t image-title">
-  <img src="assets/images/investor-title.png" alt="">
-  <span>{{'_MediaCenter' | translate | nbsp | uppercase }}</span>
+    <img src="assets/images/investor-title.png" alt="">
+    <span>{{'_MediaCenter' | translate | nbsp | uppercase }}</span>
 </div>
 <app-breadcrumb [Breadcrumb]="['_Home', '_MediaCenter' , '_News']"></app-breadcrumb>
 
 
+<div class="container-equal">
+    <div class="filter-search" [style.background]="'url(assets/images/bg-gray.png)'">
+        <div class="yellow-title">
+            <p>Filter News</p>
+        </div>
+        <div class="item">
+            <label>
+                <span>{{'EmarateID' | translate}}</span>
+                <input type="text">
+            </label>
+        </div>
+        <div class="item">
+            <label>
+                <span>{{'EmarateID' | translate}}</span>
+                <input type="text">
+            </label>
+        </div>
+        <div class="item">
+            <label>
+                <span>{{'_Birth' | translate}}</span>
+                <input type="text"
+                       class="form-control"
+                       #dp="bsDatepicker"
+                       [bsConfig]="bsConfig"
+                       bsDatepicker [(bsValue)]="myDateValue">
+                <span class="fa fa-calendar"></span>
+            </label>
 
+        </div>
+        <div class="btn-main">
+            <button>
+                {{'_Register' | translate }}
 
-<p>
-  news works!
-</p>
+            </button>
+        </div>
+    </div>
+
+    <div class="news-results">
+        <div class="news-card">
+            <img src="assets/images/banner1.jpg" width="100%">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+            <span>May, November 05-8-2018</span>
+        </div>
+        <div class="news-card">
+            <img src="assets/images/banner1.jpg" width="100%">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+            <span>May, November 05-8-2018</span>
+        </div>
+        <div class="news-card">
+            <img src="assets/images/banner1.jpg" width="100%">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+            <span>May, November 05-8-2018</span>
+        </div>
+        <div class="news-card">
+            <img src="assets/images/banner1.jpg" width="100%">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+            <span>May, November 05-8-2018</span>
+        </div>
+        <div class="news-card">
+            <img src="assets/images/banner1.jpg" width="100%">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+            <span>May, November 05-8-2018</span>
+        </div>
+        <div class="news-card">
+            <img src="assets/images/banner1.jpg" width="100%">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+            <span>May, November 05-8-2018</span>
+        </div>
+        <div class="news-card">
+            <img src="assets/images/banner1.jpg" width="100%">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+            <span>May, November 05-8-2018</span>
+        </div>
+        <div class="news-card">
+            <img src="assets/images/banner1.jpg" width="100%">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+            <span>May, November 05-8-2018</span>
+        </div>
+    </div>
+
+    <div class="yellow-title sec-b">
+        <p>
+            {{'_Back' | translate }}
+        </p>
+    </div>
+</div>
