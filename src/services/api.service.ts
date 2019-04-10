@@ -40,7 +40,7 @@ export class ApiService {
             }).pipe(map(res => res));
     }
 
-    getHomePage(data, ServiceName: string, Type: string): Observable<Object> {
+    getGeneralPage(data, ServiceName: string, Type: string): Observable<Object> {
         const headers = new HttpHeaders();
         const lang = localStorage.getItem('language') === 'en' ? 1 : 2;
         headers.append('Content-Type',

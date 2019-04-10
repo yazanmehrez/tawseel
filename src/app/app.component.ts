@@ -1,5 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, TemplateRef} from '@angular/core';
 import {AppService} from './app.service';
+import {ngxLoadingAnimationTypes} from 'ngx-loading';
+
+
+
+const PrimaryWhite = '#f7d231';
+const SecondaryGrey = '#ccc';
 
 @Component({
     selector: 'app-root',
@@ -7,6 +13,12 @@ import {AppService} from './app.service';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+    public ngxLoadingAnimationTypes = ngxLoadingAnimationTypes;
+    public loading = true;
+    public primaryColour = PrimaryWhite;
+    public secondaryColour = SecondaryGrey;
+    public loadingTemplate: TemplateRef<any>;
+    public config = { animationType: ngxLoadingAnimationTypes.none, primaryColour: this.primaryColour, secondaryColour: this.secondaryColour, tertiaryColour: this.primaryColour, backdropBorderRadius: '3px' };
     styles = {
         bootstrap: '',
         style: '',

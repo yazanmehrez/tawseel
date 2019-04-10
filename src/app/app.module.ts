@@ -33,6 +33,12 @@ import {NgProgressHttpModule} from '@ngx-progressbar/http';
 import {DeviceDetectorModule} from 'ngx-device-detector';
 import {NoBreakSpace} from '../pipes/nbsp.pipe';
 import {MultiTranslateHttpLoader} from 'ngx-translate-multi-http-loader';
+import { MediaCenterComponent } from './tawseel/media-center/media-center.component';
+import { OurServicesComponent } from './tawseel/our-services/our-services.component';
+import { ContactUsComponent } from './tawseel/contact-us/contact-us.component';
+import { TermsConditionsComponent } from './tawseel/terms-conditions/terms-conditions.component';
+import { FaqComponent } from './tawseel/faq/faq.component';
+import {NgxLoadingModule} from 'ngx-loading';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -64,7 +70,12 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
         CustomerRegistrationComponent,
         BreadcrumbComponent,
         CaptchaComponent,
-        FormsExamplesComponent
+        FormsExamplesComponent,
+        MediaCenterComponent,
+        OurServicesComponent,
+        ContactUsComponent,
+        TermsConditionsComponent,
+        FaqComponent
     ],
     imports: [
         BrowserModule,
@@ -90,6 +101,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
             spinner: false,
             color: '#000'
         }),
+        NgxLoadingModule.forRoot({ fullScreenBackdrop: true}),
         NgProgressHttpModule,
         ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production})
     ],

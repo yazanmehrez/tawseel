@@ -9,6 +9,7 @@ import {DataService} from '../services/data.service';
 export class AppService {
     public language = new BehaviorSubject<string>(null);
     currentLanguage: string;
+    public  loading: boolean = false;
 
     constructor(private translate: TranslateService, public api: DataService) {
 

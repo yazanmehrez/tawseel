@@ -39,7 +39,6 @@
   "_Back":"BACK",
   "_Investor":"Investor",
   "_PrivacyStatment":"PRIVACY STATEMENT",
-  "_FAQ":"FAQ",
   "_Services":"SERVICES",
   "_AboutUs":"ABOUT US",
   "_AboutTawseel":"About TAWSEEL",
@@ -63,7 +62,15 @@
   "_DisclaimentStatment":"Disclaiment Statement",
   "_NotRobot":"Prove you 're not a robot",
   "_SendOTP":"Send OTP",
-  "_PhoneMSG":"(OTP will be sent to this mobile number)"
+  "_PhoneMSG":"(OTP will be sent to this mobile number)",
+  "_TermsConditions":"Terms & Conditions",
+  "_ContactUs":"Contact us",
+  "_MediaCenter":"Media Center",
+  "_OurServices":"Our Services",
+  "_FAQ":"FAQ",
+  "_FAQ's":"FAQ's"
+
+
 
 
 

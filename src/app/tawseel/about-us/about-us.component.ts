@@ -14,12 +14,13 @@ export class AboutUsComponent implements OnInit {
 
     constructor(private translateService: TranslateService, public _appService: AppService) {
         this.translateService.onLangChange.subscribe(lang => {
+            this._appService.loading = true;
             this.getAboutData();
         });
     }
 
     getAboutData() {
-        this._appService.api.getAboutservice().subscribe(response => {
+        this._appService.api.getAboutService().subscribe(response => {
 
             response['payload'].forEach(item => {
                 if (item.UniqueName == 'who.we.are') {
@@ -31,10 +32,15 @@ export class AboutUsComponent implements OnInit {
                 }
             });
 
+            setTimeout(() => {
+                this._appService.loading = false;
+            }, 1000);
+
         });
     }
 
     ngOnInit() {
+        window.scrollTo(0,0);
         this.getAboutData();
     }
 

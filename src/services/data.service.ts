@@ -12,26 +12,26 @@ export class DataService {
     }
 
     getNavBarService(): Observable<Object> {
-        return this.api.getNavBar('navbar',
+        return this.api.getGeneralPage('navbar',
             environment.API_Generic_Content.ServiceName,
             environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
     }
 
     getHomePageService(): Observable<Object> {
-        return this.api.getHomePage('homepage',
+        return this.api.getGeneralPage('homepage',
             environment.API_Generic_Content.ServiceName,
             environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
     }
 
     getMainSliderService(): Observable<Object> {
-        return this.api.getMainSlider('mainslideshow',
+        return this.api.getGeneralPage('mainslideshow',
             environment.API_Generic_Content.ServiceName,
             environment.API_Generic_Content.GetGenericContentByUniqueName);
     }
 
 
-    getAboutservice(): Observable<Object> {
-        return this.api.getHomePage('about',
+    getAboutService(): Observable<Object> {
+        return this.api.getGeneralPage('about',
             environment.API_Generic_Content.ServiceName,
             environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
     }
@@ -39,16 +39,32 @@ export class DataService {
 
 
     getCustomerService(): Observable<Object> {
-        return this.api.getMainSlider('our.customers',
+        return this.api.getGeneralPage('our.customers',
             environment.API_Generic_Content.ServiceName,
             environment.API_Generic_Content.GetGenericContentByUniqueName);
     }
 
 
     getAboutDataHome(): Observable<Object> {
-        return this.api.getMainSlider('your.fast.way.for.mohre.services',
+        return this.api.getGeneralPage('your.fast.way.for.mohre.services',
             environment.API_Generic_Content.ServiceName,
             environment.API_Generic_Content.GetGenericContentByUniqueName);
+    }
+
+
+
+    getTermsConditionsService(): Observable<Object> {
+        return this.api.getGeneralPage('terms.conditions',
+            environment.API_Generic_Content.ServiceName,
+            environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
+    }
+
+
+
+    getContactDataService(): Observable<Object> {
+        return this.api.getGeneralPage('contact.us',
+            environment.API_Generic_Content.ServiceName,
+            environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
     }
 
 }

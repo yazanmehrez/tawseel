@@ -13,12 +13,16 @@ export class OurCustomerComponent implements OnInit {
 
     constructor(private translateService: TranslateService, public _appService: AppService) {
         this.translateService.onLangChange.subscribe(lang => {
+            this._appService.loading = true;
             this.getAboutData();
         });
     }
     getAboutData() {
         this._appService.api.getCustomerService().subscribe(response => {
           this.customer = response['payload'][0];
+            setTimeout(() => {
+                this._appService.loading = false;
+            }, 1000);
         });
     }
 
