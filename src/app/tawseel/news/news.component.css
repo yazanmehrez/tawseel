@@ -64,6 +64,7 @@ label {
     color: #717171;
 }
 
+
 .page:hover, .page.gradient:hover {
     background: #fefefe;
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
