@@ -332,49 +332,69 @@ app-slideshow .learn-more {
 
 /*BreadCrumb*/
 
-app-contact-us .print-share {
+.print-share {
     float: left;
 }
 
-app-contact-us .flow {
+.flow {
+    text-align: right;
+}
+
+/*news*/
+
+app-news .fa-calendar {
+    display: inline;
+    position: relative;
+    float: left;
+    left: 20px;
+    bottom: 38px;
+    cursor: pointer;
+}
+
+app-news .item {
+    display: inline-block;
+    width: 26%;
+    vertical-align: top;
+    margin: 0 10px;
+    text-align: right;
+}
+
+/*news*/
+
+/*contact us*/
+app-contact-us .details {
+    text-align: right;
+}
+
+app-contact-us .details .info span {
+    margin-right: 10px;
+}
+
+app-contact-us .left-section {
+    text-align: right;
+}
+
+app-contact-us label {
+    text-align: right;
+    width: 100%;
+}
+
+app-contact-us .fa-angle-down {
+    float: left;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+app-contact-us .left-section {
     text-align: right;
 }
 
 /*contact us*/
 
-/*app-contact-us .details {*/
-    /*text-align: right;*/
-/*}*/
+/*details*/
+.desktop-mohre{
+    text-align: right !important;
+    margin-bottom: 80px;
+}
 
-/*app-contact-us .details .info span {*/
-    /*margin-right: 10px;*/
-/*}*/
-
-/*app-contact-us .left-section {*/
-    /*text-align: right;*/
-/*}*/
-
-/*app-contact-us label {*/
-    /*text-align: right;*/
-    /*width: 100%;*/
-/*}*/
-
-/*app-contact-us .item label span{*/
-    /*padding-right: 15px;*/
-    /*text-align: right !important;*/
-/*}*/
-
-/*app-contact-us .fa-angle-down {*/
-    /*float: left;*/
-    /*margin: 15px 0;*/
-    /*font-size: 20px;*/
-/*}*/
-
-/*app-contact-us .fa-calendar {*/
-    /*display: inline;*/
-    /*position: relative;*/
-    /*float: left;*/
-    /*left: 20px;*/
-    /*bottom: 38px;*/
-    /*cursor: pointer;*/
-/*}*/
+/*details*/

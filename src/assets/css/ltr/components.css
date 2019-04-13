@@ -343,7 +343,7 @@ app-contact-us .left-section {
     text-align: left;
 }
 
-app-contact-us .item label span{
+app-contact-us .item label span {
     padding-left: 15px;
     text-align: left !important;
 }
@@ -369,8 +369,62 @@ app-contact-us .fa-calendar {
 
 }
 
+/*news*/
+app-news .fa-calendar {
+    display: inline;
+    position: relative;
+    float: right;
+    right: 20px;
+    bottom: 38px;
+    cursor: pointer;
+}
+
+app-news .item {
+    display: inline-block;
+    width: 26%;
+    vertical-align: top;
+    margin: 0 10px;
+    text-align: left;
+}
+
+/*news*/
+
+/*contact us*/
+
+app-contact-us .details {
+    text-align: left;
+}
+
+app-contact-us .details .info span {
+    margin-left: 10px;
+}
+
+app-contact-us .left-section {
+    text-align: left;
+}
+
+app-contact-us label {
+    text-align: left;
+    width: 100%;
+}
+
+app-contact-us .fa-angle-down {
+    float: right;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+app-contact-us .left-section {
+    text-align: left;
+}
+
+/*contact us*/
 
 
+/*details*/
+.desktop-mohre{
+    text-align: left !important;
+    margin-bottom: 80px;
+}
 
-
-
+/*details*/

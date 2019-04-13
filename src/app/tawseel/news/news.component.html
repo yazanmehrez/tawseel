@@ -49,25 +49,44 @@
             </button>
         </div>
     </div>
-    <div class="col-sm-12 middle middle-block not-found" *ngIf="newsList == ''"  [style.border]="newsList == '' ? 'none' : ''">
+    <div class="col-sm-12 middle middle-block not-found" *ngIf="newsList == ''"
+         [style.border]="newsList == '' ? 'none' : ''">
         {{'_NotFoundResult' | translate}}
     </div>
     <div class="news-results">
-        <div class="news-card" *ngFor = "let news of newsList" [routerLink]="['/details' , news.UniqueName]">
+        <div class="news-card" *ngFor="let news of newsList" [routerLink]="['/details' , news.UniqueName]">
             <img [src]="news.MainImageFullURL" width="100%">
             <p>{{news.Summary}}</p>
-            <span>{{_appService.getNormalDate(news.NewsDate) | date:'EEEE, MMMM d, y'}}</span>
+            <span>{{_appService.getNormalDate(news.NewsDate) | date:'EEEE, MMMM d, y' }}</span>
         </div>
     </div>
 
     <div class="col-sm-12" style="text-align: center" *ngIf="pageCount > 0 ">
-        <div class="pagination">
-            <a class="page fa fa-angle-left" [ngClass]="pageCount <= 5 || startPage == 0 ? 'disabled-arrow' : ''"   (click)="previousPage()"></a>
+        <div class="pagination" *ngIf="_appService.currentLanguage == 'en'">
+            <a class="page fa fa-angle-left" [ngClass]="pageCount <= 5 || startPage == 0 ? 'disabled-arrow' : ''"
+               (click)="previousPage()"
+            ></a>
+
 
             <a class="page" *ngFor="let page of pageCountArray | slice: startPage: endPage ; let i = index"
                (click)="searchNews(i)" [ngClass]=" activePage === i ? 'active-page' : ''" style="cursor: pointer">{{page}}</a>
 
-            <a class="page fa fa-angle-right" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''" (click)="nextPage()"></a>
+            <a class="page fa fa-angle-right" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''"
+               (click)="nextPage()"></a>
+
+        </div>
+        <div class="pagination" *ngIf="_appService.currentLanguage == 'ar'">
+            <a class="page fa fa-angle-right" [ngClass]="pageCount <= 5 || startPage == 0 ? 'disabled-arrow' : ''"
+               (click)="previousPage()"
+            ></a>
+
+
+            <a class="page" *ngFor="let page of pageCountArray | slice: startPage: endPage ; let i = index"
+               (click)="searchNews(i)" [ngClass]=" activePage === i ? 'active-page' : ''" style="cursor: pointer">{{page}}</a>
+
+            <a class="page fa fa-angle-left" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''"
+               (click)="nextPage()"></a>
+
         </div>
     </div>
 
