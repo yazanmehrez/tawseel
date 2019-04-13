@@ -571,13 +571,27 @@
     }
 
    app-news .news-card {
-        width: 40.9%;
-        padding: 15px;
-        display: inline-block;
-        margin: 15px;
-        background-color: #f5f4f4;
-        border-radius: 20px;
-        cursor: pointer;
+       width: 40.9%;
+       padding: 15px;
+       display: inline-block;
+       margin: 15px;
+       background-color: #f5f4f4;
+       border-radius: 20px;
+       cursor: pointer;
+
+   }
+
+    .im-t span {
+        /* color: #494949; */
+        font-size: 45px;
+        position: absolute;
+        top: 37%;
+        left: 5%;
+        font-weight: 800;
+        border-bottom: 5px solid yellow;
+        line-height: 0.9;
+        width: 35px;
+        font-family: 'sf-compact-display-heavy', sans-serif;
     }
 }
 
@@ -1265,6 +1279,19 @@
         height: 285px !important;
         box-shadow: 24px 8px 1px #f1f1f1;
     }
+
+    .im-t span {
+        color: #494949;
+        font-size: 33px;
+        position: absolute;
+        top: 34%;
+        left: 5%;
+        font-weight: 800;
+        border-bottom: 5px solid yellow;
+        line-height: 0.9;
+        width: 35px;
+        font-family: 'sf-compact-display-heavy', sans-serif;
+    }
 }
 
 @media (max-width: 424px) {
@@ -1834,7 +1861,6 @@
 
     app-about-us .yellow-title p {
         margin: 60px 0 15px;
-        width: 100%;
         text-align: center;
     }
 
@@ -1925,6 +1951,87 @@
 
     #agent-service {
         margin-top: -60px;
+    }
+
+    app-news .item {
+        display: inline-block;
+        width: 88%;
+        vertical-align: top;
+        margin: 0 10px;
+        text-align: left;
+    }
+
+    app-news .news-card {
+        width: 92.9%;
+        padding: 15px;
+        display: inline-block;
+        margin: 15px;
+        background-color: #f5f4f4;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    app-contact-us .item label span {
+        padding-left: 7px;
+        text-align: left !important;
+    }
+
+
+    .input25 {
+        border-radius: 20px;
+        border: none;
+        padding: 0 25px;
+        line-height: 2.5;
+        height: 45px;
+        width: 24% !important;
+        margin-bottom: 5px;
+        margin-right: 15px;
+        -webkit-box-shadow: 1px 2px 1px #e0d7d7;
+        box-shadow: 1px 2px 1px #e0d7d7;
+        background: #fff;
+        display: inline-block !important;
+    }
+
+    h4, .h4 {
+        font-size: 15px;
+    }
+
+    app-contact-us .right-section {
+        padding: 0 3px;
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .col-xs-6 {
+        width: 100%;
+    }
+
+
+    app-contact-us .left-section {
+        text-align: left;
+        padding: 0;
+    }
+
+    .details-img {
+        border-radius: 50%;
+        margin-top: 100px;
+        width: 230px !important;
+        height: 230px !important;
+        box-shadow: 24px 8px 1px #f1f1f1;
+    }
+
+    .im-t span {
+        color: #494949;
+        font-size: 30px;
+        position: absolute;
+        top: 34%;
+        left: 5%;
+        font-weight: 800;
+        border-bottom: 5px solid yellow;
+        line-height: 0.9;
+        width: 35px;
+        font-family: 'sf-compact-display-heavy', sans-serif;
     }
 
 }
