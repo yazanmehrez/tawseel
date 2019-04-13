@@ -8,101 +8,66 @@
 <div class="container-equal">
     <div class="filter-search" [style.background]="'url(assets/images/bg-gray.png)'">
         <div class="yellow-title">
-            <p>Filter News</p>
+            <p>{{'_FilterNews' | translate}}</p>
         </div>
         <div class="item">
             <label>
-                <span>{{'EmarateID' | translate}}</span>
-                <input type="text">
+                <span>{{'_Keyword' | translate}}</span>
+                <input type="text" [(ngModel)]="news.keyword" (keyup)="getAllNews()">
             </label>
         </div>
         <div class="item">
             <label>
-                <span>{{'EmarateID' | translate}}</span>
-                <input type="text">
-            </label>
-        </div>
-        <div class="item">
-            <label>
-                <span>{{'_Birth' | translate}}</span>
+                <span>{{'_DateFrom' | translate}}</span>
                 <input type="text"
                        class="form-control"
                        #dp="bsDatepicker"
+                       [min]="minDate" [max]="maxDate"
                        [bsConfig]="bsConfig"
-                       bsDatepicker [(bsValue)]="myDateValue">
+                       bsDatepicker [(bsValue)]="news.startDate">
+                <span class="fa fa-calendar"></span>
+            </label>
+
+        </div>
+        <div class="item">
+            <label>
+                <span>{{'_DateTo' | translate}}</span>
+                <input type="text"
+                       class="form-control"
+                       [min]="minDate" [max]="maxDate"
+                       #dp="bsDatepicker"
+                       [bsConfig]="bsConfig"
+                       bsDatepicker [(bsValue)]="news.endDate">
                 <span class="fa fa-calendar"></span>
             </label>
 
         </div>
         <div class="btn-main">
-            <button>
-                {{'_Register' | translate }}
+            <button (click)="searchNews(0)">
+                {{'_Search' | translate }}
 
             </button>
         </div>
     </div>
-
+    <div class="col-sm-12 middle middle-block not-found" *ngIf="newsList == ''"  [style.border]="newsList == '' ? 'none' : ''">
+        {{'_NotFoundResult' | translate}}
+    </div>
     <div class="news-results">
-        <div class="news-card">
-            <img src="assets/images/banner1.jpg" width="100%">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-            <span>May, November 05-8-2018</span>
-        </div>
-        <div class="news-card">
-            <img src="assets/images/banner1.jpg" width="100%">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-            <span>May, November 05-8-2018</span>
-        </div>
-        <div class="news-card">
-            <img src="assets/images/banner1.jpg" width="100%">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-            <span>May, November 05-8-2018</span>
-        </div>
-        <div class="news-card">
-            <img src="assets/images/banner1.jpg" width="100%">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-            <span>May, November 05-8-2018</span>
-        </div>
-        <div class="news-card">
-            <img src="assets/images/banner1.jpg" width="100%">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-            <span>May, November 05-8-2018</span>
-        </div>
-        <div class="news-card">
-            <img src="assets/images/banner1.jpg" width="100%">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-            <span>May, November 05-8-2018</span>
-        </div>
-        <div class="news-card">
-            <img src="assets/images/banner1.jpg" width="100%">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-            <span>May, November 05-8-2018</span>
-        </div>
-        <div class="news-card">
-            <img src="assets/images/banner1.jpg" width="100%">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-            <span>May, November 05-8-2018</span>
+        <div class="news-card" *ngFor = "let news of newsList" [routerLink]="['/details' , news.UniqueName]">
+            <img [src]="news.MainImageFullURL" width="100%">
+            <p>{{news.Summary}}</p>
+            <span>{{_appService.getNormalDate(news.NewsDate) | date:'EEEE, MMMM d, y'}}</span>
         </div>
     </div>
 
-    <div class="col-sm-12" style="text-align: center">
+    <div class="col-sm-12" style="text-align: center" *ngIf="pageCount > 0 ">
         <div class="pagination">
-            <a href="#" class="page fa fa-angle-left"></a>
-            <a href="#" class="page active-page">1</a>
-            <a href="#" class="page">2</a>
-            <a href="#" class="page">3</a>
-            <a href="#" class="page">4</a>
-            <a href="#" class="page">5</a>
-            <a href="#" class="page">6</a>
-            <a href="#" class="page fa fa-angle-right"></a>
+            <a class="page fa fa-angle-left" [ngClass]="pageCount <= 5 || startPage == 0 ? 'disabled-arrow' : ''"   (click)="previousPage()"></a>
+
+            <a class="page" *ngFor="let page of pageCountArray | slice: startPage: endPage ; let i = index"
+               (click)="searchNews(i)" [ngClass]=" activePage === i ? 'active-page' : ''" style="cursor: pointer">{{page}}</a>
+
+            <a class="page fa fa-angle-right" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''" (click)="nextPage()"></a>
         </div>
     </div>
 

@@ -91,3 +91,10 @@ label {
     vertical-align: inherit;
     color: #fff;
 }
+
+
+.disabled-arrow{
+    pointer-events: none;
+    background-color: #bbb8ac !important;
+
+}

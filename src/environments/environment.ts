@@ -19,6 +19,12 @@ export const environment = {
 
     },
 
+    API_Feedback_Content: {
+        ServiceName: 'FeedbackRestService.svc',
+        SendFeedBackToClient: 'SendFeedBackToClient',
+
+    },
+
 };
 
 /*

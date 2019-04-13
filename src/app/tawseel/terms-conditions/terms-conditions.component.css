@@ -1,0 +1,15 @@
+.details-img{
+    border-radius: 50%;
+    width: 350px !important;
+    height: 350px !important;
+    box-shadow: 24px 8px 1px #f1f1f1;
+}
+
+.desktop-mohre{
+    text-align: left !important;
+    margin-bottom: 80px;
+}
+
+.desktop-mohre p{
+    margin-bottom: 25px !important ;
+}

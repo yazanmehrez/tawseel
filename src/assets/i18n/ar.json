@@ -69,7 +69,30 @@
   "_FAQ":"الاسئلة الشائعة",
   "_FAQ's":"الاسئلة الشائعة",
   "_News":"الأخبار",
-  "_Details":"التفاصيل"
+  "_Details":"التفاصيل",
+  "_FilterNews":"تصفية الأخبار",
+  "_NotFoundResult":"لا يوجد نتائج",
+  "_Keyword": "الكلمة",
+  "_DateFrom":"من تاريخ",
+  "_DateTo":"الى تاريخ",
+  "_Search":"بحث",
+  "_SendEmail":"راسلنا عبر البريد الالكتروني",
+  "_FieldRequired":"جميع الحقول مطلوبة",
+  "_Name":"الاسم",
+  "_Emirate":"Emirate",
+  "_Email":"الاميل",
+  "_Send":"ارسال",
+  "_Description":"التوصيف",
+  "_Phone":"رقم الهاتف:",
+  "_Fax":"فاكس:",
+  "_FeedbackSuccess": "تم الارسال بنجاح",
+  "_EmptyFiled": "لا يمكنك ترك هذا الحقل فارغ",
+  "_EmailNotValid": "البريد الإلكتروني الذي أدخلته غير صالح",
+  "_TawseelServices": "Ministry oh human resource & emaratization (MOHRE) Taw-seel-services"
+
+
+
+
 
 
 

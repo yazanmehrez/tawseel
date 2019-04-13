@@ -1,10 +1,29 @@
 <div class="im-t image-title">
-  <img src="assets/images/investor-title.png" alt="">
-  <span>{{'_TermsConditions' | translate | nbsp | uppercase }}</span>
+    <img src="assets/images/investor-title.png" alt="">
+    <span>{{'_TermsConditions' | translate | nbsp | uppercase }}</span>
 </div>
 <app-breadcrumb [Breadcrumb]="['_Home','_TermsConditions']"></app-breadcrumb>
 
 
-<p>
-  terms-conditions works!
-</p>
+<div class="container-equal">
+
+    <ng-container>
+        <!--Desktop View-->
+        <div class="desktop-mohre" *ngIf="conditions != ''">
+            <div class="col-70 col-m f" style="padding-right: 75px;">
+                <div class="mohre sec-x" [innerHtml]="conditions?.Content">
+
+                </div>
+            </div>
+            <div class="col-30 col-m" style="vertical-align: top; text-align:left;margin-top: -30px;">
+                <img class="details-img" [src]="conditions?.MainImageFullURL" style="width: 100%;">
+            </div>
+        </div>
+
+    </ng-container>
+
+
+    <div class="yellow-title sec-b">
+        <p>{{'_Back' | translate}}</p>
+    </div>
+</div>

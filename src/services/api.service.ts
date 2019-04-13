@@ -28,18 +28,7 @@ export class ApiService {
         return null;
     }
 
-    getNavBar(data, ServiceName: string, Type: string): Observable<Object> {
-        const headers = new HttpHeaders();
-        const lang = localStorage.getItem('language') === 'en' ? 1 : 2;
-        headers.append('Content-Type',
-            'application/x-www-form-urlencoded;charset=utf-8');
-        return this.http.get(
-            this.apiURL + 'TawseelTacsoft/Services/'
-            + ServiceName + '/' + Type + '?WebsiteID=1&LanguageID='
-            + lang + '&uniqueName=' + data, {
-                headers: headers
-            }).pipe(map(res => res));
-    }
+
 
     getGeneralPage(data, ServiceName: string, Type: string): Observable<Object> {
         const headers = new HttpHeaders();
@@ -69,29 +58,36 @@ export class ApiService {
                     headers: headers
                 }).pipe(map(res => res));
 
-        } else {
+
+        }else{
 
             return this.http.get(
                 this.apiURL + 'TawseelTacsoft/Services/'
-                + ServiceName + '/' + Type + '?websiteID=1&languageID=' + lang + '&PageSize=' + news.pageSize + '&pageNumber=' + news.pageNumber + '&CategoryID=' + news.categoryID, {
+                + ServiceName + '/' + Type + '?websiteID=1&languageID=' + lang + '&PageSize=' + news.pageSize + '&pageNumber=' + news.pageNumber + '&EndDate=' + news.endDate + '&StartDate=' + news.startDate + '&CategoryID=' + news.categoryID, {
                     headers: headers
                 }).pipe(map(res => res));
+
+
+            // return this.http.get(
+            //     this.apiURL + 'TawseelTacsoft/Services/'
+            //     + ServiceName + '/' + Type + '?websiteID=1&languageID=' + lang + '&PageSize=' + news.pageSize + '&pageNumber=' + news.pageNumber + '&CategoryID=' + news.categoryID, {
+            //         headers: headers
+            //     }).pipe(map(res => res));
 
         }
 
     }
 
-    getMainSlider(data, ServiceName: string, Type: string): Observable<Object> {
+    sendFeedback(data, ServiceName: string, Type: string): Observable<any> {
         const headers = new HttpHeaders();
         const lang = localStorage.getItem('language') === 'en' ? 1 : 2;
         headers.append('Content-Type',
             'application/x-www-form-urlencoded;charset=utf-8');
-        return this.http.get(
-            this.apiURL + 'TawseelTacsoft/Services/'
-            + ServiceName + '/' + Type + '?WebsiteID=1&LanguageID='
-            + lang + '&uniqueName=' + data, {
-                headers: headers
-            }).pipe(map(res => res));
-    }
 
+        return this.http.get(this.apiURL + 'TawseelTacsoft/Services/'
+            + ServiceName + '/' + Type + '?clientToNotify=1&WebsiteID=1&LanguageID=' + lang + '&Name= ' + data.name + '&Email=' + data.email + '&Phone=' + data.phone + '&FeedType=' + data.FeedType + '&description=' + data.description , {
+            headers: headers
+        }).pipe(map(res => res));
+
+    }
 }

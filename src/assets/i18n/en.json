@@ -70,7 +70,31 @@
   "_FAQ":"FAQ",
   "_FAQ's":"FAQ's",
   "_News":"News",
-  "_Details":"Details"
+  "_Details":"Details",
+  "_FilterNews":"Filter News",
+  "_NotFoundResult":"No result found",
+  "_Keyword": "Keyword",
+  "_DateFrom":"Date from",
+  "_DateTo":"Date to",
+  "_Search":"Search",
+  "_SendEmail":"Send us an email",
+  "_FieldRequired":"All fields are required",
+  "_Name":"Name",
+  "_Emirate":"Emirate",
+  "_Send":"Send",
+  "_Description":"Description",
+  "_Phone":"Phone:",
+  "_Fax":"Fax:",
+  "_Email":"Email:",
+  "_FeedbackSuccess": "sent succesfully",
+  "_EmptyFiled": "You can't leave this field empty",
+  "_EmailNotValid": "The email you have entered is not valid",
+  "_TawseelServices": "Ministry oh human resource & emaratization (MOHRE) Taw-seel-services"
+
+
+
+
+
 
 
 

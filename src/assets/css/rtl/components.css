@@ -332,10 +332,49 @@ app-slideshow .learn-more {
 
 /*BreadCrumb*/
 
-.print-share {
+app-contact-us .print-share {
     float: left;
 }
 
-.flow {
+app-contact-us .flow {
     text-align: right;
 }
+
+/*contact us*/
+
+/*app-contact-us .details {*/
+    /*text-align: right;*/
+/*}*/
+
+/*app-contact-us .details .info span {*/
+    /*margin-right: 10px;*/
+/*}*/
+
+/*app-contact-us .left-section {*/
+    /*text-align: right;*/
+/*}*/
+
+/*app-contact-us label {*/
+    /*text-align: right;*/
+    /*width: 100%;*/
+/*}*/
+
+/*app-contact-us .item label span{*/
+    /*padding-right: 15px;*/
+    /*text-align: right !important;*/
+/*}*/
+
+/*app-contact-us .fa-angle-down {*/
+    /*float: left;*/
+    /*margin: 15px 0;*/
+    /*font-size: 20px;*/
+/*}*/
+
+/*app-contact-us .fa-calendar {*/
+    /*display: inline;*/
+    /*position: relative;*/
+    /*float: left;*/
+    /*left: 20px;*/
+    /*bottom: 38px;*/
+    /*cursor: pointer;*/
+/*}*/

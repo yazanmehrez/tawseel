@@ -2448,3 +2448,13 @@ app-customer-registration .item {
     display: block;
     font-size: 20px;
 }
+
+
+.not-found{
+    font-size: 25px;
+    color: #86888a;
+    align-items: center;
+    margin: 45px 0 -24px 0;
+}
+
+

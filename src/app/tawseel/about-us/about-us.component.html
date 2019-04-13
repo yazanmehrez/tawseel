@@ -11,7 +11,7 @@
         <div class="desktop-mohre">
             <div class="col-70 col-m f" style="padding-right: 75px;">
                 <div class="yellow-title"><p>{{services?.Title}}</p></div>
-                <div class="mohre sec-x" [innerHtml]="services.Content">
+                <div class="mohre sec-x" [innerHtml]="services?.Content">
                     <!--<p>Tawseel is a mobile service offers the services of Ministry of Human Resources and Emiratisation-->
                         <!--(MOHRE)-->
                         <!--to-->
@@ -41,7 +41,7 @@
             </div>
             <div class="f">
                 <div class="yellow-title"><p>{{services?.Title}}</p></div>
-                <div class="mohre sec-x" [innerHtml]="services.Content">
+                <div class="mohre sec-x" [innerHtml]="services?.Content">
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <div>
                     <h3>Who We Are</h3>
                 </div>
-                <p [innerHtml]="about.Content"></p>
+                <p [innerHtml]="about?.Content"></p>
             </div>
         </div>
     </ng-container>
@@ -88,9 +88,9 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div><div class="yellow-title sec-b">
+    <p>{{'_Back' | translate}}</p>
+</div>
 
-    <div class="yellow-title sec-b">
-        <p>{{'_Back' | translate}}</p>
-    </div>
+
 </div>

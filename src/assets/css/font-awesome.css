@@ -30,6 +30,8 @@
     vertical-align: -15%;
 }
 
+.fa-fax:before{content:"\f1ac"}
+
 .fa-2x {
     font-size: 2em;
 }

@@ -41,6 +41,8 @@ import { FaqComponent } from './tawseel/faq/faq.component';
 import {NgxLoadingModule} from 'ngx-loading';
 import { NewsComponent } from './tawseel/news/news.component';
 import { DetailsComponent } from './tawseel/details/details.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {ToastrModule} from 'ngx-toastr';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -82,9 +84,11 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
         DetailsComponent
     ],
     imports: [
+        ReactiveFormsModule,
         BrowserModule,
         BrowserAnimationsModule,
         AppRoutingModule,
+        FormsModule,
         SlideshowModule,
         SwiperModule,
         MatCardModule,
@@ -100,6 +104,13 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
                 useFactory: HttpLoaderFactory,
                 deps: [HttpClient]
             }
+        }),
+        ToastrModule.forRoot({
+            positionClass: 'toast-bottom-left',
+            closeButton: true,
+            disableTimeOut: true,
+            preventDuplicates: false,
+            tapToDismiss: false
         }),
         NgProgressModule.withConfig({
             spinner: false,

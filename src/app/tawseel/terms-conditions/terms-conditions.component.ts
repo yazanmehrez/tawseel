@@ -9,7 +9,7 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class TermsConditionsComponent implements OnInit {
 
-    public conditions: any;
+    public conditions: any = [];
 
     constructor(private translateService: TranslateService, public _appService: AppService) {
         this.translateService.onLangChange.subscribe(lang => {

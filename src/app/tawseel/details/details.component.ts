@@ -10,7 +10,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class DetailsComponent implements OnInit {
 
-    public details: any;
+    public details: any = [];
     public id: string;
     public news_date: any;
     public uniqueName: any;
@@ -19,7 +19,7 @@ export class DetailsComponent implements OnInit {
                 public _appService: AppService,
                 private route: ActivatedRoute) {
         this.translateService.onLangChange.subscribe(lang => {
-            this._appService.loading = true;
+            // this._appService.loading = true;
             this.getNewsDetails();
         });
     }

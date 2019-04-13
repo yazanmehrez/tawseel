@@ -1,10 +1,147 @@
 <div class="im-t image-title">
-  <img src="assets/images/investor-title.png" alt="">
-  <span>{{'_ContactUs' | translate | nbsp | uppercase }}</span>
+    <img src="assets/images/investor-title.png" alt="">
+    <span>{{'_ContactUs' | translate | nbsp | uppercase }}</span>
 </div>
 <app-breadcrumb [Breadcrumb]="['_Home','_ContactUs']"></app-breadcrumb>
 
 
-<p>
-  terms-conditions works!
-</p>
+<div class="container-equal">
+    <div class="contact-info">
+        <div class="col-xs-6 left-section" *ngIf="contact != ''">
+            <p [innerHtml]="contact.Content">
+            </p>
+        </div>
+        <div class="col-xs-6 right-section">
+
+            <div class="details">
+
+                <h4>{{contact.Description}}</h4>
+
+                <div class="info">
+                    <span><i class="fa fa-fax"></i></span>
+                    <span class="contact-tool">{{'_Fax' | translate}}</span>
+                    <span>(44)5654545</span>
+                </div>
+                <div class="info">
+                    <span><i class="fa fa-envelope"></i></span>
+                    <span class="contact-tool">{{'_Email' | translate}}</span>
+                    <span>info@taw-seel@ae</span>
+                </div>
+                <div class="info">
+                    <span><i class="fa fa-phone"></i></span>
+                    <span class="contact-tool">{{'_Phone' | translate}}</span>
+                    <span>(44)5654545</span>
+                </div>
+            </div>
+        </div>
+        <div></div>
+
+
+    </div>
+
+    <div class="form-contact">
+        <!--<div class="yellow-title"><p>{{"_Send us an email" | translate}}</p></div>-->
+        <div class="yellow-title">
+            <p>{{'_SendEmail' | translate}}</p>
+            <span>{{'_FieldRequired' | translate}}</span>
+        </div>
+
+
+        <form [formGroup]="feedbackForm" autocomplete="off">
+            <div class="contact-form">
+                <div class="container">
+                    <div class="col-sm-6">
+                        <div class="item">
+                            <label>
+                                <span>{{'_Name' | translate}} </span>
+                                <input type="text" formControlName="name" name="name">
+                                <div *ngIf="feedbackForm.controls['name'].invalid && (feedbackForm.controls['name'].dirty || feedbackForm.controls['name'].touched)">
+                                    <div *ngIf="feedbackForm.controls['name'].errors.required">
+                                        {{'_EmptyFiled' | translate}}
+                                    </div>
+                                </div>
+                            </label>
+
+                        </div>
+
+                        <div class="item">
+                            <label>
+                                <span>{{'_Phone' | translate}}</span>
+                                <span class="input25">00971</span>
+                                <input type="text" class="input70" formControlName="phone" name="phone">
+                                <div *ngIf="feedbackForm.controls['phone'].invalid && (feedbackForm.controls['phone'].dirty || feedbackForm.controls['phone'].touched)">
+                                    <div *ngIf="feedbackForm.controls['phone'].errors.required">
+                                        {{'_EmptyFiled' | translate}}                                    </div>
+                                </div>
+                            </label>
+                            <!--<span class="hint">{{'_PhoneMSG' | translate}}</span>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="item">
+                            <label>
+                                <span>{{'_Email' | translate}}</span>
+                                <input type="text" formControlName="email" name="email">
+                                <div *ngIf="feedbackForm.controls['email'].invalid && (feedbackForm.controls['email'].dirty || feedbackForm.controls['email'].touched)">
+                                    <div *ngIf="feedbackForm.controls['email'].errors.required">
+                                        {{'_EmptyFiled' | translate}}
+                                    </div>
+                                </div>
+                                <div *ngIf=" feedbackForm.controls['email'].touched && feedbackForm.hasError('pattern', ['email']) ">
+                                    {{'_EmailNotValid'|translate }}
+                                </div>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <label>
+                                <span>{{'_Emirate' | translate}}</span>
+                            </label>
+                            <div class="btn-group" dropdown>
+                                <button id="button-basic" dropdownToggle type="button" class="dropdown-toggle"
+                                        aria-controls="dropdown-basic">
+                                    Button dropdown <span class="fa fa-angle-down"></span>
+                                </button>
+                                <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                                    role="menu" aria-labelledby="button-basic">
+                                    <li role="menuitem"><a class="dropdown-item" >Action</a></li>
+                                    <li role="menuitem"><a class="dropdown-item" >Another action</a></li>
+                                    <li role="menuitem"><a class="dropdown-item" >Something else here</a></li>
+                                    <li class="divider dropdown-divider"></li>
+                                    <li role="menuitem"><a class="dropdown-item" >Separated link</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="item">
+                            <label>
+                                <span>{{'_Description' | translate}}</span>
+                                <textarea type="text" formControlName="message" name="message"></textarea>
+                                <div *ngIf="feedbackForm.controls['message'].invalid && (feedbackForm.controls['message'].dirty || feedbackForm.controls['message'].touched)">
+                                    <div *ngIf="feedbackForm.controls['message'].errors.required">
+                                        {{'_EmptyFiled' | translate}}
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="read-more">
+                <button style="margin: 15px 0;" [disabled]="!feedbackForm.valid" (click)="sendFeedback()">
+    <span>
+     {{'_Send' | translate}}
+    </span>
+                    <img src="assets/images/arrow-read-more.png" alt=""></button>
+            </div>
+        </form>
+
+        <div class="yellow-title sec-b">
+            <p>{{'_Back' | translate}}</p>
+        </div>
+    </div>
+</div>
+

@@ -29,4 +29,18 @@ export class AppService {
         this.translate.use(language);
         this.language.next(language);
     }
+
+
+    getNormalDate(news_date: any) {
+        // Get the number parts
+        const s = news_date;
+        const b = s.match(/\d+/g);
+
+        // Get the sign of the offset
+        const sign = /-/.test(s) ? -1 : +1;
+
+        // Adjust the time value by the offset converted to milliseconds
+        // and use to create a Date
+        return +b[0] + sign * (b[1].slice(0, 2) * 3.6e6 + b[1].slice(-2) * 6e4);
+    }
 }

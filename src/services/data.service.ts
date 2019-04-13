@@ -3,6 +3,7 @@ import {ApiService} from './api.service';
 import {environment} from '../environments/environment';
 import {Observable} from 'rxjs';
 import {News} from '../classes/news';
+import {Contact} from '../classes/contact';
 
 @Injectable({
     providedIn: 'root'
@@ -82,6 +83,11 @@ export class DataService {
             environment.API_News_Content.GetNewsByUniqueName);
     }
 
+    sendFeedbackService(data: Contact): Observable<Object> {
+        return this.api.sendFeedback( data,
+            environment.API_Feedback_Content.ServiceName,
+            environment.API_Feedback_Content.SendFeedBackToClient);
+    }
 
 
 

@@ -1,0 +1,121 @@
+.details {
+    text-align: left;
+}
+
+/*.details h4 {*/
+    /*color: #000;*/
+    /*margin-bottom: 23px;*/
+
+/*}*/
+
+.info span {
+    margin-bottom: 9px
+}
+
+.details .info {
+    /*direction: rtl;*/
+}
+
+/*.details .info span {*/
+    /*margin-left: 10px;*/
+/*}*/
+
+.right-section {
+    padding: 0 110px;
+}
+
+/*.left-section {*/
+    /*text-align: left;*/
+/*}*/
+
+.contact-tool{
+    /*margin: 0 40px 0 17px !important;*/
+    width: 30%;
+    display: inline-block;
+}
+
+/*@import "../../../elements/forms-examples/forms-examples.component.css";*/
+
+.container {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+    width: auto;
+}
+
+
+.yellow-title p{
+    font-size: 25px !important;
+    margin-bottom: 7px !important;
+}
+
+.yellow-title span{
+    display: block;
+}
+
+
+.yellow-title{
+    margin-bottom: 60px !important;
+}
+
+.btn-group {
+    width: 100%;
+    display: block;
+}
+
+.contact-form .container{
+    padding: 35px 135px;
+}
+
+/*.fa-angle-down {*/
+    /*float: right;*/
+    /*margin: 15px 0;*/
+    /*font-size: 20px;*/
+/*}*/
+
+.drop-select {
+    width: 100%;
+}
+
+.details h4{
+    margin-bottom: 25px;
+}
+
+/*.fa-calendar {*/
+    /*display: inline;*/
+    /*position: relative;*/
+    /*float: right;*/
+    /*right: 20px;*/
+    /*bottom: 38px;*/
+    /*cursor: pointer;*/
+/*}*/
+
+.hint {
+    color: #b0b0b0;
+}
+
+.iagree {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.form-contact{
+
+    margin-top: 200px;
+}
+
+textarea{
+    height: 127px !important;
+    resize: none;
+}
+
+.read-more{
+    margin-top: 40px;
+}
+
+.item{
+    margin-bottom: 25px;
+}
+

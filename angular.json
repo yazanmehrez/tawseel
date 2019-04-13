@@ -24,13 +24,16 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ngx-toastr/toastr.css"
+
             ],
             "scripts": [
               "src/assets/js/jquery-3.2.0.min.js",
               "src/assets/js/jquery-ui.min.js",
               "src/assets/js/popper.min.js",
-              "src/assets/js/bootstrap.min.js"
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/tawseel.js"
             ]
           },
           "configurations": {

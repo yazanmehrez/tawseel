@@ -1,0 +1,23 @@
+.details-title p{
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+.details-date{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #f8d84c;
+}
+
+.details-img{
+    border-radius: 50%;
+    width: 350px !important;
+    height: 350px !important;
+    box-shadow: 24px 8px 1px #f1f1f1;
+}
+
+.desktop-mohre{
+    text-align: left !important;
+    margin-bottom: 80px;
+}
