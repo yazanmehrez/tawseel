@@ -11,7 +11,7 @@ body {
     margin: 0;
     font-size: 100%;
     background: #fff;
-    font-family: 'sf-compact-display-regular';
+    font-family: 'dubai-regular', sans-serif;
 }
 
 body a {
@@ -43,7 +43,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-family: 'sf-compact-display-bold', sans-serif;
+    font-family: 'dubai-bold', sans-serif;
 }
 
 p {
@@ -67,7 +67,7 @@ label {
 }
 
 .ar {
-    font-family: ultra-light, sans-serif !important;
+    font-family: 'dubai-regular', sans-serif !important;
 }
 
 .col-m {
@@ -156,7 +156,6 @@ label {
 
 .navbar-default .navbar-nav > li > a {
     color: #27292b;
-    font-family: 'dubai-regular';
 }
 
 .dropdown-menu > li > a {
@@ -979,7 +978,6 @@ ol.carousel-indicators.two {
     color: #333;
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 a.b-home {
@@ -2295,7 +2293,7 @@ p.copy-right a:hover {
     float: left;
     margin-top: 8px;
     margin-left: 40px;
-    font-family: 'sf-compact-display-medium';
+    font-family: 'dubai-regular', sans-serif;
 }
 
 .im-t img {
@@ -2329,7 +2327,7 @@ p.copy-right a:hover {
     color: #494949;
     margin-bottom: 35px;
     display: inline-block;
-    font-family: 'sf-compact-display-bold', sans-serif;
+    font-family: 'dubai-regular', sans-serif;
 }
 
 .btn-main {
@@ -2340,7 +2338,6 @@ p.copy-right a:hover {
     background-color: #e1bb36;
     -webkit-box-shadow: -4px 6px 0px #e0e0cf;
     box-shadow: -4px 6px 0px #e0e0cf;
-    font-family: 'sf-compact-display-bold', sans-serif;
     height: 50px;
     width: 200px;
     border-radius: 41px;
@@ -2389,7 +2386,6 @@ p.copy-right a:hover {
     border-bottom: 5px solid yellow;
     line-height: 0.9;
     width: 35px;
-    font-family: 'sf-compact-display-heavy', sans-serif;
 }
 
 .sec-b {
@@ -2399,7 +2395,6 @@ p.copy-right a:hover {
 
 .sec-b p {
     font-size: 15px;
-    font-family: 'sf-compact-display-bold', sans-serif;
     cursor: pointer;
 }
 

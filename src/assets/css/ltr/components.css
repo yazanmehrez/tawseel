@@ -418,6 +418,14 @@ app-contact-us .left-section {
     text-align: left;
 }
 
+app-contact-us .contact-form .container{
+    padding: 35px 135px;
+}
+
+app-contact-us .right-section {
+    padding: 0 110px;
+}
+
 /*contact us*/
 
 
@@ -428,3 +436,11 @@ app-contact-us .left-section {
 }
 
 /*details*/
+
+.details-img{
+    border-radius: 50%;
+    margin-top: 100px;
+    width: 350px !important;
+    height: 350px !important;
+    box-shadow: 24px 8px 1px #f1f1f1;
+}

@@ -56,7 +56,7 @@
                 <input type="text" id="navbar-search" placeholder="{{'_Search' | translate }}">
                 <ul class="nav navbar-nav lang-switch">
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a class="dropdown-toggle ar" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false"
                            *ngIf="_appService.currentLanguage == 'ar'">
                             عربي <span class="fa fa-angle-down"></span>
@@ -66,7 +66,7 @@
                            *ngIf="_appService.currentLanguage == 'en'">
                             English <span class="fa fa-angle-down"></span>
                         </a>
-                        <ul class="dropdown-menu lang-options">
+                        <ul class="dropdown-menu lang-options ar">
                             <li><a *ngIf="_appService.currentLanguage == 'en'"
                                    (click)="_appService.switchLanguage('ar')">عربي</a></li>
                             <li><a *ngIf="_appService.currentLanguage == 'ar'"

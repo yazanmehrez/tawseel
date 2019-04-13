@@ -169,7 +169,7 @@ app-home .user-card p {
     font-size: 25px;
     font-weight: normal;
     color: #494949;
-    font-family: 'sf-compact-display-medium', sans-serif;
+
 }
 
 #service img, #van img, #agent-service img {
@@ -182,13 +182,13 @@ app-home .user-card p {
     font-size: 30px;
     color: #f6d232;
     line-height: 1;
-    font-family: 'sf-compact-display-bold', sans-serif;
+
 }
 
 .work-card span {
     color: #a0a0a0;
     font-size: 20px;
-    font-family: 'sf-compact-display-medium', sans-serif;
+
 }
 
 .complaints, .suggestion {
@@ -298,7 +298,6 @@ app-slideshow .slider-title {
     border-bottom: 5px solid yellow;
     line-height: 0.9;
     width: 35px;
-    font-family: 'sf-compact-display-heavy', sans-serif;
 }
 
 app-slideshow .slider-description {
@@ -392,7 +391,7 @@ app-contact-us .left-section {
 /*contact us*/
 
 /*details*/
-.desktop-mohre{
+.desktop-mohre {
     text-align: right !important;
     margin-bottom: 80px;
 }
