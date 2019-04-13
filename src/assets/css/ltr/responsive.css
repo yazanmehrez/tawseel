@@ -193,6 +193,17 @@
         padding: 0 5px 0 0;
         text-align: justify;
     }
+
+    app-news .news-card {
+        width: 28.9%;
+        padding: 15px;
+        display: inline-block;
+        margin: 15px;
+        background-color: #f5f4f4;
+        border-radius: 20px;
+        cursor: pointer;
+
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -504,6 +515,69 @@
 
     .btn-main {
         margin: 40px;
+    }
+
+    .im-t span {
+        color: #494949;
+        font-size: 60px;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        font-weight: 800;
+        border-bottom: 5px solid yellow;
+        line-height: 0.9;
+        width: 35px;
+        font-family: 'sf-compact-display-heavy', sans-serif;
+    }
+
+    .details-img {
+        border-radius: 50%;
+        margin-top: 50px;
+        width: 200px !important;
+        height: 200px !important;
+        box-shadow: 24px 8px 1px #f1f1f1;
+    }
+
+    .f {
+        margin-top: 4px;
+    }
+
+
+    app-contact-us .contact-form .container {
+        padding: 35px 15px;
+    }
+
+    .input25 {
+        border-radius: 20px;
+        border: none;
+        padding: 0 25px;
+        line-height: 2.5;
+        height: 45px;
+        width: 25% !important;
+        margin-bottom: 5px;
+        margin-right: 13px;
+        -webkit-box-shadow: 1px 2px 1px #e0d7d7;
+        box-shadow: 1px 2px 1px #e0d7d7;
+        background: #fff;
+        display: inline-block !important;
+    }
+
+    app-contact-us .right-section {
+        padding: 0 29px;
+    }
+
+    h4, .h4 {
+        font-size: 12px;
+    }
+
+   app-news .news-card {
+        width: 40.9%;
+        padding: 15px;
+        display: inline-block;
+        margin: 15px;
+        background-color: #f5f4f4;
+        border-radius: 20px;
+        cursor: pointer;
     }
 }
 
@@ -852,14 +926,14 @@
         padding: 25px 0;
     }
 
-    .about-left[_ngcontent-c5] {
+    .about-left {
         width: 85%;
         margin: auto;
         display: block;
         vertical-align: middle;
     }
 
-    .about[_ngcontent-c5] {
+    .about {
         padding: 2em 0;
     }
 
@@ -871,7 +945,7 @@
         text-align: center;
     }
 
-    .com-sug[_ngcontent-c5] {
+    .com-sug {
         margin: 20px 100px;
         border-bottom: 2px solid #dedede;
     }
@@ -892,7 +966,7 @@
         border-bottom: 2px solid #dedede;
     }
 
-    .head[_ngcontent-c5] {
+    .head {
         text-align: center;
         margin-bottom: 15px;
         padding: 0 60px;
@@ -957,15 +1031,15 @@
         height: 100%;
     }
 
-    .header-one-content[_ngcontent-c3] {
+    .header-one-content {
         margin-right: 0;
     }
 
-    .top_header_one[_ngcontent-c3] {
+    .top_header_one {
         text-align: center;
     }
 
-    .logo-right[_ngcontent-c3] {
+    .logo-right {
         float: right;
         padding: 5px 15px;
     }
@@ -974,7 +1048,7 @@
         width: 125px;
     }
 
-    .logo-left[_ngcontent-c3] {
+    .logo-left {
         float: left;
         padding: 5px 15px;
     }
@@ -1072,9 +1146,9 @@
         text-align: justify;
     }
 
-    app-about-us .yellow-title[_ngcontent-c5] p[_ngcontent-c5] {
+    app-about-us .yellow-title p {
         margin: 60px 0 15px;
-        width: 100%;
+        /*width: 100%;*/
         text-align: center;
     }
 
@@ -1147,6 +1221,49 @@
 
     .complaints, .suggestion {
         background-position: center;
+    }
+
+    app-news .item {
+        display: inline-block;
+        width: 90%;
+        vertical-align: top;
+        margin: 0 10px;
+        text-align: left;
+    }
+
+    app-news .news-card {
+        width: 92.9%;
+        padding: 15px;
+        display: inline-block;
+        margin: 15px;
+        background-color: #f5f4f4;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    app-contact-us .left-section {
+        text-align: left;
+        width: 100%;
+        padding: 0;
+    }
+
+    app-contact-us .right-section {
+        margin-top: 6px;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 45px;
+    }
+
+    h4, .h4 {
+        font-size: 17px;
+    }
+
+    .details-img {
+        border-radius: 50%;
+        margin-top: 100px;
+        width: 285px !important;
+        height: 285px !important;
+        box-shadow: 24px 8px 1px #f1f1f1;
     }
 }
 
@@ -1495,14 +1612,14 @@
         padding: 25px 0;
     }
 
-    .about-left[_ngcontent-c5] {
+    .about-left {
         width: 85%;
         margin: auto;
         display: block;
         vertical-align: middle;
     }
 
-    .about[_ngcontent-c5] {
+    .about {
         padding: 2em 0;
     }
 
@@ -1514,7 +1631,7 @@
         text-align: center;
     }
 
-    .com-sug[_ngcontent-c5] {
+    .com-sug {
         margin: 20px 25px;
         border-bottom: 2px solid #dedede;
     }
@@ -1535,7 +1652,7 @@
         border-bottom: 2px solid #dedede;
     }
 
-    .head[_ngcontent-c5] {
+    .head {
         text-align: center;
         margin-bottom: 15px;
         padding: 0 60px;
@@ -1600,15 +1717,15 @@
         height: 100%;
     }
 
-    .header-one-content[_ngcontent-c3] {
+    .header-one-content {
         margin-right: 0;
     }
 
-    .top_header_one[_ngcontent-c3] {
+    .top_header_one {
         text-align: center;
     }
 
-    .logo-right[_ngcontent-c3] {
+    .logo-right {
         float: right;
         padding: 5px 15px;
     }
@@ -1617,7 +1734,7 @@
         width: 125px;
     }
 
-    .logo-left[_ngcontent-c3] {
+    .logo-left {
         float: left;
         padding: 5px 15px;
     }
@@ -1715,7 +1832,7 @@
         text-align: justify;
     }
 
-    app-about-us .yellow-title[_ngcontent-c5] p[_ngcontent-c5] {
+    app-about-us .yellow-title p {
         margin: 60px 0 15px;
         width: 100%;
         text-align: center;

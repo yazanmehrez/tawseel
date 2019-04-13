@@ -35,15 +35,15 @@ label {
     margin: 5px 15px 40px;
 }
 
-.news-card {
-    width: 22.90%;
-    padding: 15px;
-    display: inline-block;
-    margin: 15px;
-    background-color: #f5f4f4;
-    border-radius: 20px;
-    cursor: pointer;
-}
+/*.news-card {*/
+    /*width: 22.90%;*/
+    /*padding: 15px;*/
+    /*display: inline-block;*/
+    /*margin: 15px;*/
+    /*background-color: #f5f4f4;*/
+    /*border-radius: 20px;*/
+    /*cursor: pointer;*/
+/*}*/
 
 .news-card p {
     margin-top: 10px;

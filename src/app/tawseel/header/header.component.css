@@ -1,16 +1,5 @@
-.top_header_one {
-    background-color: #f8d231;
-    padding: 8px 0;
-    text-align: right;
-}
 
-.header-one-content {
-    font-size: 10px;
-    display: inline-block;
-    font-weight: 900;
-    margin-right: 70px;
-    color: #000;
-}
+
 
 .top_header_one i, p, h6, .head-cont {
     font-size: 10px;
@@ -20,12 +9,3 @@
     color: #000;
 }
 
-.logo-right {
-    float: right;
-    padding: 5px 75px;
-}
-
-.logo-left {
-    float: left;
-    padding: 5px 75px;
-}

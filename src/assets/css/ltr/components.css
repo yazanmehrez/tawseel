@@ -444,3 +444,38 @@ app-contact-us .right-section {
     height: 350px !important;
     box-shadow: 24px 8px 1px #f1f1f1;
 }
+
+app-news .news-card {
+    width: 22.90%;
+    padding: 15px;
+    display: inline-block;
+    margin: 15px;
+    background-color: #f5f4f4;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.logo-right {
+    float: right;
+    padding: 5px 75px;
+}
+
+.logo-left {
+    float: left;
+    padding: 5px 75px;
+}
+
+.header-one-content {
+    font-size: 10px;
+    display: inline-block;
+    font-weight: 900;
+    margin-right: 70px;
+    color: #000;
+}
+
+.top_header_one {
+    background-color: #f8d231;
+    padding: 8px 0;
+    text-align: right;
+}
