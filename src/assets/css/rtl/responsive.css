@@ -936,15 +936,15 @@
         height: 100%;
     }
 
-    .header-one-content[_ngcontent-c3] {
+    .header-one-content {
         margin-left: 0;
     }
 
-    .top_header_one[_ngcontent-c3] {
+    .top_header_one {
         text-align: center;
     }
 
-    .logo-right[_ngcontent-c3] {
+    .logo-right {
         float: left;
         padding: 5px 15px;
     }
@@ -953,7 +953,7 @@
         width: 125px;
     }
 
-    .logo-left[_ngcontent-c3] {
+    .logo-left {
         float: right;
         padding: 5px 15px;
     }
@@ -1578,15 +1578,15 @@
         height: 100%;
     }
 
-    .header-one-content[_ngcontent-c3] {
+    .header-one-content {
         margin-left: 0;
     }
 
-    .top_header_one[_ngcontent-c3] {
+    .top_header_one {
         text-align: center;
     }
 
-    .logo-right[_ngcontent-c3] {
+    .logo-right {
         float: left;
         padding: 5px 15px;
     }
@@ -1595,7 +1595,7 @@
         width: 125px;
     }
 
-    .logo-left[_ngcontent-c3] {
+    .logo-left {
         float: right;
         padding: 5px 15px;
     }

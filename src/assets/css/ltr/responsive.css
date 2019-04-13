@@ -1332,7 +1332,7 @@
     .search {
         padding: 10px 0;
         float: none;
-        width: 350px;
+        width: 315px;
         margin: auto;
     }
 
@@ -1798,7 +1798,7 @@
     .navbar .search i {
         position: relative;
         float: none;
-        left: 150px;
+        left: 135px;
         top: 27px;
         font-weight: 100;
         font-size: 17px;

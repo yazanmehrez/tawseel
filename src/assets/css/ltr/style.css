@@ -2412,6 +2412,10 @@ p.copy-right a:hover {
     padding: 75px;
 }
 
+.equal-x {
+    padding: 0 75px;
+}
+
 .section {
     padding: 7em 0;
 }
@@ -2456,5 +2460,3 @@ app-customer-registration .item {
     align-items: center;
     margin: 45px 0 -24px 0;
 }
-
-

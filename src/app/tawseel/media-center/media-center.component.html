@@ -1,12 +1,62 @@
 <div class="im-t image-title">
-  <img src="assets/images/investor-title.png" alt="">
-  <span>{{'_MediaCenter' | translate | nbsp | uppercase }}</span>
+    <img src="assets/images/investor-title.png" alt="">
+    <span>{{'_MediaCenter' | translate | nbsp | uppercase }}</span>
 </div>
 <app-breadcrumb [Breadcrumb]="['_Home','_MediaCenter']"></app-breadcrumb>
 
+<div class="join-us-section highlight">
+    <div class="yellow-title">
+        <p>We have the best services</p>
+    </div>
+    <div class="user-card">
+        <div>
+            <img src="assets/images/investor.PNG" alt="">
+            <p>{{'_AreYouInvestor' | translate}}</p>
+        </div>
+        <div>
+            <img src="assets/images/agent.PNG" alt="">
+            <p>{{'_AreYouAgent' | translate}}</p>
+        </div>
+        <div>
+            <img src="assets/images/customer.PNG" alt="">
+            <p>{{'_AreYouCustomer' | translate}}</p>
+        </div>
+    </div>
 
-<p>
-  media-center works!
-</p>
+</div>
+
+<div class="banner_bottom c-feedback">
+    <div class="yellow-title" style="text-align: center">
+        <p>Customers feedback</p>
+    </div>
+    <p class="desc">
+        Lorem ipsum dolor sit amet consictotur apisimderr Lorem ipsum dolor sit amet consictotur apisimderr Lorem ipsum
+        dolor sit amet consictotur apisimderr
+    </p>
+    <div class="equal-x">
+        <div class="feedback-slider">
+            <div class="item">
+                <img src="assets/images/banner4.jpg" width="100%">
+                <h3>Services Launch</h3>
+                <p>Lorem ipsum dolor sit amet consictotur apisimderr</p>
+            </div>
+            <div class="item">
+                <img src="assets/images/banner4.jpg" width="100%">
+                <h3>Services Launch</h3>
+                <p>Lorem ipsum dolor sit amet consictotur apisimderr</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="banner_bottom">
+    <app-swiper *ngIf="appendNews" [imageUrls]="newsSlider"></app-swiper>
+</div>
+
+<div class="yellow-title sec-b">
+    <p> {{'_Back' | translate }}
+    </p>
+</div>
+
 
 
