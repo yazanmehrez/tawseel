@@ -1,99 +1,58 @@
-.toggle-wrap {
-    float: left;
-    width: 100%;
-    border: 1px solid #e0e0e0;
-    margin-bottom: 15px;
-    -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.03);
-    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.03);
-}
 
-.trigger a {
-    display: block;
-    cursor: pointer;
-    position: relative;
-    font-size: 18px;
-    padding: 0 0 15px 0;
-    margin: 15px 20px;
-    line-height: 26px;
-    color: #707070;
-    font-weight: 500;
-    -webkit-transition: background-color 200ms ease-in-out;
-    -moz-transition: background-color 200ms ease-in-out;
-    -o-transition: background-color 200ms ease-in-out;
-    -ms-transition: background-color 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out;
-}
-
-.trigger a {
-    background-color: #fcfcfc;
-}
-
-.trigger a:hover,
-.trigger.active a,
-.trigger.active a:hover {
-    background: #fff;
-}
-
-.trigger.active a {
-    color: #ed3e41;
-}
-
-.toggle-icon {
-    width: 18px;
-    height: 18px;
+ul li a.toggle {
+    width: 90%;
     display: inline-block;
-    background-color: #ccc;
-    border-radius: 2px;
-    /*background-image: url(../images/accordion-plus.png);*/
-    background-repeat: no-repeat;
-    background-position: 50%;
-    float: left;
-    margin: 3px 10px 0 0;
-    box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
-    -webkit-transition: background-color 200ms ease-in-out;
-    -moz-transition: background-color 200ms ease-in-out;
-    -o-transition: background-color 200ms ease-in-out;
-    -ms-transition: background-color 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out;
+    padding: 0;
+    font-size: 24px;
+    transition: background 0.3s ease;
+    color: #000;
+    margin: 0 15px;
+    border-radius: 0;
+    vertical-align: sub;
 }
 
-.trigger.active .toggle-icon {
-    background-color: #169fe6;
-    box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.15);
-    /*background-image: url(../images/accordion-minus.png);*/
+ul .inner {
+    padding: 45px 90px;
+    overflow: hidden;
+    display: none;
 }
 
-.toggle-container p {
-    margin: 0;
+.accordion li {
+    list-style: none;
+    border-radius: 0;
+    text-align: left;
+    border: 1px solid rgba(230, 230, 230, 0.98);
 }
 
-.toggle-container {
-    padding: 0 20px 17px 20px;
-}
-
-.toggle-wrap {
-    background-color: #f1f1f1;
-    margin-top: 15px;
-    margin-bottom: 0 !important;
-}
-
-.toggle-wrap .trigger {
-    width: 100%;
-}
-
-.toggle-wrap p {
-    border-top: 1px solid #dcdcdc;
-    padding-top: 20px;
-}
-
-.trigger a {
-    background-color: #f1f1f1 !important;
-}
-
-.toggle-wrap .fa {
-    float: right;
-    font-weight: 900;
-    font-size: 18px;
+.num {
+    display: inline-block;
+    padding: 0;
+    font-weight: 800;
+    font-size: 30px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
     vertical-align: middle;
-    margin: 0 5px;
+    text-align: center;
+}
+
+.accordion .fa-angle-down, .accordion .fa-angle-up {
+    font-size: 45px;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+
+.head {
+    padding: 15px;
+}
+
+.head.active {
+    background: #f7d231;
+}
+
+.head.active .num {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
 }

@@ -2420,7 +2420,7 @@ p.copy-right a:hover {
     padding: 7em 0;
 }
 
-.swiper-container{
+.swiper-container {
     direction: ltr;
 }
 
@@ -2448,13 +2448,27 @@ app-customer-registration .item {
     text-align: left;
 }
 
+select::-ms-expand {
+    display: none;
+}
+
+.select .fa {
+    position: absolute;
+    right: 30px;
+    margin: 20px 5px;
+}
+
+.item select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 .item label span {
     display: block;
     font-size: 20px;
 }
 
-
-.not-found{
+.not-found {
     font-size: 25px;
     color: #86888a;
     align-items: center;

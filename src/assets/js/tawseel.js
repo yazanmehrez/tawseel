@@ -1,23 +1,24 @@
-(function ($) {
+$(document).ready(function () {
 
-    $('.trigger').toggle(function () {
-        $(this).addClass('active');
-    }, function () {
-        $(this).removeClass('active');
+    $('.toggle').click(function (e) {
+        e.preventDefault();
+
+        let $this = $(this);
+        $this.find('.fa').toggleClass('fa-angle-up fa-angle-down');
+
+        if ($this.find('.inner').hasClass('show')) {
+            $this.find('.inner').removeClass('show');
+            $this.find('.head').removeClass('active');
+            // $this.next().slideUp(350);
+        } else {
+            $this.find('.inner').removeClass('show');
+            $this.find('.head').removeClass('active');
+            // $this.find('li .inner').slideUp(350);
+            $this.find('.inner').toggleClass('show');
+            $this.find('.head').toggleClass('active');
+            // $this.next().slideToggle(350);
+        }
     });
-    $('.trigger').click(function () {
-        $(this).next('.toggle-container').slideToggle();
-    });
-
-    $('.trigger.opened').toggle(function () {
-        $(this).removeClass('active');
-    }, function () {
-        $(this).addClass('active');
-    });
-
-    $('.trigger.opened').addClass('active').next('.toggle-container').show();
-
-
 
     $(document).mouseup(function (e) {
         let container = $('#toast-container');
@@ -26,4 +27,4 @@
         }
     });
 
-}(jQuery));
+});
