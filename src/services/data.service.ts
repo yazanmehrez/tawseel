@@ -90,6 +90,12 @@ export class DataService {
     }
 
 
+    getMediaCenterService(): Observable<Object> {
+        return this.api.getGeneralPage('media.center',
+            environment.API_Generic_Content.ServiceName,
+            environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
+    }
+
 
 }
 

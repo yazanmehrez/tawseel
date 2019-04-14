@@ -67,13 +67,20 @@
                         <div class="item">
                             <label>
                                 <span>{{'_Phone' | translate}}</span>
-                                <span class="input25">00971</span>
-                                <input type="text" class="input70" formControlName="phone" name="phone">
+                                <div class="phone-section" style="direction: ltr">
+                                <span class="input25">{{'_CodePhone' | translate}}</span>
+                                <input type="text" class="input70" formControlName="phone" name="phone" type="number" pattern="^[0-9]+$" onKeyPress="if(this.value.length==9) return false;">
+                                </div>
                                 <div *ngIf="feedbackForm.controls['phone'].invalid && (feedbackForm.controls['phone'].dirty || feedbackForm.controls['phone'].touched)">
                                     <div *ngIf="feedbackForm.controls['phone'].errors.required">
-                                        {{'_EmptyFiled' | translate}}
-                                    </div>
+                                        {{'_EmptyFiled' | translate}}                                    </div>
                                 </div>
+                                <div class="alert"
+                                     *ngIf="feedbackForm.controls['phone'].errors.minlength && feedbackForm.controls['phone'].touched">
+                                    {{'_NotValidGSM'|translate }}
+                                </div>
+
+
                             </label>
                             <!--<span class="hint">{{'_PhoneMSG' | translate}}</span>-->
                         </div>
@@ -97,21 +104,7 @@
                             <label>
                                 <span>{{'_Emirate' | translate}}</span>
                             </label>
-                            <!--<div class="btn-group" dropdown>-->
-                            <!--<button id="button-basic" dropdownToggle type="button" class="dropdown-toggle"-->
-                            <!--aria-controls="dropdown-basic">-->
-                            <!--Button dropdown <span class="fa fa-angle-down"></span>-->
-                            <!--</button>-->
-                            <!--<ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"-->
-                            <!--role="menu" aria-labelledby="button-basic">-->
-                            <!--<li role="menuitem"><a class="dropdown-item" >Action</a></li>-->
-                            <!--<li role="menuitem"><a class="dropdown-item" >Another action</a></li>-->
-                            <!--<li role="menuitem"><a class="dropdown-item" >Something else here</a></li>-->
-                            <!--<li class="divider dropdown-divider"></li>-->
-                            <!--<li role="menuitem"><a class="dropdown-item" >Separated link</a>-->
-                            <!--</li>-->
-                            <!--</ul>-->
-                            <!--</div>-->
+
                             <div class="select">
                                 <select name="" id="">
                                     <option value="NULL" selected disabled>Your Choice</option>

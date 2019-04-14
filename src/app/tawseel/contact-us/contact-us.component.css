@@ -18,10 +18,24 @@ select::-ms-expand {
 }
 
 
-.contact-tool {
+
+/*.details .info span {*/
+    /*margin-left: 10px;*/
+/*}*/
+
+/*.right-section {*/
+    /*padding: 0 110px;*/
+/*}*/
+
+/*.left-section {*/
+    /*text-align: left;*/
+/*}*/
+
+.contact-tool{
     width: 30%;
     display: inline-block;
 }
+
 
 .container {
     background: #f4f4f4;
@@ -30,21 +44,19 @@ select::-ms-expand {
     width: auto;
 }
 
-/*label {*/
-/*text-align: left;*/
-/*width: 100%;*/
+
+
+/*.yellow-title p {*/
+    /*font-size: 25px !important;*/
+    /*margin-bottom: 7px !important;*/
 /*}*/
 
-.yellow-title p {
-    font-size: 25px !important;
-    margin-bottom: 7px !important;
-}
-
-.yellow-title span {
+.yellow-title span{
     display: block;
 }
 
-.yellow-title {
+
+.yellow-title{
     margin-bottom: 60px !important;
 }
 
@@ -54,18 +66,19 @@ select::-ms-expand {
 }
 
 /*.contact-form .container{*/
-/*padding: 35px 135px;*/
+    /*padding: 35px 135px;*/
 /*}*/
 
 /*.fa-angle-down {*/
-/*float: right;*/
-/*margin: 15px 0;*/
-/*font-size: 20px;*/
+    /*float: right;*/
+    /*margin: 15px 0;*/
+    /*font-size: 20px;*/
 /*}*/
 
 .drop-select {
     width: 100%;
 }
+
 
 .hint {
     color: #b0b0b0;
@@ -78,21 +91,21 @@ select::-ms-expand {
     vertical-align: middle;
 }
 
-.form-contact {
+.form-contact{
 
     margin-top: 200px;
 }
 
-textarea {
+textarea{
     height: 127px !important;
     resize: none;
 }
 
-.read-more {
+.read-more{
     margin-top: 40px;
 }
 
-.item {
+.item{
     margin-bottom: 25px;
 }
 

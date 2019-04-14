@@ -79,16 +79,29 @@
   "_SendEmail":"راسلنا عبر البريد الالكتروني",
   "_FieldRequired":"جميع الحقول مطلوبة",
   "_Name":"الاسم",
-  "_Emirate":"Emirate",
+  "_Emirate":"الإمارة",
   "_Email":"الاميل",
   "_Send":"ارسال",
   "_Description":"التوصيف",
   "_Phone":"رقم الهاتف:",
+  "_CodePhone":"00971",
   "_Fax":"فاكس:",
   "_FeedbackSuccess": "تم الارسال بنجاح",
   "_EmptyFiled": "لا يمكنك ترك هذا الحقل فارغ",
   "_EmailNotValid": "البريد الإلكتروني الذي أدخلته غير صالح",
-  "_TawseelServices": "Ministry oh human resource & emaratization (MOHRE) Taw-seel-services"
+  "_NotValidGSM": "رقم الهاتف المدخل غير صحيح",
+  "_AlFoujera": "الفجيرة",
+  "_RasAlkhema": "رأس الخيمة",
+  "_AumAlquewen": "أم القيوين",
+  "AlAeen": "العين",
+  "_AbuZabi": "أبو ظبي",
+  "_AlSharka": "الشارقة",
+  "_Dubai": "دبي",
+  "_ServiceLunch":"اطلاق الخدمة",
+  "_WhyTawseel":"لماذا توصيل" ,
+  "dummy":"انطلاق خدمات توصيل في اقرب وقت "
+
+
 
 
 

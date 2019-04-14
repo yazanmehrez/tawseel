@@ -37,7 +37,7 @@ export class ContactUsComponent implements OnInit {
 
             'name': [null, Validators.required],
             'email': [null, [Validators.required, Validators.pattern(this.isEmail)]],
-            'phone': [null, Validators.compose([Validators.required, Validators.minLength(14), Validators.maxLength(14)])],
+            'phone': [null, Validators.compose([Validators.required, Validators.minLength(9), Validators.maxLength(9)])],
             'message': [null, Validators.required],
             // 'emirate': '',
         });

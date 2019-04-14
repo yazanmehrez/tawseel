@@ -6,45 +6,118 @@
 
 <div class="media-center-section highlight">
     <div class="yellow-title">
-        <p>We have the best services</p>
+        <p [innerHtml] = "services?.Description"></p>
     </div>
-    <div class="user-card">
-        <div>
-            <img src="assets/images/investor.PNG" alt="">
-            <p>{{'_AreYouInvestor' | translate}}</p>
-        </div>
-        <div>
-            <img src="assets/images/agent.PNG" alt="">
-            <p>{{'_AreYouAgent' | translate}}</p>
-        </div>
-        <div>
-            <img src="assets/images/customer.PNG" alt="">
-            <p>{{'_AreYouCustomer' | translate}}</p>
+    <div>
+        <ng-container>
+            <!--<div *ngIf="i == videoIndex" [@fadeInOut]>-->
+            <div class="user-card" *ngIf="videoIndex == 0" [@fadeInOut]>
+                <div>
+                    <img src="assets/images/investor.PNG" alt="">
+                    <p>{{'_AreYouInvestor' | translate}}</p>
+                </div>
+                <div>
+                    <img src="assets/images/agent.PNG" alt="">
+                    <p>{{'_AreYouAgent' | translate}}</p>
+                </div>
+                <div>
+                    <img src="assets/images/customer.PNG" alt="">
+                    <p>{{'_AreYouCustomer' | translate}}</p>
+                </div>
+            </div>
+            <div class="user-card"  *ngIf="videoIndex == 1" [@fadeInOut]>
+                <div>
+                    <img src="assets/images/investor.PNG" alt="">
+                    <p>{{'_AreYouInvestor' | translate}}</p>
+                </div>
+                <div>
+                    <img src="assets/images/agent.PNG" alt="">
+                    <p>{{'_AreYouAgent' | translate}}</p>
+                </div>
+                <div>
+                    <img src="assets/images/customer.PNG" alt="">
+                    <p>{{'_AreYouCustomer' | translate}}</p>
+                </div>
+            </div>
+            <div class="user-card"  *ngIf="videoIndex == 2" [@fadeInOut]>
+                <div>
+                    <img src="assets/images/investor.PNG" alt="">
+                    <p>{{'_AreYouInvestor' | translate}}</p>
+                </div>
+                <div>
+                    <img src="assets/images/agent.PNG" alt="">
+                    <p>{{'_AreYouAgent' | translate}}</p>
+                </div>
+                <div>
+                    <img src="assets/images/customer.PNG" alt="">
+                    <p>{{'_AreYouCustomer' | translate}}</p>
+                </div>
+            </div>
+            <div class="user-card"  *ngIf="videoIndex == 3" [@fadeInOut]>
+                <div>
+                    <img src="assets/images/investor.PNG" alt="">
+                    <p>{{'_AreYouInvestor' | translate}}</p>
+                </div>
+                <div>
+                    <img src="assets/images/agent.PNG" alt="">
+                    <p>{{'_AreYouAgent' | translate}}</p>
+                </div>
+                <div>
+                    <img src="assets/images/customer.PNG" alt="">
+                    <p>{{'_AreYouCustomer' | translate}}</p>
+                </div>
+            </div>
+            <!--</div>-->
+        </ng-container>
+        <div class="controls">
+            <div *ngFor="let dot of videoSlider; let i = index" class="dot" (click)="videoIndex = i"
+                 [ngClass]="videoIndex == i ? 'active' : ''"></div>
         </div>
     </div>
+
+
+
+
 
 </div>
 
 <div class="banner_bottom c-feedback">
     <div class="yellow-title" style="text-align: center">
-        <p>Customers feedback</p>
+        <p [innerHtml]="feedback?.Title"></p>
     </div>
-    <p class="desc">
-        Lorem ipsum dolor sit amet consictotur apisimderr Lorem ipsum dolor sit amet consictotur apisimderr Lorem ipsum
-        dolor sit amet consictotur apisimderr
+    <p class="desc" [innerHtml]="feedback?.Content">
+
     </p>
     <div class="equal-x">
         <div class="feedback-slider">
-            <div class="item">
-                <img src="assets/images/banner4.jpg" width="100%">
-                <h3>Services Launch</h3>
-                <p>Lorem ipsum dolor sit amet consictotur apisimderr</p>
+            <div class="item"  >
+                <img src="assets/images/banner4.jpg" width="100%" *ngIf="videoIndex1 == 0" [@fadeInOut]>
+                <img src="assets/images/banner4.jpg" width="100%" *ngIf="videoIndex1 == 1" [@fadeInOut]>
+                <img src="assets/images/banner4.jpg" width="100%" *ngIf="videoIndex1 == 2" [@fadeInOut]>
+                <img src="assets/images/banner4.jpg" width="100%" *ngIf="videoIndex1 == 3" [@fadeInOut]>
+                <div class="controls">
+                    <div *ngFor="let dot of videoSlider; let i = index" class="dot" (click)="videoIndex1 = i"
+                         [ngClass]="videoIndex1 == i ? 'active' : ''"></div>
+                </div>
+                <h3>{{'_WhyTawseel' | translate}}</h3>
+                <p>{{'dummy' | translate}}</p>
+
             </div>
+
             <div class="item">
-                <img src="assets/images/banner4.jpg" width="100%">
-                <h3>Services Launch</h3>
-                <p>Lorem ipsum dolor sit amet consictotur apisimderr</p>
+                <img src="assets/images/banner4.jpg" width="100%"  *ngIf="videoIndex2 == 0" [@fadeInOut]>
+                <img src="assets/images/banner4.jpg" width="100%"  *ngIf="videoIndex2 == 1" [@fadeInOut]>
+                <img src="assets/images/banner4.jpg" width="100%"  *ngIf="videoIndex2 == 2" [@fadeInOut]>
+                <img src="assets/images/banner4.jpg" width="100%"  *ngIf="videoIndex2 == 3" [@fadeInOut]>
+                <div class="controls">
+                    <div *ngFor="let dot of videoSlider; let i = index" class="dot" (click)="videoIndex2 = i"
+                         [ngClass]="videoIndex2 == i ? 'active' : ''"></div>
+                </div>
+                <h3>{{'_ServiceLunch' | translate}}</h3>
+                <p>{{'dummy' | translate}}</p>
             </div>
+
+
         </div>
     </div>
 </div>

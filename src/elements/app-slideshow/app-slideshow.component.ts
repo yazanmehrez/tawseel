@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, Input, ViewChild} from '@angular/core';
 import * as $ from 'jquery';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
     selector: 'app-slideshow',
@@ -9,8 +10,16 @@ import * as $ from 'jquery';
 export class AppSlideshowComponent implements AfterViewInit {
     @ViewChild('slideshow') private slideshow: any;
     @Input() imageUrls;
+    private trans = {
+        learnMore: null,
 
-    constructor() {
+    };
+
+    constructor( private translate: TranslateService) {
+        translate.get(['_LearnMore']).subscribe(res => {
+            this.trans.learnMore = res._LearnMore;
+
+        });
     }
 
     ngAfterViewInit() {
@@ -30,5 +39,7 @@ export class AppSlideshowComponent implements AfterViewInit {
             $('<div><span class="slider-description">' + self.imageUrls[index].Description + '</span></div>').appendTo(this);
             $('<div><div class="read-more learn-more"><button><span>Learn More</span><img src="assets/images/arrow-read-more.png"></button></div></div>').appendTo(this);
         });
+
+        $('.learn-more span').text(this.trans.learnMore);
     }
 }

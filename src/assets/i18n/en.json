@@ -86,10 +86,22 @@
   "_Phone":"Phone:",
   "_Fax":"Fax:",
   "_Email":"Email:",
+  "_CodePhone":"00971",
   "_FeedbackSuccess": "sent succesfully",
   "_EmptyFiled": "You can't leave this field empty",
   "_EmailNotValid": "The email you have entered is not valid",
-  "_TawseelServices": "Ministry oh human resource & emaratization (MOHRE) Taw-seel-services"
+  "_NotValidGSM": "The phone you have entered is not valid",
+  "_AlFoujera": "Al Foujera",
+  "_RasAlkhema": "Ras Alkhema",
+  "_AumAlquewen": "Aum Alquewen",
+  "AlAeen": "Al aen",
+  "_AbuZabi": "Abu Dubai",
+  "_AlSharka": "Al Sharka",
+  "_Dubai": "Dubai",
+  "_ServiceLunch":"Service Launch",
+  "_WhyTawseel":"Why Tawseel",
+  "dummy":"Lorem ipsum dolor sit amet consictotur apisimderr"
+
 
 
 

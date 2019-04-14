@@ -403,6 +403,12 @@ app-contact-us .left-section {
     text-align: left;
 }
 
+app-contact-us .item label span {
+    padding-left: 15px;
+    text-align: right !important;
+}
+
+
 app-contact-us label {
     text-align: left;
     width: 100%;
@@ -430,7 +436,11 @@ app-contact-us .right-section {
 
 
 /*details*/
-.desktop-mohre{
+.desktop-mohre-f{
+    text-align: left !important;
+}
+
+.desktop-mohre {
     text-align: left !important;
     margin-bottom: 80px;
 }
@@ -479,3 +489,24 @@ app-news .news-card {
     padding: 8px 0;
     text-align: right;
 }
+
+
+/*media center*/
+
+app-media-center .feedback-slider .item {
+    width: 45%;
+    text-align: left;
+    margin: 20px;
+    display: inline-block;
+}
+
+app-media-center .yellow-title {
+    padding: 0 75px;
+}
+
+
+app-slider .information-container {
+    padding: 0 30%;
+    height: 12em;
+}
+

@@ -150,8 +150,12 @@ label {
     padding: 5px 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 0.75em;
+    font-size: 16px;
     font-weight: 600;
+}
+
+.navbar-nav.lang-switch a {
+    font-size: 0.75rem;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -2283,6 +2287,10 @@ p.copy-right a:hover {
 }
 
 .read-more button img {
+    transform: rotate(180deg);
+}
+
+.read-more button img {
     float: right;
     margin-right: 10px;
     height: 40px;
@@ -2449,8 +2457,7 @@ app-customer-registration .item {
     font-size: 20px;
 }
 
-
-.not-found{
+.not-found {
     font-size: 25px;
     color: #86888a;
     align-items: center;
