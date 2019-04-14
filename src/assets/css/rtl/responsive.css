@@ -267,7 +267,7 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
     p {
         font-size: 12px;
     }
@@ -307,8 +307,8 @@
     }
 
     #navbar {
-        padding: 10px 0;
-        width: 979px;
+        padding: 5px 0;
+        width: 73%;
         margin: auto;
         float: none;
     }

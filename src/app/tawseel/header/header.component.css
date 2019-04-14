@@ -1,8 +1,20 @@
+.head-cont h5 {
+    display: inline-block;
+    cursor: pointer;
+}
 
-
+.seperate {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 8px;
+    border-right: 1px solid #969292;
+    height: 14px;
+    vertical-align: sub;
+    font-weight: 100;
+}
 
 .top_header_one i, p, h6, .head-cont {
-    font-size: 10px;
+    font-size: 12px;
     display: inline-block;
     font-weight: 900;
     margin: 0 3px 3px 3px;

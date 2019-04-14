@@ -4,7 +4,7 @@
 </div>
 <app-breadcrumb [Breadcrumb]="['_Home','_JoinUs', '_OurCustomers']"></app-breadcrumb>
 
-<div class="container-equal">
+<div class="container-equal" *ngIf="customer">
     <div class="yellow-title"><p>{{customer?.Title}}</p></div>
     <div>
         <img [src]="customer?.MainImageFullURL" width="100%">

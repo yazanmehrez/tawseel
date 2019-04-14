@@ -4,12 +4,13 @@
         <div class="header-one-content">
             <div class="head-cont">
                 <i class="fa fa-lock"></i>
-                <h6>{{'_Login' | translate}}</h6>
+                <h5>{{'_Login' | translate}}</h5>
             </div>
-            |
+            <div class="seperate">
+            </div>
             <div class="head-cont">
                 <i class="fa fa-user"></i>
-                <h6>{{'_Register' | translate}}</h6>
+                <h5>{{'_Register' | translate}}</h5>
             </div>
         </div>
     </div>
@@ -61,8 +62,6 @@
                 </ul>
             </div>
             <div class="search">
-                <i class="fa fa-search"></i>
-                <input type="text" id="navbar-search" placeholder="{{'_Search' | translate }}">
                 <ul class="nav navbar-nav lang-switch">
                     <li class="dropdown">
                         <a class="dropdown-toggle ar" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -83,6 +82,10 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="searching">
+                    <input type="text" id="navbar-search" placeholder="{{'_Search' | translate }}">
+                    <i class="fa fa-search"></i>
+                </div>
             </div>
             <!--/.nav-collapse -->
         </div>

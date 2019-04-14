@@ -98,7 +98,7 @@ label {
 }
 
 .navbar-nav {
-    margin: 0;
+    margin: 0 30px;
 }
 
 .navbar-default {
@@ -111,12 +111,6 @@ label {
 .navbar-nav > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
-}
-
-.nav_top_fx_w3ls_agileinfo {
-    margin: 0 auto;
-    width: 93%;
-    padding: 0.5em 0;
 }
 
 .navbar-brand {
@@ -148,8 +142,8 @@ label {
 .navbar-nav > li > a {
     padding: 5px 15px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 16px;
+    letter-spacing: 0px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -1604,7 +1598,7 @@ p.copy-right a:hover {
     }
 
     .navbar-nav > li > a {
-        padding: 7px 15px;
+        padding: 5px 15px;
     }
 
     .top-buttons {
@@ -1717,9 +1711,9 @@ p.copy-right a:hover {
     }
 
     .navbar-nav > li > a {
-        padding: 7px 20px;
-        letter-spacing: 1px;
-        font-size: 0.75em;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        font-size: 12px;
         font-weight: 600;
     }
 
@@ -2248,27 +2242,59 @@ p.copy-right a:hover {
 }
 
 .navbar .search input {
-    float: right;
     padding: 5px 15px;
     border-radius: 25px;
+    width: 175px;
     margin: 0;
     border: 0;
 }
 
 .navbar .search i {
     position: relative;
-    float: right;
-    right: 35px;
-    top: 6px;
+    /* float: right; */
+    right: 30px;
+    /* top: 6px; */
     font-weight: 100;
     font-size: 17px;
 }
 
+@media (min-width: 768px) and (max-width: 1320px) {
+    nav #navbar {
+        display: flex !important;
+        justify-content: center;
+        margin: auto;
+        padding: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .search {
+        width: 50%;
+    }
+
+    .nav_top_fx_w3ls_agileinfo {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+    .navbar-nav > li > a {
+        padding: 5px 10px;
+    }
+}
+
 .lang-switch {
-    float: right;
+    display: inline-block;
     border: 1px solid white;
     border-radius: 25px;
-    margin: 0 10px;
+    vertical-align: bottom;
+    margin: 0 5px;
+}
+
+.searching {
+    display: inline-block;
+    margin-right: 35px;
 }
 
 .lang-options {
@@ -2401,7 +2427,7 @@ p.copy-right a:hover {
 }
 
 .sec-b p {
-    font-size: 15px;
+    font-size: 20px !important;
     font-family: 'sf-compact-display-bold', sans-serif;
     cursor: pointer;
 }
