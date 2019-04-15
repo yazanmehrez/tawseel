@@ -43,6 +43,7 @@ import { NewsComponent } from './tawseel/news/news.component';
 import { DetailsComponent } from './tawseel/details/details.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ToastrModule} from 'ngx-toastr';
+import { GeneralComponent } from './tawseel/general/general.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     direction: 'horizontal',
@@ -81,7 +82,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
         TermsConditionsComponent,
         FaqComponent,
         NewsComponent,
-        DetailsComponent
+        DetailsComponent,
+        GeneralComponent
     ],
     imports: [
         ReactiveFormsModule,

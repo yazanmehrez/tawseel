@@ -14,6 +14,7 @@ import {TermsConditionsComponent} from './tawseel/terms-conditions/terms-conditi
 import {FaqComponent} from './tawseel/faq/faq.component';
 import {NewsComponent} from './tawseel/news/news.component';
 import {DetailsComponent} from './tawseel/details/details.component';
+import {GeneralComponent} from './tawseel/general/general.component';
 
 const routes: Routes = [
         {
@@ -67,6 +68,10 @@ const routes: Routes = [
                 {
                     path: 'details/:id',
                     component: DetailsComponent
+                },
+                {
+                    path: 'more/:id',
+                    component: GeneralComponent
                 },
 
                 {

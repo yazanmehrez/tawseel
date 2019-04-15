@@ -2667,7 +2667,7 @@
 
     .yellow-title p {
         border-bottom: 3px solid #f6e392;
-        font-size: 20px !important;
+        font-size: 12px !important;
     }
 
     .work-card p {
@@ -3074,18 +3074,19 @@
         position: relative;
         float: none;
         left: 135px;
-        top: 27px;
+        top: -27px;
         font-weight: 100;
         font-size: 17px;
     }
 
     .lang-switch {
         float: none;
+        display: block !important;
         border: 1px solid white;
         border-radius: 25px;
-        margin-top: 20px;
-        margin-right: 0;
-        margin-left: 0;
+        margin-bottom: 20px;
+        margin-right: 8px;
+        margin-left: 8px
     }
 
     .nav > li {
@@ -3398,5 +3399,21 @@
         object-fit: cover;
         cursor: -webkit-grab;
         cursor: grab;
+    }
+
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0;
+    }
+
+    .social{
+        margin-top: 90px;
+    }
+
+    .searching{
+        margin-right: 8px;
+        margin-left: 8px;
+        display: block;
     }
 }

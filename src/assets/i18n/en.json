@@ -83,14 +83,12 @@
   "_Emirate":"Emirate",
   "_Send":"Send",
   "_Description":"Description",
-  "_Phone":"Phone",
   "_Fax":"Fax:",
   "_Email":"Email:",
   "_CodePhone":"00971",
   "_FeedbackSuccess": "sent succesfully",
   "_EmptyFiled": "You can't leave this field empty",
   "_EmailNotValid": "The email you have entered is not valid",
-  "_NotValidGSM": "The phone you have entered is not valid",
   "_AlFoujera": "Al Foujera",
   "_RasAlkhema": "Ras Alkhema",
   "_AumAlquewen": "Aum Alquewen",
@@ -104,7 +102,8 @@
   "_FrequentlyAskedQuestions":"Frequently Asked Questions.",
   "_DealingServiceFAQ":"Dealing with th service FAQ.",
   "_NotValidGSM": "The phone you have entered is not valid",
-  "_LicensingFAQ":"Licensing FAQ."
+  "_LicensingFAQ":"Licensing FAQ.",
+  "_More":"More"
 
 
 

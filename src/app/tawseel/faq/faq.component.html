@@ -12,15 +12,15 @@
     <div class="sections">
         <ul class="accordion">
             <p class="title-faq">{{'_DealingServiceFAQ' | translate}}</p>
-            <li class="toggle" *ngFor="let item of dealingSevices; let i = index">
-                <div class="head active">
+            <li class="toggle" *ngFor="let item of dealingSevices; let i = index; let firstEl = first">
+                <div class="head" [ngClass]="firstEl ? 'active' : ''">
                     <div class="num">{{i + 1}}</div>
                     <a class="toggle">
                         {{item.Question}}
                     </a>
-                    <i class="fa fa-angle-up"></i>
+                    <i class="fa" [ngClass]="firstEl ? 'fa-angle-up' : 'fa-angle-down'"></i>
                 </div>
-                <p class="inner show" [innerHtml]="item.Answer">
+                <p class="inner" [ngClass]="firstEl ? 'show' : ''" [innerHtml]="item.Answer">
 
                 </p>
             </li>
@@ -31,15 +31,15 @@
     <div class="sections">
         <ul class="accordion">
             <p class="title-faq">{{'_LicensingFAQ' | translate}}</p>
-            <li class="toggle" *ngFor="let item of licences; let i = index">
-                <div class="head active">
+            <li class="toggle" *ngFor="let item of licences; let i = index; let firstEl = first">
+                <div class="head" [ngClass]="firstEl ? 'active' : ''">
                     <div class="num">{{i + 1}}</div>
                     <a class="toggle">
                         {{item.Question}}
                     </a>
-                    <i class="fa fa-angle-up"></i>
+                    <i class="fa" [ngClass]="firstEl ? 'fa-angle-up' : 'fa-angle-down'"></i>
                 </div>
-                <p class="inner show" [innerHtml]="item.Answer">
+                <p class="inner" [ngClass]="firstEl ? 'show' : ''" [innerHtml]="item.Answer">
 
                 </p>
             </li>

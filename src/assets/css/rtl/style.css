@@ -114,12 +114,6 @@ label {
     padding-bottom: 25px;
 }
 
-.nav_top_fx_w3ls_agileinfo {
-    margin: 0 auto;
-    width: 93%;
-    padding: 0.5em 0;
-}
-
 .navbar-brand {
     float: right;
     height: 50px;
@@ -287,6 +281,10 @@ span.desc {
 .carousel-caption a:hover {
     background: #ee4f4f;
     border: 1px solid #ee4f4f;
+}
+
+.image-title img {
+    transform: scaleX(-1);
 }
 
 .codes {
@@ -2298,9 +2296,9 @@ p.copy-right a:hover {
 
 .read-more button span {
     font-size: 15px;
-    float: left;
+    float: right;
     margin-top: 8px;
-    margin-left: 40px;
+    margin-right: 25px;
     font-family: 'dubai-regular', sans-serif;
 }
 
@@ -2483,19 +2481,19 @@ app-customer-registration .item {
     }
 
 }
+
 /*nav #navbar {*/
-    /*display: flex !important;*/
-    /*justify-content: center;*/
-    /*margin: auto;*/
-    /*padding: 5px 0;*/
-    /*width: 100%;*/
-    /*text-align: center;*/
+/*display: flex !important;*/
+/*justify-content: center;*/
+/*margin: auto;*/
+/*padding: 5px 0;*/
+/*width: 100%;*/
+/*text-align: center;*/
 /*}*/
 
 nav .search {
     /*width: 50%;*/
 }
-
 
 .lang-switch {
     float: right;

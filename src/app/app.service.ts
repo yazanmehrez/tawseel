@@ -12,6 +12,7 @@ export class AppService {
     currentLanguage: string;
     topImage: string;
     timeWork: string;
+    contentMore: any;
     public  loading: boolean = false;
 
     constructor(private translate: TranslateService, public api: DataService) {

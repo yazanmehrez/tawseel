@@ -1,0 +1,20 @@
+<div class="im-t image-title">
+  <img [src]="_appService.topImage" alt="">
+  <span>{{'_More' | translate | nbsp | uppercase }}</span>
+</div>
+<app-breadcrumb [Breadcrumb]="['_Home','_More']"></app-breadcrumb>
+
+<div class="container-equal">
+
+  <div class="photo">
+    <img [src]="contentMore?.FullUrl">
+  </div>
+  <div class="title">
+    <h3>{{contentMore?.Title}}</h3>
+  </div>
+  <div style="border-bottom: 1px solid #c1c1c1" [innerHTML]="contentMore?.Description">
+  </div>
+  <div class="yellow-title sec-b" routerLink="/home">
+    <p>{{'_Back' | translate}}</p>
+  </div>
+</div>

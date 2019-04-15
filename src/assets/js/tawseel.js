@@ -1,6 +1,5 @@
 $(document).ready(function () {
-
-    $('.toggle').click(function (e) {
+    $(document).on('click', '.toggle', function (e) {
         e.preventDefault();
 
         let $this = $(this);
@@ -19,6 +18,7 @@ $(document).ready(function () {
             // $this.next().slideToggle(350);
         }
     });
+
 
     $(document).mouseup(function (e) {
         let container = $('#toast-container');

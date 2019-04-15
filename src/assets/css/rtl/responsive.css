@@ -1484,8 +1484,8 @@
 
     .navbar .search i {
         position: relative;
-        float: none;
-        left: 150px;
+        float: left;
+        right: -12px;;
         top: -27px;
         font-weight: 100;
         font-size: 17px;
@@ -2333,7 +2333,7 @@
         position: relative;
         float: none;
         right: 135px;
-        top: 27px;
+        top: -23px;
         font-weight: 100;
         font-size: 17px;
     }
@@ -2792,7 +2792,7 @@
 
     .yellow-title p {
         border-bottom: 3px solid #f6e392;
-        font-size: 15px !important;
+        font-size: 12px !important;
     }
 
     .work-card p {
@@ -2834,7 +2834,7 @@
     .read-more button img {
         float: left;
         margin-left: 10px;
-        height: 21px;
+        height: 23px;
     }
 
     .read-more button span {
@@ -3199,18 +3199,19 @@
         position: relative;
         float: none;
         right: 135px;
-        top: 27px;
+        top: -27px;
         font-weight: 100;
         font-size: 17px;
     }
 
     .lang-switch {
         float: none;
+        display: block !important;
         border: 1px solid white;
         border-radius: 25px;
-        margin-top: 20px;
-        margin-left: 0;
-        margin-right: 0;
+        margin-bottom: 20px;
+        margin-left: 8px;
+        margin-right: 8px
     }
 
     .nav > li {
@@ -3325,11 +3326,18 @@
         text-align: center;
     }
 
-    /*app-home .info-card {*/
-    /*padding: 10px 0px;*/
-    /*text-align: center;*/
-    /*margin: 0 0 0 95px;*/
-    /*}*/
+    app-contact-us .yellow-title p {
+        font-size: 19px !important;
+        margin-bottom: 7px !important;
+        margin-top: 20px;
+    }
+
+    app-home .info-card {
+        padding: 10px 0px;
+        text-align: center;
+        margin: 0 0 0 95px;
+    }
+
     .complaints, .suggestion {
         background-position: center;
     }
@@ -3398,8 +3406,8 @@
     .details-img {
         border-radius: 50%;
         margin-top: 100px;
-        width: 200px !important;
-        height: 200px !important;
+        width: 230px !important;
+        height: 230px !important;
         box-shadow: -24px 8px 1px #f1f1f1;
     }
 
@@ -3407,7 +3415,7 @@
         color: #494949;
         font-size: 24px;
         position: absolute;
-        top: 33%;
+        top: 34%;
         right: 5%;
         font-weight: 800;
         border-bottom: 5px solid yellow;
@@ -3436,24 +3444,21 @@
     }
 
     .input25 {
+
         border-radius: 20px;
         border: none;
-        padding: 0 0px;
-        line-height: 3.5;
+        padding: 0 4px;
+        line-height: 2.5;
         height: 45px;
-        font-size: 12px !important;
+        width: 22% !important;
+        margin-bottom: 5px;
+        font-size: 14px !important;
+        margin-left: 5px;
         -webkit-box-shadow: -1px 2px 1px #e0d7d7;
         box-shadow: -1px 2px 1px #e0d7d7;
         background: #fff;
         display: inline-block !important;
-        margin: 5px;
-        width: 22% !important;
-        text-align: center !important;
-    }
 
-    app-contact-us .yellow-title p {
-        font-size: 20px !important;
-        margin-bottom: 7px !important;
     }
 
     app-media-center .yellow-title {
@@ -3461,9 +3466,9 @@
     }
 
     app-media-center .feedback-slider .item {
-        width: 145%;
+        width: 75%;
         text-align: right;
-        margin-right: -25px;
+         margin-right:0;
         margin-top: 18px;
         display: inline-block;
     }
@@ -3478,66 +3483,25 @@
         margin-top: 117px;
     }
 
-    app-media-center .user-card div {
 
+
+    app-media-center .user-card div {
         display: inline-block;
         background-color: #fff;
         padding: 0 5px;
         height: 340px;
         width: 269px;
+        margin: 0;
         margin-left: 0px;
         border-radius: 10px;
         margin-bottom: 22px;
     }
 
-    user-card p {
+    .user-card p {
         font-size: 18px;
         font-weight: normal;
         color: #494949;
         font-family: 'sf-compact-display-medium', sans-serif;
-    }
-
-    app-media-center .feedback-slider .item {
-        width: 100%;
-        text-align: right;
-        margin-right: -25px;
-        margin-top: 18px;
-        display: inline-block;
-    }
-
-    app-media-center .yellow-title {
-        padding: 0 20px !important;
-        margin-top: 117px;
-        text-align: center;
-    }
-
-    app-media-center .user-card div {
-        display: inline-block;
-        background-color: #fff;
-        padding: 0px 5px;
-        height: 340px;
-        width: 258px;
-        margin-left: 0;
-        margin-right: 0;
-        border-radius: 10px;
-        margin-bottom: 22px;
-    }
-
-    app-media-center .feedback-slider .item {
-        width: 100%;
-        text-align: right;
-        margin: 0;
-        display: inline-block;
-        padding: 20px;
-    }
-
-    .read-more button span {
-        font-size: 12px;
-        float: right;
-        margin-top: 3px;
-        margin-right: 20px;
-        margin-left: 10px;
-        font-family: 'sf-compact-display-medium';
     }
 
     .swiper-slide img {
@@ -3566,4 +3530,31 @@
         cursor: grab;
     }
 
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0;
+    }
+
+    .social{
+        margin-top: 90px;
+    }
+
+    .searching{
+        margin-left: 8px;
+        margin-right: 8px;
+        display: block;
+    }
+
+    .read-more button span {
+        font-size: 9px;
+        float: left;
+        margin-top: 7px;
+        margin-left: 30px;
+        font-family: 'sf-compact-display-medium';
+    }
+
+    .col-30 {
+        width: 100%;
+    }
 }
