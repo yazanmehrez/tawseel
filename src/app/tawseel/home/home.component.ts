@@ -47,6 +47,7 @@ export class HomeComponent implements OnInit {
             this.getMainSliderData();
             this.searchNews(0);
             this.getAboutData();
+            this.getHomePageData();
         });
 
 
@@ -65,18 +66,18 @@ export class HomeComponent implements OnInit {
         });
     }
 
-    // getHomePageData() {
-    //     this.appendNews = false;
-    //     this.appendXslider = false;
-    //     this._appService.api.getHomePageService().subscribe(response => {
-    //         this.newsSlider = response['payload'][0]['RelatedEntities'];
-    //         this.xSlider = response['payload'][1]['RelatedEntities'];
-    //         this.videoSlider = response['payload'][2]['RelatedEntities'];
-    //     }, (error) => console.log(error), () => {
-    //         this.appendNews = true;
-    //         this.appendXslider = true;
-    //     });
-    // }
+    getHomePageData() {
+        this.appendNews = false;
+        this.appendXslider = false;
+        this._appService.api.getHomePageService().subscribe(response => {
+            // this.newsSlider = response['payload'][0]['RelatedEntities'];
+            this.xSlider = response['payload'][1]['RelatedEntities'];
+            this.videoSlider = response['payload'][2]['RelatedEntities'];
+        }, (error) => console.log(error), () => {
+            this.appendNews = true;
+            this.appendXslider = true;
+        });
+    }
 
 
     searchNews(pageNumber) {
@@ -104,7 +105,6 @@ export class HomeComponent implements OnInit {
     }
 
 
-
     getAboutData() {
         this._appService.api.getAboutDataHome().subscribe(response => {
             this.about = response['payload'][0];
@@ -112,8 +112,8 @@ export class HomeComponent implements OnInit {
     }
 
     ngOnInit() {
-
-        window.scrollTo(0,0);
+        this.getHomePageData();
+        window.scrollTo(0, 0);
         this.getMainSliderData();
         this.searchNews(0);
         this.getAboutData();

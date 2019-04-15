@@ -14,7 +14,7 @@
   "_Location": "الموقع",
   "_AgentServes": "وكيل يخدم ",
   "_Customer": "العميل",
-  "_ReadMore": "قراءة المزيد",
+  "_ReadMore": "اقرأ المزيد",
   "_LatestNews": "آخر الأخبار",
   "_LearnMore": "تعلم المزيد",
   "_About": "عن توصيل",
@@ -102,7 +102,10 @@
   "_FrequentlyAskedQuestions":"أسئلة مكررة.",
   "_DealingServiceFAQ":"أسئلة شائعة حول الخدمة.",
   "_LicensingFAQ":"أسئلة شائعة حول الترخيص.",
-  "_More":"المزيد"
+  "_More":"المزيد",
+  "_ApplyMore":"تقديم"
+
+
 
 
 

@@ -1637,14 +1637,17 @@
         text-align: left;
     }
 
-    app-news .news-card {
-        width: 92.9%;
-        padding: 15px;
-        display: inline-block;
-        margin: 15px;
-        background-color: #f5f4f4;
-        border-radius: 20px;
-        cursor: pointer;
+    .im-t span {
+        color: #494949;
+        font-size: 33px;
+        position: absolute;
+        top: 40% !important;
+        left: 5%;
+        font-weight: 800;
+        border-bottom: 5px solid yellow;
+        line-height: 0.9;
+        width: 35px;
+        font-family: 'sf-compact-display-heavy', sans-serif;
     }
 
     app-contact-us .left-section {
@@ -1672,18 +1675,7 @@
         box-shadow: -24px 8px 1px #f1f1f1;
     }
 
-    .im-t span {
-        color: #494949;
-        font-size: 33px;
-        position: absolute;
-        top: 34%;
-        left: 5%;
-        font-weight: 800;
-        border-bottom: 5px solid yellow;
-        line-height: 0.9;
-        width: 35px;
-        font-family: 'sf-compact-display-heavy', sans-serif;
-    }
+
 
     .not-found {
         font-size: 25px;
@@ -2555,9 +2547,9 @@
 
     .im-t span {
         color: #494949;
-        font-size: 30px;
+        font-size: 20px;
         position: absolute;
-        top: 34%;
+        top: 43%;
         right: 5%;
         font-weight: 800;
         border-bottom: 5px solid yellow;
@@ -3413,9 +3405,9 @@
 
     .im-t span {
         color: #494949;
-        font-size: 24px;
+        font-size: 20px;
         position: absolute;
-        top: 34%;
+        top: 40%;
         right: 5%;
         font-weight: 800;
         border-bottom: 5px solid yellow;
