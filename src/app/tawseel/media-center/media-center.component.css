@@ -1,8 +1,7 @@
 .highlight {
     margin: 25px 0;
+    padding: 3em 0 5px 0em;
 }
-
-
 
 .user-card img {
     margin: 30px auto;
@@ -25,52 +24,56 @@
 }
 
 /*.user-card div {*/
-    /*display: inline-block;*/
-    /*background-color: #fff;*/
-    /*padding: 0 5px;*/
-    /*height: 340px;*/
-    /*width: 352px;*/
-    /*margin-right: 51px;*/
-    /*border-radius: 10px;*/
+/*display: inline-block;*/
+/*background-color: #fff;*/
+/*padding: 0 5px;*/
+/*height: 340px;*/
+/*width: 352px;*/
+/*margin-right: 51px;*/
+/*border-radius: 10px;*/
 /*}*/
 
 .feedback-slider {
     text-align: center;
 }
 
-
 .feedback-slider .item img {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     margin-bottom: 15px;
+    box-shadow: 9px 17px 5px -5px rgba(0, 0, 0, .06), 0 21px 16px 0 rgba(0, 0, 0, .06), 0 10px 19px 0 rgba(0, 0, 0, .08);
 }
 
 .c-feedback .yellow-title {
     text-align: center;
 }
 
-
-
 .dot {
-    background-color: #b0afaf;
+    background-color: #fff;
+    border: 2px solid gray;
     width: 10px;
     height: 10px;
     display: inline-block;
     margin: 0 5px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.controls{
-    /*margin-top: 55px !important;*/
+.controls {
     text-align: center;
 }
 
+.media-center-section .controls {
+    margin: 30px 0;
+}
+
 .dot.active {
-    background-color: #f7d231;
+    background-color: #6f6b59;
+    width: 13px;
+    height: 13px;
+    border: none;
+    vertical-align: middle;
 }
 
 .slider-facebook .fa-play-circle-o {
