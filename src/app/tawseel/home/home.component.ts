@@ -67,15 +67,15 @@ export class HomeComponent implements OnInit {
     }
 
     getHomePageData() {
-        this.appendNews = false;
-        this.appendXslider = false;
+        // this.appendNews = false;
+        // this.appendXslider = false;
         this._appService.api.getHomePageService().subscribe(response => {
             // this.newsSlider = response['payload'][0]['RelatedEntities'];
             this.xSlider = response['payload'][1]['RelatedEntities'];
             this.videoSlider = response['payload'][2]['RelatedEntities'];
         }, (error) => console.log(error), () => {
-            this.appendNews = true;
-            this.appendXslider = true;
+            // this.appendNews = true;
+            // this.appendXslider = true;
         });
     }
 
