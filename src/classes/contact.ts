@@ -4,6 +4,7 @@ export class Contact {
     phone: string;
     email: string;
     FeedType: string;
+    emirate: string;
 
 
 }

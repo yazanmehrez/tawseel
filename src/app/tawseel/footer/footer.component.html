@@ -15,8 +15,7 @@
                 <i class="fa fa-clock-o"></i>
             </div>
             <div class="time-details">
-                <span>{{'_SundayToThursday' | translate}}<br>
-               {{'_Time'  | translate}}</span>
+                <span [innerHtml]="_appService.timeWork"></span>
             </div>
         </div>
         <div class="item quick-links">

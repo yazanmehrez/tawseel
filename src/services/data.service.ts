@@ -96,6 +96,18 @@ export class DataService {
             environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
     }
 
+    getFAQDealingService(): Observable<Object> {
+        return this.api.getGeneralPage('dealing',
+            environment.API_FAQ_Content.ServiceName,
+            environment.API_FAQ_Content.SendFeedBackToClient);
+    }
+
+    getFAQLicenceService(): Observable<Object> {
+        return this.api.getGeneralPage('licensing',
+            environment.API_FAQ_Content.ServiceName,
+            environment.API_FAQ_Content.SendFeedBackToClient);
+    }
+
 
 }
 

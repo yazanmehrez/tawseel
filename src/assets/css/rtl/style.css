@@ -2247,7 +2247,7 @@ p.copy-right a:hover {
 }
 
 .navbar .search input {
-    float: left;
+    float: right;
     padding: 5px 15px;
     border-radius: 25px;
     margin: 0;
@@ -2256,7 +2256,7 @@ p.copy-right a:hover {
 
 .navbar .search i {
     position: relative;
-    float: left;
+    float: right;
     right: -35px;
     top: 6px;
     font-weight: 100;
@@ -2462,4 +2462,44 @@ app-customer-registration .item {
     color: #86888a;
     align-items: center;
     margin: 45px 0 -24px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1320px) {
+    nav #navbar {
+        display: flex !important;
+        justify-content: center;
+        margin: auto;
+        padding: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .search {
+        width: 50%;
+    }
+
+    .nav_top_fx_w3ls_agileinfo {
+        width: 100%;
+    }
+
+}
+/*nav #navbar {*/
+    /*display: flex !important;*/
+    /*justify-content: center;*/
+    /*margin: auto;*/
+    /*padding: 5px 0;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+/*}*/
+
+nav .search {
+    /*width: 50%;*/
+}
+
+
+.lang-switch {
+    float: right;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 0 10px;
 }

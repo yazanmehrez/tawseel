@@ -83,7 +83,7 @@
   "_Emirate":"Emirate",
   "_Send":"Send",
   "_Description":"Description",
-  "_Phone":"Phone:",
+  "_Phone":"Phone",
   "_Fax":"Fax:",
   "_Email":"Email:",
   "_CodePhone":"00971",
@@ -100,7 +100,13 @@
   "_Dubai": "Dubai",
   "_ServiceLunch":"Service Launch",
   "_WhyTawseel":"Why Tawseel",
-  "dummy":"Lorem ipsum dolor sit amet consictotur apisimderr"
+  "dummy":"Lorem ipsum dolor sit amet consictotur apisimderr",
+  "_FrequentlyAskedQuestions":"Frequently Asked Questions.",
+  "_DealingServiceFAQ":"Dealing with th service FAQ.",
+  "_NotValidGSM": "The phone you have entered is not valid",
+  "_LicensingFAQ":"Licensing FAQ."
+
+
 
 
 

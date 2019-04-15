@@ -112,6 +112,8 @@ export class HomeComponent implements OnInit {
     }
 
     ngOnInit() {
+
+        window.scrollTo(0,0);
         this.getMainSliderData();
         this.searchNews(0);
         this.getAboutData();

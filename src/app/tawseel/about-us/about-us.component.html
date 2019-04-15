@@ -1,5 +1,5 @@
 <div class="im-t image-title">
-    <img src="assets/images/investor-title.png" alt="">
+    <img [src]="_appService.topImage" alt="">
     <span>{{'_JoinUs' | translate | nbsp | uppercase }}</span>
 </div>
 <app-breadcrumb [Breadcrumb]="['_Home','_AboutTaw-Seel']"></app-breadcrumb>
@@ -56,7 +56,7 @@
             </div>
             <div class="title-p">
                 <div>
-                    <h3>{{about.Title}}</h3>
+                    <h3>{{about?.Title}}</h3>
                 </div>
                 <p [innerHtml]="about?.Content"></p>
             </div>
@@ -74,7 +74,9 @@
                 </p>
             </div>
         </div>
-    </div><div class="yellow-title sec-b">
+    </div>
+
+    <div class="yellow-title sec-b" routerLink="/home">
     <p>{{'_Back' | translate}}</p>
 </div>
 

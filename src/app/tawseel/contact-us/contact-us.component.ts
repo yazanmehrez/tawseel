@@ -39,7 +39,7 @@ export class ContactUsComponent implements OnInit {
             'email': [null, [Validators.required, Validators.pattern(this.isEmail)]],
             'phone': [null, Validators.compose([Validators.required, Validators.minLength(9), Validators.maxLength(9)])],
             'message': [null, Validators.required],
-            // 'emirate': '',
+            'emirate': [null, Validators.required],
         });
 
 
@@ -57,6 +57,7 @@ export class ContactUsComponent implements OnInit {
         this.feedback.description = this.feedbackForm.controls.message.value;
         this.feedback.phone = this.feedbackForm.controls.phone.value;
         this.feedback.email = this.feedbackForm.controls.email.value;
+        this.feedback.emirate = this.feedbackForm.controls.emirate.value;
         console.log(this.feedback);
         this._appService.api.sendFeedbackService(this.feedback)
             .subscribe(response => {
@@ -93,13 +94,7 @@ export class ContactUsComponent implements OnInit {
         });
     }
 
-    clear() {
-        this.feedback.phone = '';
-        this.feedback.email = '';
-        this.feedback.description = '';
-        this.feedback.name = '';
 
-    }
 
     ngOnInit() {
         window.scrollTo(0, 0);

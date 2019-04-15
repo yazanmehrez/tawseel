@@ -10,6 +10,8 @@ import {st} from '@angular/core/src/render3';
 export class AppService {
     public language = new BehaviorSubject<string>(null);
     currentLanguage: string;
+    topImage: string;
+    timeWork: string;
     public  loading: boolean = false;
 
     constructor(private translate: TranslateService, public api: DataService) {

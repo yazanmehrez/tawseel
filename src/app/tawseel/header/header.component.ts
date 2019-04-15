@@ -22,6 +22,14 @@ export class HeaderComponent implements OnInit {
     getNavBarData() {
         this._appService.api.getNavBarService().subscribe(response => {
             this.navbar = response['payload'];
+
+            this.navbar.forEach(item => {
+                if (item.UniqueName == 'home') {
+
+                    this._appService.topImage = item.MainImageFullURL;
+                    this._appService.timeWork = item.Content;
+                }
+            });
         });
     }
 

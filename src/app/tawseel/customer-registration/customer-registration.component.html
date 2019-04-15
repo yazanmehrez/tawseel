@@ -1,5 +1,5 @@
 <div class="im-t image-title">
-    <img src="assets/images/investor-title.png" alt="">
+    <img [src]="_appService.topImage" alt="">
     <span>{{'_JoinUs' | translate | nbsp | uppercase}}</span>
 </div>
 <app-breadcrumb [Breadcrumb]="['_Home','_JoinUs', '_OurCustomers','_CustomerRegistration']"></app-breadcrumb>
@@ -129,7 +129,7 @@
     </div>
 
 
-    <div class="yellow-title sec-b">
+    <div class="yellow-title sec-b" routerLink="/home">
         <p>{{'_Back' | translate}}</p>
     </div>
 </div>

@@ -25,6 +25,12 @@ export const environment = {
 
     },
 
+    API_FAQ_Content: {
+        ServiceName: 'faqrestservice.svc',
+        SendFeedBackToClient: 'GetFAQByCategoryUniqueName',
+
+    },
+
 };
 
 /*

@@ -28,6 +28,7 @@ export class MediaCenterComponent implements OnInit {
     videoIndex2: number = 0;
     mainSlider = [];
     newsSlider = [];
+    newsListSlider = [];
     xSlider = [];
     videoSlider = [];
     public feedback: any;
@@ -102,7 +103,7 @@ export class MediaCenterComponent implements OnInit {
         this._appService.api.getNewsService(this.news)
             .subscribe(response => {
                 this._appService.loading = false;
-                this.newsSlider = response['Records'];
+                this.newsListSlider = response['Records'];
 
             },
                 (error) => console.log(error), () => {

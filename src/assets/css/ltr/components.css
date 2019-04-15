@@ -346,6 +346,7 @@ app-contact-us .left-section {
 app-contact-us .item label span {
     padding-left: 15px;
     text-align: left !important;
+    display: inline-block;
 }
 
 app-contact-us label {
@@ -403,10 +404,6 @@ app-contact-us .left-section {
     text-align: left;
 }
 
-app-contact-us .item label span {
-    padding-left: 15px;
-    text-align: right !important;
-}
 
 
 app-contact-us label {
@@ -510,3 +507,38 @@ app-slider .information-container {
     height: 12em;
 }
 
+app-faq .accordion li {
+    list-style: none;
+    border-radius: 0;
+    text-align: left;
+    border: 1px solid rgba(230, 230, 230, 0.98);
+}
+
+.title-faq{
+    text-align: left;
+    font-size: 23px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+.mat-card-actions, .mat-card-content, .mat-card-subtitle {
+    display: block;
+    margin-bottom: 16px;
+    padding: 0 386px;
+}
+
+
+app-terms-conditions .desktop-mohre{
+    text-align: left !important;
+    margin-bottom: 80px;
+}
+
+app-media-center
+.user-card p {
+    font-size: 25px;
+    font-weight: normal;
+    color: #494949;
+    font-family: 'sf-compact-display-medium', sans-serif;
+}

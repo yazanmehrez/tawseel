@@ -1,5 +1,5 @@
-@media (min-width: 1440px) {
-    p {
+@media (min-width: 1441px) {
+    p , span{
         font-size: 18px;
     }
 
@@ -194,13 +194,15 @@
     }
 
     app-news .news-card {
-        width: 28.9%;
+        width: 21.9%;
+        height: 440px;
         padding: 15px;
         display: inline-block;
         margin: 15px;
         background-color: #f5f4f4;
         border-radius: 20px;
         cursor: pointer;
+        vertical-align: top;
 
     }
 
@@ -244,11 +246,17 @@
         cursor: -webkit-grab;
         cursor: grab;
     }
+
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 386px;
+    }
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
     p {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     h1,
@@ -457,10 +465,9 @@
         background-color: #fff;
         padding: 0 5px;
         height: 340px;
-        width: 270px;
-        margin-right: 37px;
+        width: 340px;
+        margin: 0 20px;
         border-radius: 10px;
-        /* text-align: center; */
     }
 
     app-media-center .c-feedback .desc {
@@ -491,6 +498,12 @@
         object-fit: cover;
         cursor: -webkit-grab;
         cursor: grab;
+    }
+
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 270px;
     }
 }
 
@@ -924,6 +937,12 @@
         object-fit: cover;
         cursor: -webkit-grab;
         cursor: grab;
+    }
+
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 40px;
     }
 }
 
@@ -1707,6 +1726,16 @@
         cursor: grab;
     }
 
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 3px;
+    }
+
+    .social{
+        margin-top: 75px;
+    }
+
 }
 
 @media (min-width: 321px) and (max-width: 424px) {
@@ -1807,7 +1836,7 @@
 
     .yellow-title p {
         border-bottom: 3px solid #f6e392;
-        font-size: 11px !important;
+        font-size: 15px !important;
     }
 
     .work-card p {
@@ -2476,10 +2505,10 @@
         height: 12em;
     }
 
-    app-media-center .yellow-title {
-        padding: 0 75px;
-        margin-top: 78px;
-    }
+    /*app-media-center .yellow-title {*/
+        /*padding: 0 75px;*/
+        /*margin-top: 0px;*/
+    /*}*/
 
     .swiper-slide img {
         border-radius: 15px;
@@ -2507,6 +2536,37 @@
         cursor: grab;
     }
 
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 5px;
+    }
+
+    .social{
+        margin-top: 90px;
+    }
+
+    app-media-center .user-card div {
+        display: inline-block;
+        background-color: #fff;
+        padding: 0 5px;
+        height: 300px;
+        width: 300px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+   app-media-center .user-card p {
+        font-size: 15px;
+        font-weight: normal;
+        color: #494949;
+        font-family: 'sf-compact-display-medium', sans-serif;
+    }
+
+   app-media-center .back{
+       padding: 95px 0 0 15px
+   }
 }
 
 @media (max-width: 320px) {

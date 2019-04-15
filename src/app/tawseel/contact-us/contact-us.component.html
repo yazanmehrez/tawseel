@@ -1,5 +1,5 @@
 <div class="im-t image-title">
-    <img src="assets/images/investor-title.png" alt="">
+    <img [src]="_appService.topImage" alt="">
     <span>{{'_ContactUs' | translate | nbsp | uppercase }}</span>
 </div>
 <app-breadcrumb [Breadcrumb]="['_Home','_ContactUs']"></app-breadcrumb>
@@ -15,7 +15,7 @@
 
             <div class="details">
 
-                <h4>{{contact.Description}}</h4>
+                <h3>{{contact.Description}}</h3>
 
                 <div class="info">
                     <span><i class="fa fa-fax"></i></span>
@@ -53,7 +53,7 @@
                     <div class="col-sm-6">
                         <div class="item">
                             <label>
-                                <span>{{'_Name' | translate}} </span>
+                                <span>{{'_Name' | translate}} <span class="required">*</span></span>
                                 <input type="text" formControlName="name" name="name">
                                 <div *ngIf="feedbackForm.controls['name'].invalid && (feedbackForm.controls['name'].dirty || feedbackForm.controls['name'].touched)">
                                     <div *ngIf="feedbackForm.controls['name'].errors.required">
@@ -66,7 +66,7 @@
 
                         <div class="item">
                             <label>
-                                <span>{{'_Phone' | translate}}</span>
+                                <span>{{'_Phone' | translate}}<span class="required">*</span></span>
                                 <div class="phone-section" style="direction: ltr">
                                 <span class="input25">{{'_CodePhone' | translate}}</span>
                                 <input type="text" class="input70" formControlName="phone" name="phone" type="number" pattern="^[0-9]+$" onKeyPress="if(this.value.length==9) return false;">
@@ -75,8 +75,8 @@
                                     <div *ngIf="feedbackForm.controls['phone'].errors.required">
                                         {{'_EmptyFiled' | translate}}                                    </div>
                                 </div>
-                                <div class="alert"
-                                     *ngIf="feedbackForm.controls['phone'].errors.minlength && feedbackForm.controls['phone'].touched">
+
+                                <div *ngIf=" feedbackForm.controls['phone'].touched  && feedbackForm.controls['phone'].hasError ">
                                     {{'_NotValidGSM'|translate }}
                                 </div>
 
@@ -88,7 +88,7 @@
                     <div class="col-sm-6">
                         <div class="item">
                             <label>
-                                <span>{{'_Email' | translate}}</span>
+                                <span>{{'_Email' | translate}}<span class="required">*</span></span>
                                 <input type="text" formControlName="email" name="email">
                                 <div *ngIf="feedbackForm.controls['email'].invalid && (feedbackForm.controls['email'].dirty || feedbackForm.controls['email'].touched)">
                                     <div *ngIf="feedbackForm.controls['email'].errors.required">
@@ -102,24 +102,33 @@
                         </div>
                         <div class="item">
                             <label>
-                                <span>{{'_Emirate' | translate}}</span>
+                                <span>{{'_Emirate' | translate}}</span><span class="required">*</span>
                             </label>
 
                             <div class="select">
-                                <select name="" id="">
+                                <select name="" id="" formControlName="emirate" name="emirate">
                                     <option value="NULL" selected disabled>Your Choice</option>
-                                    <option value="">adfa</option>
-                                    <option value="">adfad</option>
-                                    <option value="">adfad</option>
+                                    <option value="">{{'_Dubai' | translate}}</option>
+                                    <option value="">{{'_AbuZabi' | translate}}</option>
+                                    <option value="">{{'AlAeen' | translate}}</option>
+                                    <option value="">{{'_AlSharka' | translate}}</option>
+                                    <option value="">{{'_AumAlquewen' | translate}}</option>
+                                    <option value="">{{'_RasAlkhema' | translate}}</option>
+                                    <option value="">{{'_AlFoujera' | translate}}</option>
                                 </select>
                                 <i class="fa fa-angle-down"></i>
+                            </div>
+                            <div *ngIf="feedbackForm.controls['emirate'].invalid && (feedbackForm.controls['emirate'].dirty || feedbackForm.controls['emirate'].touched)">
+                                <div *ngIf="feedbackForm.controls['emirate'].errors.required">
+                                    {{'_EmptyFiled' | translate}}
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12">
                         <div class="item">
                             <label>
-                                <span>{{'_Description' | translate}}</span>
+                               <span>{{'_Description' | translate}}</span> <span class="required">*</span>
                                 <textarea type="text" formControlName="message" name="message"></textarea>
                                 <div *ngIf="feedbackForm.controls['message'].invalid && (feedbackForm.controls['message'].dirty || feedbackForm.controls['message'].touched)">
                                     <div *ngIf="feedbackForm.controls['message'].errors.required">
@@ -142,7 +151,7 @@
             </div>
         </form>
 
-        <div class="yellow-title sec-b">
+        <div class="yellow-title sec-b" routerLink="/home">
             <p>{{'_Back' | translate}}</p>
         </div>
     </div>

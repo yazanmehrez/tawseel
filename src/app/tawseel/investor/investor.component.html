@@ -1,5 +1,5 @@
 <div class="im-t image-title">
-    <img src="assets/images/investor-title.png" alt="">
+    <img [src]="_appService.topImage" alt="">
     <span>{{'_Investor' | translate | nbsp | uppercase}}</span>
 </div>
 
@@ -18,7 +18,7 @@
         </button>
     </div>
 
-    <div class="yellow-title sec-b">
+    <div class="yellow-title sec-b" routerLink="/home">
         <p>            {{'_Back' | translate }}
         </p>
     </div>

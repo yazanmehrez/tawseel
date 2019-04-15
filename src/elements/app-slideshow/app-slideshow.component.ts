@@ -11,13 +11,13 @@ export class AppSlideshowComponent implements AfterViewInit {
     @ViewChild('slideshow') private slideshow: any;
     @Input() imageUrls;
     private trans = {
-        learnMore: null,
+        readMore: null,
 
     };
 
     constructor( private translate: TranslateService) {
-        translate.get(['_LearnMore']).subscribe(res => {
-            this.trans.learnMore = res._LearnMore;
+        translate.get(['_ReadMore']).subscribe(res => {
+            this.trans.readMore = res._ReadMore;
 
         });
     }
@@ -40,6 +40,6 @@ export class AppSlideshowComponent implements AfterViewInit {
             $('<div><div class="read-more learn-more"><button><span>Learn More</span><img src="assets/images/arrow-read-more.png"></button></div></div>').appendTo(this);
         });
 
-        $('.learn-more span').text(this.trans.learnMore);
+        $('.learn-more span').text(this.trans.readMore);
     }
 }

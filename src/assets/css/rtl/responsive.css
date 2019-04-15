@@ -1,6 +1,8 @@
-@media (min-width: 1440px) {
-    p {
-        font-size: 12px;
+@media (min-width: 1441px) {
+
+
+    p , span{
+        font-size: 18px;
     }
 
     h1,
@@ -33,21 +35,20 @@
         font-size: 9px;
     }
 
-    .navbar-default {
-        padding-bottom: 10px;
-    }
-
     #navbar {
-        padding: 10px 35px;
-        width: auto;
-        margin: auto;
-        float: none;
+        padding: 10px 15px;
+        width: 70%;
+        display: inline-block !important;
+        float: right;
     }
 
     .search {
-        padding: 10px 0;
+        padding: 5px 0;
         float: none;
-        width: 350px;
+        width: 25%;
+        text-align: left;
+        vertical-align: bottom;
+        display: inline-block;
         margin: auto;
     }
 
@@ -56,7 +57,7 @@
     }
 
     .yellow-title p {
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .im-t img {
@@ -181,10 +182,6 @@
         padding: 35px 40px;
     }
 
-    app-contact-us .input25 {
-        margin-right: 3px;
-    }
-
     .details-img {
         border-radius: 50%;
         margin-top: 70px;
@@ -199,19 +196,16 @@
     }
 
     app-news .news-card {
-        width: 28.9%;
+        width: 21.9%;
+        height: 440px;
         padding: 15px;
         display: inline-block;
         margin: 15px;
         background-color: #f5f4f4;
         border-radius: 20px;
         cursor: pointer;
+        vertical-align: top;
 
-    }
-
-    app-contact-us .item label span {
-        padding-right: 15px;
-        text-align: right !important;
     }
 
     app-media-center .user-card div {
@@ -229,17 +223,6 @@
         padding: 0 321px;
     }
 
-    app-media-center .user-card div {
-        display: inline-block;
-        background-color: #fff;
-        padding: 0 5px;
-        height: 340px;
-        width: 247px;
-        margin-left: 0;
-        border-radius: 10px;
-        /* text-align: center; */
-    }
-
     .swiper-slide img {
         border-radius: 15px;
         height: 100%;
@@ -249,7 +232,7 @@
     }
 
     .mat-card {
-        transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
         display: block;
         position: relative;
         width: auto;
@@ -265,11 +248,18 @@
         cursor: -webkit-grab;
         cursor: grab;
     }
+
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 386px;
+    }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     p {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     h1,
@@ -302,21 +292,20 @@
         font-size: 9px;
     }
 
-    .navbar-default {
-        padding-bottom: 10px;
-    }
-
     #navbar {
         padding: 5px 0;
-        width: 73%;
-        margin: auto;
+        width: 70%;
+        margin-left: auto;
+        display: inline-block !important;
         float: none;
     }
 
     .search {
         padding: 10px 0;
         float: none;
-        width: 350px;
+        width: 25%;
+        vertical-align: bottom;
+        display: inline-block;
         margin: auto;
     }
 
@@ -450,10 +439,6 @@
         padding: 35px 40px;
     }
 
-    app-contact-us .input25 {
-        margin-right: 3px;
-    }
-
     .details-img {
         border-radius: 50%;
         margin-top: 70px;
@@ -478,35 +463,18 @@
 
     }
 
-    app-contact-us .item label span {
-        padding-right: 15px;
-        text-align: right !important;
-    }
-
     app-media-center .user-card div {
         display: inline-block;
         background-color: #fff;
         padding: 0 5px;
         height: 340px;
-        width: 270px;
-        margin-left: 37px;
+        width: 340px;
+        margin: 0 20px;
         border-radius: 10px;
-        /* text-align: center; */
     }
 
     app-media-center .c-feedback .desc {
         padding: 0 321px;
-    }
-
-    app-media-center .user-card div {
-        display: inline-block;
-        background-color: #fff;
-        padding: 0 5px;
-        height: 340px;
-        width: 247px;
-        margin-left: 0;
-        border-radius: 10px;
-        /* text-align: center; */
     }
 
     .swiper-slide img {
@@ -518,7 +486,7 @@
     }
 
     .mat-card {
-        transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
         display: block;
         position: relative;
         width: auto;
@@ -534,6 +502,28 @@
         cursor: -webkit-grab;
         cursor: grab;
     }
+
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 270px;
+    }
+
+    .navbar .search i {
+        position: relative;
+        float: right;
+        right: -35px;
+        top: 6px;
+        font-weight: 100;
+        font-size: 17px;
+    }
+
+    app-contact-us .input25 {
+        margin-right: 3px;
+    }
+
+
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -875,10 +865,10 @@
     .input25 {
         border-radius: 20px;
         border: none;
-        padding: 0 4px;
+        padding: 0 25px;
         line-height: 2.5;
         height: 45px;
-        width: 21% !important;
+        width: 25% !important;
         margin-bottom: 5px;
         margin-left: 13px;
         -webkit-box-shadow: -1px 2px 1px #e0d7d7;
@@ -919,39 +909,6 @@
         font-family: 'sf-compact-display-heavy', sans-serif;
     }
 
-    app-contact-us .item label span {
-        padding-right: 15px;
-        text-align: right !important;
-    }
-
-    .read-more button img {
-        float: right;
-        margin-right: 10px;
-        height: 23px;
-    }
-
-    .read-more button span {
-        font-size: 12px;
-        float: left;
-        margin-top: 3px;
-        margin-left: 30px;
-        font-family: 'sf-compact-display-medium';
-    }
-
-    app-media-center .read-more button img {
-        float: right;
-        margin-right: 6px;
-        height: 24px;
-    }
-
-    app-media-center .read-more button span {
-        font-size: 10px !important;
-        float: left;
-        margin-top: 3px;
-        margin-left: 30px;
-        font-family: 'sf-compact-display-medium';
-    }
-
     app-media-center .user-card div {
 
         display: inline-block;
@@ -968,6 +925,13 @@
         padding: 0 80px !important;
     }
 
+    app-media-center .feedback-slider .item {
+        width: 75%;
+        text-align: right;
+        margin: 20px;
+        display: inline-block;
+    }
+
     .swiper-slide img {
         border-radius: 15px;
         height: 100%;
@@ -977,7 +941,7 @@
     }
 
     .mat-card {
-        transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
         display: block;
         position: relative;
         width: auto;
@@ -992,6 +956,28 @@
         object-fit: cover;
         cursor: -webkit-grab;
         cursor: grab;
+    }
+
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 40px;
+    }
+
+    .read-more button span {
+        font-size: 12px;
+        float: right;
+        margin-top: 3px;
+        margin-right: 20px;
+        margin-left: 10px;
+        font-family: 'sf-compact-display-medium';
+    }
+
+
+    .read-more button img {
+        float: left;
+        margin-left: 10px;
+        height: 21px;
     }
 }
 
@@ -1122,8 +1108,8 @@
 
     .read-more button {
         background-color: #e1bb36;
-        -webkit-box-shadow: -4px 6px 0px #e0e0cf;
-        box-shadow: -4px 6px 0px #e0e0cf;
+        -webkit-box-shadow: 4px 6px 0px #e0e0cf;
+        box-shadow: 4px 6px 0px #e0e0cf;
         height: 35px;
         width: 135px;
         border-radius: 41px;
@@ -1133,16 +1119,16 @@
     }
 
     .read-more button img {
-        float: left;
-        margin-left: 10px;
+        float: right;
+        margin-right: 10px;
         height: 23px;
     }
 
     .read-more button span {
         font-size: 12px;
-        float: right;
+        float: left;
         margin-top: 3px;
-        margin-right: 30px;
+        margin-left: 30px;
         font-family: 'sf-compact-display-medium';
     }
 
@@ -1160,7 +1146,7 @@
 
     app-home .info-card {
         padding: 10px 0;
-        text-align: right;
+        text-align: left;
         margin: 0 25px;
     }
 
@@ -1252,11 +1238,11 @@
 
     app-footer .item.follow-us {
         width: auto;
-        padding: 31px 0px 0 0;
+        padding: 31px 0 0 0px;
     }
 
     app-footer .social i {
-        margin: 10px 0 0 10px;
+        margin: 10px 10px 0 0;
         border: none;
         border-radius: 50%;
         width: 20px;
@@ -1268,7 +1254,7 @@
     app-footer .item {
         width: 23.5%;
         display: inline-block;
-        text-align: right;
+        text-align: left;
         height: 200px;
         padding: 37px 25px;
         vertical-align: middle;
@@ -1304,6 +1290,10 @@
         padding: 45px;
     }
 
+    .yellow-title p {
+        font-size: 12px;
+    }
+
     app-about-us .card .item {
         margin: 0 12px;
     }
@@ -1314,8 +1304,8 @@
 
     .btn-main button {
         background-color: #e1bb36;
-        -webkit-box-shadow: -4px 6px 0px #e0e0cf;
-        box-shadow: -4px 6px 0px #e0e0cf;
+        -webkit-box-shadow: 4px 6px 0px #e0e0cf;
+        box-shadow: 4px 6px 0px #e0e0cf;
         height: 35px;
         width: 135px;
         border-radius: 41px;
@@ -1442,7 +1432,7 @@
     }
 
     .header-one-content {
-        margin-left: 0;
+        margin-right: 0;
     }
 
     .top_header_one {
@@ -1450,7 +1440,7 @@
     }
 
     .logo-right {
-        float: left;
+        float: right;
         padding: 5px 15px;
     }
 
@@ -1459,7 +1449,7 @@
     }
 
     .logo-left {
-        float: right;
+        float: left;
         padding: 5px 15px;
     }
 
@@ -1473,7 +1463,7 @@
 
     #navbar {
         float: none;
-        margin-right: 0;
+        margin-left: 0;
         width: 100%;
     }
 
@@ -1495,19 +1485,25 @@
     .navbar .search i {
         position: relative;
         float: none;
-        right: 150px;
-        top: 27px;
+        left: 150px;
+        top: -27px;
         font-weight: 100;
         font-size: 17px;
     }
 
+    .searching {
+        display: block;
+        margin: 0;
+    }
+
     .lang-switch {
         float: none;
+        display: block !important;
         border: 1px solid white;
         border-radius: 25px;
-        margin-top: 20px;
-        margin-left: 0;
+        margin-bottom: 20px;
         margin-right: 0;
+        margin-left: 0;
     }
 
     .nav > li {
@@ -1558,8 +1554,8 @@
 
     app-about-us .yellow-title p {
         margin: 60px 0 15px;
-        /*width: 100%;*/
         text-align: center;
+
     }
 
     app-about-us .card .item {
@@ -1615,7 +1611,7 @@
         font-size: 15px !important;
         width: 22% !important;
         margin-bottom: 5px !important;
-        margin-left: 15px !important;
+        margin-right: 15px !important;
     }
 
     app-customer-registration .item {
@@ -1626,7 +1622,7 @@
     app-home .info-card {
         padding: 10px 0px;
         text-align: center;
-        margin: 0 0 0 95px;
+        margin: 0 95px 0 0;
     }
 
     .complaints, .suggestion {
@@ -1638,7 +1634,7 @@
         width: 90%;
         vertical-align: top;
         margin: 0 10px;
-        text-align: right;
+        text-align: left;
     }
 
     app-news .news-card {
@@ -1652,7 +1648,7 @@
     }
 
     app-contact-us .left-section {
-        text-align: right;
+        text-align: left;
         width: 100%;
         padding: 0;
     }
@@ -1681,7 +1677,7 @@
         font-size: 33px;
         position: absolute;
         top: 34%;
-        right: 5%;
+        left: 5%;
         font-weight: 800;
         border-bottom: 5px solid yellow;
         line-height: 0.9;
@@ -1689,47 +1685,17 @@
         font-family: 'sf-compact-display-heavy', sans-serif;
     }
 
-    app-contact-us .item label span {
-        padding-right: 15px;
-        text-align: right !important;
+    .not-found {
+        font-size: 25px;
+        color: #86888a;
+        align-items: center;
+        margin: 45px 0 15px 0;
     }
 
-    .input25 {
-        border-radius: 20px;
-        border: none;
-        padding: 0 5px;
-        line-height: 2.5;
-        height: 45px;
-        width: 21% !important;
-        margin-bottom: 5px;
-        margin-left: 15px;
-        -webkit-box-shadow: -1px 2px 1px #e0d7d7;
-        box-shadow: -1px 2px 1px #e0d7d7;
-        background: #fff;
-        display: inline-block !important;
-    }
-
-    .read-more button img {
-        float: right;
-        margin-right: 10px;
-        height: 23px;
-    }
-
-    .read-more button span {
-        font-size: 12px;
-        float: left;
-        margin-top: 3px;
-        margin-left: 30px;
-        font-family: 'sf-compact-display-medium';
-    }
-
-    .col-30 {
-        width: 90%;
-    }
-
+    /*padding: 0 25px;*/
     app-media-center .feedback-slider .item {
         width: 95%;
-        text-align: right;
+        text-align: left;
         margin: 20px;
         display: inline-block;
     }
@@ -1764,17 +1730,9 @@
         padding: 0 5px;
         height: 340px;
         width: 325px;
-        margin-right: 0px;
+        margin: 0;
         margin-bottom: 20px;
         border-radius: 10px;
-    }
-
-    .read-more button span {
-        font-size: 12px;
-        float: left;
-        margin-top: 5px;
-        margin-left: 19px;
-        font-family: 'sf-compact-display-medium';
     }
 
     .swiper-slide img {
@@ -1802,6 +1760,75 @@
         cursor: -webkit-grab;
         cursor: grab;
     }
+
+
+
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 3px;
+    }
+
+    .read-more button span {
+        font-size: 12px;
+        float: left;
+        margin-top: 3px;
+        margin-left: 20px;
+        margin-right: 10px;
+        font-family: 'sf-compact-display-medium';
+    }
+
+
+    .read-more button img {
+        float: right;
+        margin-right: 10px;
+        height: 21px;
+    }
+
+
+    .social{
+        margin-top: 20px;
+    }
+
+
+
+
+    .input25 {
+        border-radius: 20px;
+        border: none;
+        padding: 0 15px;
+        line-height: 2.5;
+        height: 45px;
+        width: 25% !important;
+        margin-bottom: 5px;
+        margin-right: 4px;
+        -webkit-box-shadow: 1px 2px 1px #e0d7d7;
+        box-shadow: 1px 2px 1px #e0d7d7;
+        background: #fff;
+        display: inline-block !important;
+    }
+
+    .item label span {
+        display: block;
+        font-size: 17px;
+    }
+
+    app-contact-us  .contact-info {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    app-contact-us .yellow-title {
+        margin-bottom: 18px !important;
+    }
+
+    app-terms-conditions .desktop-mohre {
+        margin-bottom: 30px;
+        text-align: left !important;
+
+    }
+
 }
 
 @media (min-width: 321px) and (max-width: 424px) {
@@ -1902,7 +1929,7 @@
 
     .yellow-title p {
         border-bottom: 3px solid #f6e392;
-        font-size: 11px !important;
+        font-size: 15px !important;
     }
 
     .work-card p {
@@ -2632,6 +2659,37 @@
         object-fit: cover;
         cursor: -webkit-grab;
         cursor: grab;
+    }
+
+    .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 5px;
+    }
+
+    .social{
+        margin-top: 90px;
+    }
+
+
+    .searching {
+        display: block;
+        margin: 0;
+    }
+
+    .lang-switch {
+        float: none;
+        display: block !important;
+        border: 1px solid white;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    app-media-center .back {
+        padding: 35px 15px 0 15px;
     }
 
 }

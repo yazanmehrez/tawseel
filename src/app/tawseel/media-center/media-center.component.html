@@ -1,5 +1,5 @@
 <div class="im-t image-title">
-    <img src="assets/images/investor-title.png" alt="">
+    <img [src]="_appService.topImage" alt="">
     <span>{{'_MediaCenter' | translate | nbsp | uppercase }}</span>
 </div>
 <app-breadcrumb [Breadcrumb]="['_Home','_MediaCenter']"></app-breadcrumb>
@@ -120,10 +120,14 @@
 </div>
 
 <div class="banner_bottom">
-    <app-swiper *ngIf="appendNews" [imageUrls]="newsSlider"></app-swiper>
+    <div class="yellow-title" style="text-align: center;">
+        <p>{{'_LatestNews' | translate}}</p>
+    </div>
+    <div>
+    <app-swiper *ngIf="appendNews" [imageUrls]="newsListSlider"></app-swiper>
 </div>
 
-<div class="yellow-title sec-b">
+<div class="yellow-title sec-b back" routerLink="/home">
     <p> {{'_Back' | translate }}
     </p>
 </div>

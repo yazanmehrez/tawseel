@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppService} from '../../app.service';
 
 @Component({
   selector: 'app-our-services',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurServicesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _appService: AppService) { }
 
   ngOnInit() {
       window.scrollTo(0,0);

@@ -85,7 +85,7 @@ export class ApiService {
             'application/x-www-form-urlencoded;charset=utf-8');
 
         return this.http.get(this.apiURL + 'TawseelTacsoft/Services/'
-            + ServiceName + '/' + Type + '?clientToNotify=1&WebsiteID=1&LanguageID=' + lang + '&Name= ' + data.name + '&Email=' + data.email + '&Phone=' + data.phone + '&FeedType=' + data.FeedType + '&description=' + data.description , {
+            + ServiceName + '/' + Type + '?clientToNotify=1&WebsiteID=1&LanguageID=' + lang + '&Name= ' + data.name + '&Email=' + data.email + '&Phone=' + data.phone + '&FeedType=' + data.FeedType + '&description=' + data.description  + '&Emirate=' + data.emirate, {
             headers: headers
         }).pipe(map(res => res));
 

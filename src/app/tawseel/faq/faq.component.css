@@ -17,12 +17,7 @@ ul .inner {
     display: none;
 }
 
-.accordion li {
-    list-style: none;
-    border-radius: 0;
-    text-align: left;
-    border: 1px solid rgba(230, 230, 230, 0.98);
-}
+
 
 .num {
     display: inline-block;
@@ -55,4 +50,15 @@ ul .inner {
     background: #000;
     color: #fff;
     border: 1px solid #fff;
+}
+
+
+
+.inner{
+    font-size: inherit;
+}
+
+
+.sections{
+    margin-bottom: 90px;
 }

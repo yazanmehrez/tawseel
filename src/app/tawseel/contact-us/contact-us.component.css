@@ -91,10 +91,7 @@ select::-ms-expand {
     vertical-align: middle;
 }
 
-.form-contact{
 
-    margin-top: 200px;
-}
 
 textarea{
     height: 127px !important;
@@ -108,4 +105,21 @@ textarea{
 .item{
     margin-bottom: 25px;
 }
+
+.required{
+    display: inline-block;
+    color: red;
+}
+
+.details h3{
+    margin-bottom: 30px;
+}
+
+
+.mat-card-actions, .mat-card-content, .mat-card-subtitle {
+    display: block;
+    margin-bottom: 16px;
+    padding: 0 386px;
+}
+
 
