@@ -101,6 +101,11 @@ app-home .info-card {
     vertical-align: middle;
 }
 
+.about-content p{
+    color: #a0a0a0;
+}
+
+
 app-home .line {
     border-right: 5px solid #e8e8e8;
 }
@@ -173,11 +178,12 @@ app-home .user-card p {
 
 #service img, #van img, #agent-service img {
     width: auto;
-    height: 219px;
+    height: 305px;
     display: block;
 }
 
 .work-card p {
+    display: block;
     font-size: 30px;
     color: #f6d232;
     line-height: 1;
@@ -186,7 +192,7 @@ app-home .user-card p {
 
 .work-card span {
     color: #a0a0a0;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'sf-compact-display-medium', sans-serif;
 }
 
@@ -394,6 +400,7 @@ app-news .item {
 
 app-contact-us .details {
     text-align: left;
+    margin-bottom: 16px;
 }
 
 app-contact-us .details .info span {
@@ -403,8 +410,6 @@ app-contact-us .details .info span {
 app-contact-us .left-section {
     text-align: left;
 }
-
-
 
 app-contact-us label {
     text-align: left;
@@ -421,7 +426,7 @@ app-contact-us .left-section {
     text-align: left;
 }
 
-app-contact-us .contact-form .container{
+app-contact-us .contact-form .container {
     padding: 35px 135px;
 }
 
@@ -431,9 +436,8 @@ app-contact-us .right-section {
 
 /*contact us*/
 
-
 /*details*/
-.desktop-mohre-f{
+.desktop-mohre-f {
     text-align: left !important;
 }
 
@@ -444,7 +448,7 @@ app-contact-us .right-section {
 
 /*details*/
 
-.details-img{
+.details-img {
     border-radius: 50%;
     margin-top: 100px;
     width: 350px !important;
@@ -461,7 +465,6 @@ app-news .news-card {
     border-radius: 20px;
     cursor: pointer;
 }
-
 
 .logo-right {
     float: right;
@@ -487,7 +490,6 @@ app-news .news-card {
     text-align: right;
 }
 
-
 /*media center*/
 
 app-media-center .feedback-slider .item {
@@ -498,9 +500,8 @@ app-media-center .feedback-slider .item {
 }
 
 app-media-center .yellow-title {
-    padding: 0 75px;
+    padding: 15px 78px;
 }
-
 
 app-slider .information-container {
     padding: 0 30%;
@@ -514,7 +515,7 @@ app-faq .accordion li {
     border: 1px solid rgba(230, 230, 230, 0.98);
 }
 
-.title-faq{
+.title-faq {
     text-align: left;
     font-size: 23px;
     font-weight: bold;
@@ -522,23 +523,119 @@ app-faq .accordion li {
     margin-bottom: 20px;
 }
 
-
 .mat-card-actions, .mat-card-content, .mat-card-subtitle {
     display: block;
     margin-bottom: 16px;
     padding: 0 386px;
 }
 
-
-app-terms-conditions .desktop-mohre{
+app-terms-conditions .desktop-mohre {
     text-align: left !important;
     margin-bottom: 80px;
 }
 
-app-media-center
-.user-card p {
+app-media-center .user-card p {
     font-size: 25px;
     font-weight: normal;
     color: #494949;
     font-family: 'sf-compact-display-medium', sans-serif;
 }
+
+.complaints {
+    background-image: url(../../images/complaints.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+.xgallery{
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+
+.top_header_one i, p, h6, .head-cont {
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 900;
+    margin: 0 3px 3px 3px;
+    color: #000;
+}
+
+.pagination .fa {
+    padding: 4px 10px;
+    background-color: #e1bb36;
+    vertical-align: inherit;
+    color: #fff;
+}
+
+.page.active-page {
+    display: inline-block;
+    padding: 6px 15px;
+    margin-right: 4px;
+    border-radius: 3px;
+    border: solid 1px #c0c0c0;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .8), 0px 1px 3px rgba(0, 0, 0, .1);
+    font-size: .875em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #717171;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+}
+
+.details-title p {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.details-date{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #f8d84c;
+}
+
+
+.font-style{
+    color: #8b8c87;
+    font-weight: 900;
+
+}
+
+.font-style p{
+    color: #8b8c87;
+    font-weight: 900;
+
+}
+
+app-terms-conditions .font-style h2{
+    color: #494949;
+}
+
+app-media-center .user-card img {
+    margin: 30px auto;
+    width: auto;
+    display: block;
+    text-align: center;
+    height: 165px;
+
+}
+
+.search {
+    padding: 5px 0;
+    float: none;
+    width: 27%;
+    text-align: right;
+    vertical-align: bottom;
+    display: inline-block;
+    margin: auto;
+}
+
+
+
+/*.text-grey-darken1 {*/
+     /*padding: 0 256px*/
+ /*}*/
+

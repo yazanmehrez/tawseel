@@ -11,12 +11,12 @@
         <div class="desktop-mohre-f">
             <div class="col-70 col-m f" style="padding-right: 75px;">
                 <div class="yellow-title"><p>{{services?.Title}}</p></div>
-                <div class="mohre sec-x" [innerHtml]="services?.Content">
+                <div class="mohre sec-x font-style" [innerHtml]="services?.Content">
 
                 </div>
             </div>
             <div class="col-30 col-m" style="vertical-align: top; text-align:right;margin-top: -30px;">
-                <img [src]="services?.MainImageFullURL" style="width: 100%;">
+                <img [src]="services?.MainImageFullURL" style="width: 90%;">
             </div>
         </div>
 
@@ -27,7 +27,7 @@
             </div>
             <div class="f">
                 <div class="yellow-title"><p>{{services?.Title}}</p></div>
-                <div class="mohre sec-x" [innerHtml]="services?.Content">
+                <div class="mohre sec-x font-style" [innerHtml]="services?.Content">
                 </div>
             </div>
         </div>
@@ -37,13 +37,13 @@
         <!--Desktop View-->
         <div class="desktop-mohre">
             <div class="col-30 col-m">
-                <img [src]="about?.MainImageFullURL" style="width: 100%;">
+                <img [src]="about?.MainImageFullURL" style="width: 90%;">
             </div>
             <div class="col-70 col-m title-p">
                 <div>
                     <h3>{{about?.Title}}</h3>
                 </div>
-                <p [innerHtml]="about?.Content"></p>
+                <p class="font-style" [innerHtml]="about?.Content"></p>
             </div>
         </div>
     </ng-container>
@@ -58,19 +58,19 @@
                 <div>
                     <h3>{{about?.Title}}</h3>
                 </div>
-                <p [innerHtml]="about?.Content"></p>
+                <p class="font-style" [innerHtml]="about?.Content"></p>
             </div>
         </div>
     </ng-container>
 
     <div class="cards-container container-equal">
         <div class="card">
-            <div class="item col-20 col-m" *ngFor="let item of about?.RelatedEntities">
+                <div class="item  col-20 col-m" *ngFor="let item of about?.RelatedEntities">
                 <img [src]="item.FullUrl" width="80%">
                 <div class="yellow-title">
                     <p>{{item?.Title}}</p>
                 </div>
-                <p [innerHtml]="item?.Description">
+                <p class="font-style"  [innerHtml]="item?.Description">
                 </p>
             </div>
         </div>

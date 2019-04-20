@@ -81,6 +81,10 @@ label {
     width: 30%;
 }
 
+.col-35 {
+    width: 35%;
+}
+
 .col-40 {
     width: 40%;
 }
@@ -2305,7 +2309,7 @@ p.copy-right a:hover {
     background-color: #e1bb36;
     -webkit-box-shadow: 4px 6px 0px #e0e0cf;
     box-shadow: 4px 6px 0px #e0e0cf;
-    height: 50px;
+    height: 55px;
     width: 190px;
     border-radius: 41px;
     border: none;

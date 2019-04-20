@@ -47,12 +47,9 @@
     padding: 0 60px;
 }
 
-
-
 .slider-facebook {
     position: relative;
 }
-
 
 .semi {
     display: inline-block;
@@ -83,11 +80,17 @@
 }
 
 .w-more {
+    display: block;
     color: #fff;
     cursor: pointer;
 }
 
-.fa-long-arrow-right,.fa-long-arrow-left {
+.fa-long-arrow-right, .fa-long-arrow-left {
     margin: 0 5px;
 }
 
+@media (min-width: 1440px) {
+    .col-40 {
+        width: 35%;
+    }
+}

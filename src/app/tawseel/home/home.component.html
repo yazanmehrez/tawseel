@@ -57,7 +57,7 @@
         <div class="yellow-title">
             <p>{{'_About' | translate}}</p>
         </div>
-        <div>
+        <div class="about-content font-style">
             <p [innerHtml]="about?.Content">
 
             </p>
@@ -86,8 +86,7 @@
 <div class="social highlight">
     <div class="col-m col-40 line complaints-mobile">
         <div class="com-sug">
-            <div class="complaints" [style.background-image]="'url(assets/images/complaints.png)'" style="cursor: pointer" routerLink="/contact-us"
-                 [style.background-repeat]="'no-repeat'" [style.background-size]="'contain'">
+            <div class="complaints"  style="cursor: pointer" routerLink="/contact-us">
                 <div class="info-card">
                     <h1>{{'_Complaints' | translate}}</h1>
                     <p class="b-par">{{'_TellUsAboutYourComplaint' | translate}}</p>
@@ -95,8 +94,7 @@
                             [ngClass]="_appService.currentLanguage == 'en' ? 'fa fa-long-arrow-right' : 'fa fa-long-arrow-left'"></i></span>
                 </div>
             </div>
-            <div class="suggestion" [style.background-image]="'url(assets/images/suggestions.png)'" style="cursor: pointer" routerLink="/contact-us"
-                 [style.background-repeat]="'no-repeat'" [style.background-size]="'contain'">
+            <div class="suggestion"  style="cursor: pointer" routerLink="/contact-us">
                 <div class="info-card">
                     <h1>{{'_Suggestion' | translate}}</h1>
                     <p class="b-par">{{'_TellUsAboutYourSuggestion' | translate}}</p>

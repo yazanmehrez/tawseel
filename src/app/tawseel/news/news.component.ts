@@ -33,7 +33,7 @@ export class NewsComponent implements OnInit {
     constructor(private translateService: TranslateService,
                 public _appService: AppService,
                 public datePipe: DatePipe) {
-        this.news.pageSize = 8;
+        this.news.pageSize = 5;
         this.news.pageNumber = 0;
         this.translateService.onLangChange.subscribe(lang => {
             this._appService.loading = true;
