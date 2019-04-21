@@ -20,6 +20,7 @@ export class ContactUsComponent implements OnInit {
         feedbackSuccess: null,
 
     };
+
     private isEmail: any = /^[\w\-\.]{2,}\@[a-zA-Z-0-9]{2,}\.[\w\-]{2,4}$/;
 
     constructor(private translateService: TranslateService,

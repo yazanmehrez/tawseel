@@ -5094,6 +5094,7 @@ a.thumbnail.active {
 .media:first-child {
     margin-top: 0;
 }
+
 .media,
 .media-body {
     overflow: hidden;

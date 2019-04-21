@@ -90,14 +90,14 @@
                             <label>
                                 <span>{{'_Email' | translate}}<span class="required">*</span></span>
                                 <input type="text" formControlName="email" name="email">
-                                <div *ngIf="feedbackForm.controls['email'].invalid && (feedbackForm.controls['email'].dirty || feedbackForm.controls['email'].touched)">
-                                    <div *ngIf="feedbackForm.controls['email'].errors.required">
-                                        {{'_EmptyFiled' | translate}}
+                                    <div *ngIf="feedbackForm.controls['email'].invalid && (feedbackForm.controls['email'].dirty || feedbackForm.controls['email'].touched)">
+                                        <div *ngIf="feedbackForm.controls['email'].errors.required">
+                                            {{'_EmptyFiled' | translate}}
+                                        </div>
                                     </div>
-                                </div>
-                                <div *ngIf=" feedbackForm.controls['email'].touched && feedbackForm.hasError('pattern', ['email']) ">
-                                    {{'_EmailNotValid'|translate }}
-                                </div>
+                                    <div *ngIf=" feedbackForm.controls['email'].touched && feedbackForm.hasError('pattern', ['email']) ">
+                                        {{'_EmailNotValid'|translate }}
+                                    </div>
                             </label>
                         </div>
                         <div class="item">

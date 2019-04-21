@@ -633,6 +633,20 @@ app-media-center .user-card img {
     margin: auto;
 }
 
+.item li {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.item .time-details {
+    display: inline-block;
+}
+
+
+.com-sug {
+    margin: 45px;
+}
+
 
 
 /*.text-grey-darken1 {*/

@@ -10,14 +10,7 @@
     list-style: none;
 }
 
-.item li {
-    margin: 5px 0;
-    cursor: pointer;
-}
 
-.item .time-details {
-    display: inline-block;
-}
 
 .copy-right span {
     display: block;
