@@ -128,6 +128,28 @@
                     <div class="col-sm-12">
                         <div class="item">
                             <label>
+                                <span>{{'_Reason' | translate}}</span><span class="required">*</span>
+                            </label>
+
+                            <div class="select">
+                                <select formControlName="reason" name="reason">
+                                    <option value="NULL" selected disabled>{{'_YourChoice' | translate}}</option>
+                                    <option value="">{{'_Inquiry' | translate}}</option>
+                                    <option value="">{{'_Suggestion' | translate}}</option>
+                                    <option value="">{{'_Complaint' | translate}}</option>
+                                </select>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <div *ngIf="feedbackForm.controls['reason'].invalid && (feedbackForm.controls['reason'].dirty || feedbackForm.controls['reason'].touched)">
+                                <div *ngIf="feedbackForm.controls['reason'].errors.required">
+                                    {{'_EmptyFiled' | translate}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="item">
+                            <label>
                                <span>{{'_Description' | translate}}</span> <span class="required">*</span>
                                 <textarea type="text" formControlName="message" name="message"></textarea>
                                 <div *ngIf="feedbackForm.controls['message'].invalid && (feedbackForm.controls['message'].dirty || feedbackForm.controls['message'].touched)">
@@ -138,8 +160,6 @@
                             </label>
                         </div>
                     </div>
-
-
                 </div>
             </div>
             <div class="read-more">
@@ -151,7 +171,7 @@
             </div>
         </form>
 
-        <div class="yellow-title sec-b" routerLink="/home">
+        <div class="yellow-title sec-b" (click)="_appService.goBackBrowser()">
             <p>{{'_Back' | translate}}</p>
         </div>
     </div>

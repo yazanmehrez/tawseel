@@ -9,6 +9,8 @@
 
 /*Header*/
 .top_header_two {
+    display: flex;
+    justify-content: space-between;
     height: 90px;
 }
 

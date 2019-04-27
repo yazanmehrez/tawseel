@@ -18,6 +18,7 @@ export class CustomerRegistrationComponent implements OnInit {
 
     ngOnInit() {
         this.bsConfig = Object.assign({}, {containerClass: 'theme-orange'});
+        scrollTo(0, 0);
     }
 
 }

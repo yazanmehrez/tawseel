@@ -7,7 +7,7 @@
         <ng-container *ngFor="let bread of Breadcrumb; let firstItem = first; let lastItem = last">
             <ng-container *ngIf="firstItem">
                 <i class="fa fa-home" aria-hidden="true" style="color: #f8d84c;"></i>
-                <span class="firstItem" style="font-weight: 800">{{bread | translate}}</span>
+                <span class="firstItem" style="font-weight: 800; cursor:pointer;" routerLink="/home">{{bread | translate}}</span>
             </ng-container>
            <ng-container *ngIf="!lastItem && !firstItem">
                <i [ngClass]="_appService.currentLanguage === 'en' ? 'fa fa-angle-double-right' : 'fa fa-angle-double-left'"></i>

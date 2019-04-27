@@ -41,6 +41,7 @@ export class ContactUsComponent implements OnInit {
             'phone': [null, Validators.compose([Validators.required, Validators.minLength(9), Validators.maxLength(9)])],
             'message': [null, Validators.required],
             'emirate': [null, Validators.required],
+            'reason': [null, Validators.required],
         });
 
 

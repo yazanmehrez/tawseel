@@ -9,6 +9,8 @@
 
 /*Header*/
 .top_header_two {
+    display: flex;
+    justify-content: space-between;
     height: 90px;
 }
 
@@ -451,7 +453,8 @@ app-news .news-card {
 
 .header-one-content {
     font-size: 10px;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
     font-weight: 900;
     margin-left: 70px;
     color: #000;
@@ -502,7 +505,6 @@ app-slider .information-container {
     height: 12em;
 }
 
-
 app-faq .accordion li {
     list-style: none;
     border-radius: 0;
@@ -510,7 +512,7 @@ app-faq .accordion li {
     border: 1px solid rgba(230, 230, 230, 0.98);
 }
 
-.title-faq{
+.title-faq {
     text-align: right;
     font-size: 23px;
     font-weight: bold;
@@ -536,20 +538,16 @@ app-contact-us .fa-angle-down {
     margin: 20px 5px;
 }
 
-
-
-app-contact-us .contact-info{
+app-contact-us .contact-info {
     display: inline-block;
     width: 100%;
     margin-bottom: 50px;
 }
 
-
-app-terms-conditions  .desktop-mohre{
+app-terms-conditions .desktop-mohre {
     text-align: left !important;
     margin-bottom: 80px;
 }
-
 
 app-media-center
 .user-card p {

@@ -7,15 +7,15 @@
         <p>{{'_JoinUs' | translate}}</p>
     </div>
     <div class="user-card">
-        <div>
+        <div routerLink="/investor">
             <img src="assets/images/investor.PNG" alt="">
             <p>{{'_AreYouInvestor' | translate}}</p>
         </div>
-        <div>
-            <img src="assets/images/agent.PNG" alt="">
-            <p>{{'_AreYouAgent' | translate}}</p>
-        </div>
-        <div>
+        <!--<div routerLink="">-->
+            <!--<img src="assets/images/agent.PNG" alt="">-->
+            <!--<p>{{'_AreYouAgent' | translate}}</p>-->
+        <!--</div>-->
+        <div routerLink="/our-customer">
             <img src="assets/images/customer.PNG" alt="">
             <p>{{'_AreYouCustomer' | translate}}</p>
         </div>
@@ -24,7 +24,7 @@
 </div>
 
 <div class="banner_bottom">
-    <div class="yellow-title">
+    <div class="yellow-title" routerLink="/customer-registration" style="cursor: pointer;">
         <p>{{'_HowItWorks' | translate}}</p>
     </div>
     <div class="work-card">

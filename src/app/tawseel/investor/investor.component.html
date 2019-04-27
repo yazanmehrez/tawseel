@@ -11,14 +11,14 @@
     <div class="inv">
         <img src="assets/images/placeholder.png" width="100%">
     </div>
-    <div class="btn-main">
+    <div class="btn-main" routerLink="/customer-registration">
         <button>
             {{'_Register' | translate }}
 
         </button>
     </div>
 
-    <div class="yellow-title sec-b" routerLink="/home">
+    <div class="yellow-title sec-b" (click)="_appService.goBackBrowser()">
         <p>            {{'_Back' | translate }}
         </p>
     </div>

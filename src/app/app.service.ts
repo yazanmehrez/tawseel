@@ -47,4 +47,8 @@ export class AppService {
         // and use to create a Date
         return +b[0] + sign * (b[1].slice(0, 2) * 3.6e6 + b[1].slice(-2) * 6e4);
     }
+
+    goBackBrowser() {
+        window.history.back();
+    }
 }

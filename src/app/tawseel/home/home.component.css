@@ -91,3 +91,7 @@
         width: 35%;
     }
 }
+
+.user-card div {
+    cursor: pointer;
+}
