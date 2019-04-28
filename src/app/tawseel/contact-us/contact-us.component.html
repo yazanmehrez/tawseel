@@ -2,7 +2,8 @@
     <img [src]="_appService.topImage" alt="">
     <span>{{'_ContactUs' | translate | nbsp | uppercase }}</span>
 </div>
-<app-breadcrumb [Breadcrumb]="['_Home','_ContactUs']"></app-breadcrumb>
+<app-breadcrumb [Breadcrumb]="[{title: '_Home', route: '/home'},
+                               {title: '_ContactUs', route: ''}]"></app-breadcrumb>
 
 
 <div class="container-equal">

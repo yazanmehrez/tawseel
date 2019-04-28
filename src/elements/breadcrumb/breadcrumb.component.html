@@ -5,18 +5,19 @@
     </div>
     <div class="flow">
         <ng-container *ngFor="let bread of Breadcrumb; let firstItem = first; let lastItem = last">
-            <ng-container *ngIf="firstItem">
-                <i class="fa fa-home" aria-hidden="true" style="color: #f8d84c;"></i>
-                <span class="firstItem" style="font-weight: 800; cursor:pointer;" routerLink="/home">{{bread | translate}}</span>
+            <ng-container *ngIf="bread.title" >
+                <i class="fa fa-home" aria-hidden="true"  style="color: #f8d84c;" *ngIf="firstItem"></i>
+                <i *ngIf="!firstItem" [ngClass]="_appService.currentLanguage === 'en' ? 'fa fa-angle-double-right' : 'fa fa-angle-double-left'"></i>
+                <span class="firstItem" style="font-weight: 800 ; cursor: pointer" [style.color]="lastItem ? '#f8d84c': ''" [routerLink]="bread.route" >{{bread.title | translate}}</span>
             </ng-container>
-           <ng-container *ngIf="!lastItem && !firstItem">
-               <i [ngClass]="_appService.currentLanguage === 'en' ? 'fa fa-angle-double-right' : 'fa fa-angle-double-left'"></i>
-               <span>{{bread | translate}}</span>
-           </ng-container>
-           <ng-container *ngIf="lastItem">
-               <i [ngClass]="_appService.currentLanguage === 'en' ? 'fa fa-angle-double-right' : 'fa fa-angle-double-left'"></i>
-               <span class="lastItem">{{bread | translate}}</span>
-           </ng-container>
+           <!--<ng-container *ngIf="!lastItem && !firstItem">-->
+               <!--<i [ngClass]="_appService.currentLanguage === 'en' ? 'fa fa-angle-double-right' : 'fa fa-angle-double-left'"></i>-->
+               <!--<span>{{bread | translate}}</span>-->
+           <!--</ng-container>-->
+           <!--<ng-container *ngIf="lastItem">-->
+               <!--<i [ngClass]="_appService.currentLanguage === 'en' ? 'fa fa-angle-double-right' : 'fa fa-angle-double-left'"></i>-->
+               <!--<span class="lastItem">{{bread | translate}}</span>-->
+           <!--</ng-container>-->
         </ng-container>
     </div>
 </div>

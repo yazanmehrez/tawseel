@@ -649,7 +649,17 @@ app-media-center .user-card img {
     margin: 45px;
 }
 
+.news-card p{
+    max-height: 210px;
+    overflow: hidden;
+    height: 210px;
+}
 
+.head {
+    margin: 0 10px 15px 10px;
+    text-align: left;
+    padding: 0 60px;
+}
 
 /*.text-grey-darken1 {*/
      /*padding: 0 256px*/

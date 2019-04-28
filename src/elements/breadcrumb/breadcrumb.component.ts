@@ -7,7 +7,7 @@ import {AppService} from '../../app/app.service';
     styleUrls: ['./breadcrumb.component.css']
 })
 export class BreadcrumbComponent implements OnInit {
-    @Input() Breadcrumb: string[];
+    @Input() Breadcrumb: Object;
 
     constructor(public _appService: AppService) {
     }

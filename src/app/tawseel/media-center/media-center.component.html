@@ -2,7 +2,8 @@
     <img [src]="_appService.topImage" alt="">
     <span>{{'_MediaCenter' | translate | nbsp | uppercase }}</span>
 </div>
-<app-breadcrumb [Breadcrumb]="['_Home','_MediaCenter']"></app-breadcrumb>
+<app-breadcrumb [Breadcrumb]="[{title: '_Home', route: '/home'},
+                               {title: '_MediaCenter', route: ''}]"></app-breadcrumb>
 
 <div class="media-center-section highlight">
     <div class="yellow-title">

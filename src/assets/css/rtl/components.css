@@ -4,7 +4,7 @@
  - Home
  - About Us
  - Customer Registration
- - BreadCrumb
+ - Breadcrumb
  */
 
 /*Header*/
@@ -91,7 +91,6 @@ app-home .info-card {
     padding: 25px;
     text-align: right;
     margin: 0 25px;
-    transform: scaleX(-1);
 }
 
 .about-right img {
@@ -103,6 +102,11 @@ app-home .info-card {
     display: inline-block;
     vertical-align: middle;
 }
+
+.about-content p{
+    color: #a0a0a0;
+}
+
 
 app-home .line {
     border-left: 5px solid #e8e8e8;
@@ -171,32 +175,32 @@ app-home .user-card p {
     font-size: 25px;
     font-weight: normal;
     color: #494949;
-
+    font-family: 'sf-compact-display-medium', sans-serif;
 }
 
 #service img, #van img, #agent-service img {
     width: auto;
-    height: 219px;
+    height: 305px;
     display: block;
 }
 
 .work-card p {
+    display: block;
     font-size: 30px;
     color: #f6d232;
     line-height: 1;
-
+    font-family: 'sf-compact-display-bold', sans-serif;
 }
 
 .work-card span {
     color: #a0a0a0;
-    font-size: 20px;
-
+    font-size: 25px;
+    font-family: 'sf-compact-display-medium', sans-serif;
 }
 
 .complaints, .suggestion {
     margin: 25px;
     border-radius: 10px;
-    transform: scaleX(-1);
 }
 
 .b-par {
@@ -247,7 +251,7 @@ app-about-us .card .item {
     height: 45px;
     width: 25% !important;
     margin-bottom: 5px;
-    margin-left: 15px;
+    margin-right: 15px;
     -webkit-box-shadow: -1px 2px 1px #e0d7d7;
     box-shadow: -1px 2px 1px #e0d7d7;
     background: #fff;
@@ -300,6 +304,7 @@ app-slideshow .slider-title {
     border-bottom: 5px solid yellow;
     line-height: 0.9;
     width: 35px;
+    font-family: 'sf-compact-display-heavy', sans-serif;
 }
 
 app-slideshow .slider-description {
@@ -341,8 +346,47 @@ app-slideshow .learn-more {
     text-align: right;
 }
 
-/*news*/
+/*contact us*/
+app-contact-us .details {
+    text-align: right;
+}
 
+app-contact-us .details .info span {
+    margin-right: 10px;
+}
+
+app-contact-us .left-section {
+    text-align: right;
+}
+
+app-contact-us .item label span {
+    padding-right: 15px;
+    text-align: right !important;
+    display: inline-block;
+}
+
+app-contact-us label {
+    text-align: right;
+    width: 100%;
+}
+
+app-contact-us .fa-angle-down {
+    float: left;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+app-contact-us .fa-calendar {
+    display: inline;
+    position: relative;
+    float: left;
+    left: 20px;
+    bottom: 38px;
+    cursor: pointer;
+
+}
+
+/*news*/
 app-news .fa-calendar {
     display: inline;
     position: relative;
@@ -363,8 +407,10 @@ app-news .item {
 /*news*/
 
 /*contact us*/
+
 app-contact-us .details {
     text-align: right;
+    margin-bottom: 16px;
 }
 
 app-contact-us .details .info span {
@@ -373,12 +419,6 @@ app-contact-us .details .info span {
 
 app-contact-us .left-section {
     text-align: right;
-}
-
-app-contact-us .item label span {
-    padding-right: 15px;
-    text-align: left !important;
-    display: inline-block;
 }
 
 app-contact-us label {
@@ -404,16 +444,11 @@ app-contact-us .right-section {
     padding: 0 110px;
 }
 
-app-contact-us .input25 {
-    margin-right: 11px;
-}
-
 /*contact us*/
 
 /*details*/
-
 .desktop-mohre-f {
-    text-align: left !important;
+    text-align: right !important;
 }
 
 .desktop-mohre {
@@ -453,8 +488,7 @@ app-news .news-card {
 
 .header-one-content {
     font-size: 10px;
-    display: flex;
-    justify-content: flex-end;
+    display: inline-block;
     font-weight: 900;
     margin-left: 70px;
     color: #000;
@@ -475,29 +509,8 @@ app-media-center .feedback-slider .item {
     display: inline-block;
 }
 
-/*app-media-center .c-feedback .desc {*/
-/*padding: 0 500px;*/
-/*}*/
-
-app-media-center .user-card div {
-    display: inline-block;
-    background-color: #fff;
-    padding: 0 5px;
-    height: 340px;
-    width: 352px;
-    margin-right: 51px;
-    border-radius: 10px;
-}
-
-app-media-center .feedback-slider .item {
-    width: 45%;
-    text-align: right;
-    margin: 20px;
-    display: inline-block;
-}
-
 app-media-center .yellow-title {
-    padding: 0 75px;
+    padding: 15px 78px;
 }
 
 app-slider .information-container {
@@ -526,33 +539,139 @@ app-faq .accordion li {
     padding: 0 386px;
 }
 
-app-contact-us .fa-angle-down {
-    float: right;
-    margin: 16px 0;
-    font-size: 20px;
-}
-
-.select .fa {
-    position: absolute;
-    left: 30px;
-    margin: 20px 5px;
-}
-
-app-contact-us .contact-info {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 50px;
-}
-
 app-terms-conditions .desktop-mohre {
-    text-align: left !important;
+    text-align: right !important;
     margin-bottom: 80px;
 }
 
-app-media-center
-.user-card p {
+app-media-center .user-card p {
     font-size: 25px;
     font-weight: normal;
     color: #494949;
     font-family: 'sf-compact-display-medium', sans-serif;
 }
+
+.complaints {
+    background-image: url(../../images/complaints.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+.xgallery{
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+
+.top_header_one i, p, h6, .head-cont {
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 900;
+    margin: 0 3px 3px 3px;
+    color: #000;
+}
+
+.pagination .fa {
+    padding: 4px 10px;
+    background-color: #e1bb36;
+    vertical-align: inherit;
+    color: #fff;
+}
+
+.page.active-page {
+    display: inline-block;
+    padding: 6px 15px;
+    margin-left: 4px;
+    border-radius: 3px;
+    border: solid 1px #c0c0c0;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .8), 0px 1px 3px rgba(0, 0, 0, .1);
+    font-size: .875em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #717171;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+}
+
+.details-title p {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.details-date{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #f8d84c;
+}
+
+
+.font-style{
+    color: #8b8c87;
+    font-weight: 900;
+
+}
+
+.font-style p{
+    color: #8b8c87;
+    font-weight: 900;
+
+}
+
+app-terms-conditions .font-style h2{
+    color: #494949;
+}
+
+app-media-center .user-card img {
+    margin: 30px auto;
+    width: auto;
+    display: block;
+    text-align: center;
+    height: 165px;
+
+}
+
+.search {
+    padding: 5px 0;
+    float: none;
+    width: 27%;
+    text-align: left;
+    vertical-align: bottom;
+    display: inline-block;
+    margin: auto;
+}
+
+.item li {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.item .time-details {
+    display: inline-block;
+}
+
+
+.com-sug {
+    margin: 45px;
+}
+
+.news-card p{
+    max-height: 210px;
+    overflow: hidden;
+    height: 210px;
+}
+
+.head {
+    margin: 0 10px 15px 10px;
+    text-align: right;
+    padding: 0 60px;
+}
+
+
+
+/*.text-grey-darken1 {*/
+/*padding: 0 256px*/
+/*}*/
+

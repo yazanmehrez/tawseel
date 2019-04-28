@@ -70,8 +70,3 @@ label {
 
 }
 
-.news-card p{
-    max-height: 210px;
-    overflow: hidden;
-    height: 210px;
-}

@@ -2,5 +2,6 @@
   <img [src]="_appService.topImage" alt="">
   <span>{{'_OurServices' | translate | nbsp | uppercase }}</span>
 </div>
-<app-breadcrumb [Breadcrumb]="['_Home','_OurServices']"></app-breadcrumb>
+<app-breadcrumb [Breadcrumb]="[{title: '_Home', route: '/home'},
+                               {title: '_OurServices', route: ''}]"></app-breadcrumb>
 
