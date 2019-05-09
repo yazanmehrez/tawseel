@@ -2,7 +2,6 @@ import {Injectable} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {BehaviorSubject} from 'rxjs';
 import {DataService} from '../services/data.service';
-import {st} from '@angular/core/src/render3';
 
 @Injectable({
     providedIn: 'root'
@@ -13,7 +12,7 @@ export class AppService {
     topImage: string;
     timeWork: string;
     contentMore: any;
-    public  loading: boolean = false;
+    public loading = false;
 
     constructor(private translate: TranslateService, public api: DataService) {
 
