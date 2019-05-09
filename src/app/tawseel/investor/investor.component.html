@@ -3,7 +3,9 @@
     <span>{{'_Investor' | translate | nbsp | uppercase}}</span>
 </div>
 
-<app-breadcrumb [Breadcrumb]="['_Home','_JoinUs','_Investor']"></app-breadcrumb>
+<app-breadcrumb [Breadcrumb]="[{title: '_Home', route: '/home'},
+                               {title: '_JoinUs', route: ''},
+                               {title: '_Investor', route: ''}]"></app-breadcrumb>
 <div class="container-equal">
 
     <div class="yellow-title"><p>{{'_Investor' | translate}}</p></div>

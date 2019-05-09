@@ -2,7 +2,9 @@
     <img [src]="_appService.topImage" alt="">
     <span>{{'_MediaCenter' | translate | nbsp | uppercase }}</span>
 </div>
-<app-breadcrumb [Breadcrumb]="['_Home', '_MediaCenter' , '_News']"></app-breadcrumb>
+<app-breadcrumb [Breadcrumb]="[{title: '_Home', route: '/home'},
+                               {title: '_MediaCenter', route: '/media-center'},
+                               {title: '_News', route: ''}]"></app-breadcrumb>
 
 
 <div class="container-equal">

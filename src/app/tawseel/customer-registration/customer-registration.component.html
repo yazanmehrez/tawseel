@@ -2,7 +2,9 @@
     <img [src]="_appService.topImage" alt="">
     <span>{{'_JoinUs' | translate | nbsp | uppercase}}</span>
 </div>
-<app-breadcrumb [Breadcrumb]="['_Home','_JoinUs', '_OurCustomers','_CustomerRegistration']"></app-breadcrumb>
+<app-breadcrumb [Breadcrumb]="[{title: '_Home', route: '/home'},
+                               {title: '_JoinUs', route: ''},
+                               {title: '_CustomerRegistration', route: ''}]"></app-breadcrumb>
 <div class="container-equal">
 
     <div class="yellow-title"><p>{{"_CustomerRegistration" | translate}}</p></div>

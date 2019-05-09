@@ -2454,7 +2454,7 @@
     }
 
     p {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .search {
@@ -2606,7 +2606,7 @@
 
     .head .t {
         display: inline-block;
-        font-size: 10px !important;
+        font-size: 15px !important;
         margin: 0 5px;
     }
 
@@ -2659,7 +2659,7 @@
     }
 
     .fa-clock-o {
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .time-details span {
@@ -2669,7 +2669,7 @@
     .footer_tawseel .item li {
         margin: 5px 0;
         cursor: pointer;
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .item.quick-links {
@@ -3000,8 +3000,8 @@
     }
 
     app-about-us .card .item {
-        margin: 0 12px;
-        width: 100%;
+        margin: 20px 12px;
+        width: 80%;
     }
 
     .sec-b {
@@ -3107,7 +3107,7 @@
 
     .details-img {
         border-radius: 50%;
-        margin-top: 100px;
+        margin-left: 45px;
         width: 285px !important;
         height: 285px !important;
         box-shadow: 24px 8px 1px #f1f1f1;
@@ -3115,9 +3115,9 @@
 
     .im-t span {
         color: #494949;
-        font-size: 33px;
+        font-size: 15px;
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 5%;
         font-weight: 800;
         border-bottom: 5px solid yellow;
@@ -3226,7 +3226,7 @@
         background-size: contain;
     }
 .for-tab{
-    margin-top: 120px;
+    margin-top: 150px;
 }
 
     app-media-center .user-card img {
@@ -3244,7 +3244,45 @@
         font-family: 'sf-compact-display-medium', sans-serif;
     }
 
+    .page.active-page {
+        display: inline-block;
+        padding: 0px 10px;
+        margin-right: 4px;
+        border-radius: 3px;
+        border: solid 1px #c0c0c0;
+        box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .8), 0px 1px 3px rgba(0, 0, 0, .1);
+        font-size: .875em;
+        font-weight: bold;
+        text-decoration: none;
+        color: #717171;
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+    }
 
+    .news-card p {
+        max-height: 210px;
+        overflow: hidden;
+        height: 160px;
+    }
+
+    .yellow-title {
+        text-align: center;
+    }
+
+    .back p{
+        margin-top: 90px;
+    }
+    .details-title p {
+        font-size: 17px;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .details-date {
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: #f8d84c;
+    }
 }
 
 @media (min-width: 321px) and (max-width: 424px) {
