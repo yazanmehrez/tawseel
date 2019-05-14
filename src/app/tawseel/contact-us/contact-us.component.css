@@ -56,6 +56,8 @@ select::-ms-expand {
 }
 
 
+
+
 /*.yellow-title{*/
     /*margin-bottom: 60px !important;*/
 /*}*/
@@ -111,7 +113,11 @@ textarea{
     color: red;
 }
 
-.details h3{
+.contact-desc .contact-desc{
+    margin-bottom: 0;
+}
+
+.details .contact-keyword{
     margin-bottom: 30px;
 }
 

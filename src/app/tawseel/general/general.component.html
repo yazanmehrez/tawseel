@@ -14,7 +14,7 @@
   </div>
   <div style="border-bottom: 1px solid #c1c1c1" [innerHTML]="contentMore?.Description">
   </div>
-  <div class="yellow-title sec-b" (click)="_appService.goBackBrowser()">
-    <p>{{'_Back' | translate}}</p>
+  <div class="yellow-title sec-b" >
+    <p (click)="_appService.goBackBrowser()">{{'_Back' | translate}}</p>
   </div>
 </div>

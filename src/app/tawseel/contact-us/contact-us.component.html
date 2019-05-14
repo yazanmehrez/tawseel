@@ -16,22 +16,23 @@
 
             <div class="details">
 
-                <h3>{{contact.Description}}</h3>
+                <h3 class="contact-desc">{{contact.Description}}</h3>
+                <h3 class="contact-keyword">{{contact.Keywords}}</h3>
 
                 <div class="info">
                     <span><i class="fa fa-fax"></i></span>
                     <span class="contact-tool">{{'_Fax' | translate}}</span>
-                    <span>(44)5654545</span>
+                    <span>(416)446-3443</span>
                 </div>
                 <div class="info">
                     <span><i class="fa fa-envelope"></i></span>
                     <span class="contact-tool">{{'_Email' | translate}}</span>
-                    <span>info@taw-seel@ae</span>
+                    <span>info@taw-seel.ae</span>
                 </div>
                 <div class="info">
                     <span><i class="fa fa-phone"></i></span>
                     <span class="contact-tool">{{'_Phone' | translate}}</span>
-                    <span>(44)5654545</span>
+                    <span>(416)446-3443</span>
                 </div>
             </div>
         </div>
@@ -76,10 +77,10 @@
                                     <div *ngIf="feedbackForm.controls['phone'].errors.required">
                                         {{'_EmptyFiled' | translate}}                                    </div>
                                 </div>
-
-                                <div *ngIf=" feedbackForm.controls['phone'].touched  && feedbackForm.controls['phone'].hasError ">
+                                <div *ngIf=" feedbackForm.controls['phone'].touched && feedbackForm.hasError('pattern', ['phone']) ">
                                     {{'_NotValidGSM'|translate }}
                                 </div>
+
 
 
                             </label>
@@ -107,15 +108,15 @@
                             </label>
 
                             <div class="select">
-                                <select name="" id="" formControlName="emirate" name="emirate">
-                                    <option value="NULL" selected disabled>Your Choice</option>
-                                    <option value="">{{'_Dubai' | translate}}</option>
-                                    <option value="">{{'_AbuZabi' | translate}}</option>
-                                    <option value="">{{'AlAeen' | translate}}</option>
-                                    <option value="">{{'_AlSharka' | translate}}</option>
-                                    <option value="">{{'_AumAlquewen' | translate}}</option>
-                                    <option value="">{{'_RasAlkhema' | translate}}</option>
-                                    <option value="">{{'_AlFoujera' | translate}}</option>
+                                <select  formControlName="emirate" name="emirate">
+                                    <option value="NULL" selected disabled>{{'_YourChoice' | translate}}</option>
+                                    <option value="Dubai">{{'_Dubai' | translate}}</option>
+                                    <option value="AbuDhabi">{{'_AbuDhabi' | translate}}</option>
+                                    <option value="AlAeen">{{'_AlAeen' | translate}}</option>
+                                    <option value="AlSharka">{{'_AlSharka' | translate}}</option>
+                                    <option value="AumAlquewen">{{'_AumAlquewen' | translate}}</option>
+                                    <option value="RasAlkhema">{{'_RasAlkhema' | translate}}</option>
+                                    <option value="AlFoujera">{{'_AlFoujera' | translate}}</option>
                                 </select>
                                 <i class="fa fa-angle-down"></i>
                             </div>
@@ -133,11 +134,11 @@
                             </label>
 
                             <div class="select">
-                                <select formControlName="reason" name="reason">
+                                <select class="custom-select" formControlName="reason" name="reason" >
                                     <option value="NULL" selected disabled>{{'_YourChoice' | translate}}</option>
-                                    <option value="">{{'_Inquiry' | translate}}</option>
-                                    <option value="">{{'_Suggestion' | translate}}</option>
-                                    <option value="">{{'_Complaint' | translate}}</option>
+                                    <option value="inquiry">{{'_Inquiry' | translate}}</option>
+                                    <option value="suggestion">{{'_Suggestion' | translate}}</option>
+                                    <option value="complaint">{{'_Complaint' | translate}}</option>
                                 </select>
                                 <i class="fa fa-angle-down"></i>
                             </div>
@@ -164,7 +165,7 @@
                 </div>
             </div>
             <div class="read-more">
-                <button style="margin: 15px 0;" [disabled]="!feedbackForm.valid" (click)="sendFeedback()">
+                <button style="margin: 15px 0;"  [disabled]="!feedbackForm.valid"   (click)="sendFeedback()">
     <span>
      {{'_Send' | translate}}
     </span>
@@ -172,8 +173,8 @@
             </div>
         </form>
 
-        <div class="yellow-title sec-b" (click)="_appService.goBackBrowser()">
-            <p>{{'_Back' | translate}}</p>
+        <div class="yellow-title sec-b" >
+            <p (click)="_appService.goBackBrowser()">{{'_Back' | translate}}</p>
         </div>
     </div>
 </div>

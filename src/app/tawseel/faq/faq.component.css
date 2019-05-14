@@ -17,7 +17,12 @@ ul .inner {
     display: none;
 }
 
+.faq-list{
 
+     margin: 0;
+    text-align: left;
+    padding: 0 60px;
+}
 
 .num {
     display: inline-block;

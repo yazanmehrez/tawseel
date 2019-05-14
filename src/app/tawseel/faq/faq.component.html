@@ -13,7 +13,7 @@
         <ul class="accordion">
             <p class="title-faq">{{'_DealingServiceFAQ' | translate}}</p>
             <li class="toggle" *ngFor="let item of dealingSevices; let i = index; let firstEl = first">
-                <div class="head" [ngClass]="firstEl ? 'active' : ''">
+                <div class="head faq-list" [ngClass]="firstEl ? 'active' : ''">
                     <div class="num">{{i + 1}}</div>
                     <a class="toggle">
                         {{item.Question}}
@@ -32,7 +32,7 @@
         <ul class="accordion">
             <p class="title-faq">{{'_LicensingFAQ' | translate}}</p>
             <li class="toggle" *ngFor="let item of licences; let i = index; let firstEl = first">
-                <div class="head" [ngClass]="firstEl ? 'active' : ''">
+                <div class="head faq-list" [ngClass]="firstEl ? 'active' : ''">
                     <div class="num">{{i + 1}}</div>
                     <a class="toggle">
                         {{item.Question}}
@@ -46,8 +46,8 @@
 
         </ul>
     </div>
-    <div class="yellow-title sec-b" (click)="_appService.goBackBrowser()">
-        <p>{{'_Back' | translate}}</p>
+    <div class="yellow-title sec-b" >
+        <p (click)="_appService.goBackBrowser()">{{'_Back' | translate}}</p>
     </div>
     <!--<div class="container">-->
     <!--<div class="col-sm-12 pagination-block">-->

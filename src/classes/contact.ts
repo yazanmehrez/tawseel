@@ -3,7 +3,7 @@ export class Contact {
     description: string;
     phone: string;
     email: string;
-    FeedType: string;
+    FeedType: any;
     emirate: string;
 
 

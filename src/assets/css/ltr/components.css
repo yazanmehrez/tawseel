@@ -658,7 +658,7 @@ app-media-center .user-card img {
 .head {
     margin: 0 10px 15px 10px;
     text-align: left;
-    padding: 0 60px;
+    /*padding: 0 60px;*/
 }
 
 /*.text-grey-darken1 {*/

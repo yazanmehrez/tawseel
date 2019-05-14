@@ -4,7 +4,7 @@
 </div>
 <app-breadcrumb [Breadcrumb]="[{title: '_Home', route: '/home'},
                                {title: '_MediaCenter', route: '/media-center'},
-                               {title: '_News', route: ''}]"></app-breadcrumb>
+                               {title: '_News', route: '/news'}]"></app-breadcrumb>
 
 
 <div class="container-equal">
@@ -93,8 +93,8 @@
     </div>
 
 
-    <div class="yellow-title sec-b" (click)="_appService.goBackBrowser()">
-        <p>
+    <div class="yellow-title sec-b" >
+        <p (click)="_appService.goBackBrowser()">
             {{'_Back' | translate }}
         </p>
     </div>

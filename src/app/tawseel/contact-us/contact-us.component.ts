@@ -22,6 +22,8 @@ export class ContactUsComponent implements OnInit {
     };
 
     private isEmail: any = /^[\w\-\.]{2,}\@[a-zA-Z-0-9]{2,}\.[\w\-]{2,4}$/;
+    is_mobile = /^[0-9]{9}$/;
+
 
     constructor(private translateService: TranslateService,
                 public _appService: AppService,
@@ -38,7 +40,7 @@ export class ContactUsComponent implements OnInit {
 
             'name': [null, Validators.required],
             'email': [null, [Validators.required, Validators.pattern(this.isEmail)]],
-            'phone': [null, Validators.compose([Validators.required, Validators.minLength(9), Validators.maxLength(9)])],
+            'phone': [null, [Validators.required, Validators.pattern(this.is_mobile)]],
             'message': [null, Validators.required],
             'emirate': [null, Validators.required],
             'reason': [null, Validators.required],
@@ -60,6 +62,7 @@ export class ContactUsComponent implements OnInit {
         this.feedback.phone = this.feedbackForm.controls.phone.value;
         this.feedback.email = this.feedbackForm.controls.email.value;
         this.feedback.emirate = this.feedbackForm.controls.emirate.value;
+        this.feedback.FeedType = this.feedbackForm.controls.reason.value;
         console.log(this.feedback);
         this._appService.api.sendFeedbackService(this.feedback)
             .subscribe(response => {
