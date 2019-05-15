@@ -1,7 +1,7 @@
 {
   "_Home": "Home",
   "_Login": "CUSTOMERS LOGIN",
-  "_Register": "REGISTER",
+  "_Register": "Register",
   "_JoinUs": "Join Us",
   "_AreYouInvestor": "Are you an Investor?",
   "_AreYouAgent": "Are you an Agent?",
@@ -105,7 +105,8 @@
   "_More": "More",
   "_ApplyMore": "Apply",
   "_Reason": "Reason",
-  "_YourChoice": "Your Choice"
+  "_YourChoice": "Your Choice",
+  "_DownloadApp":"Download the application"
 }
 
 

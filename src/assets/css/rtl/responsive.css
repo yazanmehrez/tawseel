@@ -473,7 +473,7 @@
     .head {
         margin: 0 10px 15px 10px;
         text-align: right;
-        padding: 0 60px;
+        padding: 0px;
     }
 
     .news-card p {
@@ -1385,7 +1385,7 @@
     .head {
         margin: 0 10px 15px 10px;
         text-align: right;
-        padding: 0 60px;
+        padding: 0px;
     }
 
     .search{
@@ -2454,6 +2454,12 @@
     .com-sug {
         margin: 45px 22px;
     }
+
+    .head {
+        margin: 0 10px 15px 10px;
+        text-align: right;
+        padding: 0px;
+    }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -2845,7 +2851,7 @@
     .head {
         text-align: center;
         margin-bottom: 15px;
-        padding: 0 60px;
+        padding: 0px;
     }
 
     .col-m.col-50.fac {

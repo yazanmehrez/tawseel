@@ -22,6 +22,42 @@
     display: none;
 }
 
+.charter-left {
+    width: 49%;
+    display: inline-block;
+    height: 445px;
+}
+
+
+
+.read-more{
+    text-align: center;
+}
+
+
+
+.service-charter ul{
+    padding: 15px 60px;
+}
+
+.service-charter li{
+    padding: 15px;
+    color: #8b8c87;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.app img{
+    display: inline-block;
+    width: 146px;
+    height: 50px;
+}
+
+
+
 @media (max-width: 664px) {
     .mobile-mohre {
         display: block;

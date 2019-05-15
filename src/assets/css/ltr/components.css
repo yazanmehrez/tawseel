@@ -661,6 +661,40 @@ app-media-center .user-card img {
     /*padding: 0 60px;*/
 }
 
+
+.app{
+    text-align: left;
+    margin-bottom: 110px;
+    margin-left: 15px;
+}
+
+.service-charter ul li::before {
+    content: "\2022";
+    color: rgb(248, 216, 76);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 25px;
+}
+
+.google-play{
+    margin-right: 12px;
+}
+
+.service-charter h3{
+    padding-left: 35px;
+}
+
+.charter-right {
+    width: 49%;
+    display: inline-block;
+    float: right;
+    height: 445px;
+
+}
+
+
 /*.text-grey-darken1 {*/
      /*padding: 0 256px*/
  /*}*/

@@ -454,7 +454,7 @@
     }
 
     .news-card p, span {
-        font-size: 19px;
+        font-size: 17px;
     }
 
     app-media-center .yellow-title {
@@ -2810,7 +2810,7 @@
     .head {
         text-align: center;
         margin-bottom: 15px;
-        padding: 0 60px;
+        padding: 0px;
     }
 
     .col-m.col-50.fac {

@@ -41,9 +41,9 @@ export class DataService {
 
 
     getCustomerService(): Observable<Object> {
-        return this.api.getGeneralPage('our.customers',
+        return this.api.getGeneralPage('our.customer',
             environment.API_Generic_Content.ServiceName,
-            environment.API_Generic_Content.GetGenericContentByUniqueName);
+            environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
     }
 
 
