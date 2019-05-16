@@ -15,7 +15,6 @@
 }
 
 
-
 .swiper-slide img {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -23,3 +22,39 @@
     cursor: grab;
 }
 
+.card-content-date, .card-content-description, .overlay {
+    display: none;
+}
+
+.swiper-slide-active .card-content-date {
+    display: inline;
+    background-color: #e1bb36;
+    height: 50px;
+    border-radius: 41px;
+    border: none;
+    font-weight: 600;
+    padding: 8px 22px;
+    position: relative;
+    bottom: 60px;
+    font-size: 15px;
+}
+
+.swiper-slide:not(.swiper-slide-active) .card-content-description {
+    position: relative;
+    bottom: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline;
+    color: #fff;
+}
+
+.swiper-slide:not(.swiper-slide-active) .overlay {
+    width: 100%;
+    height: 95.5%;
+    position: absolute;
+    display: flex;
+    background: linear-gradient(to top, black 0%, transparent 100%);
+    opacity: 0.7;
+    margin: -16px;
+    border-radius: 10px;
+}

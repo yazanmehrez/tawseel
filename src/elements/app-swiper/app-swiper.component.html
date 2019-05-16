@@ -2,7 +2,10 @@
     <div *ngFor="let slide of imageUrls; let i = index" class="swiper-slide" [id]="i">
         <div>
             <mat-card class="card-content">
+                <div class="overlay"></div>
                 <img mat-card-image [src]="slide?.MainImageFullURL">
+                <span class="card-content-date">15/2/2019</span>
+                <span class="card-content-description">YAZAN</span>
             </mat-card>
         </div>
     </div>

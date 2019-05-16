@@ -690,16 +690,15 @@
     }
 
     app-news .news-card {
-        width: 21.9%;
-        height: 400px;
-        padding: 15px;
+        width: 25%;
+        height: 325px;
+        padding: 0px;
         display: inline-block;
-        margin: 15px;
-        background-color: #f5f4f4;
-        border-radius: 20px;
+        margin-top: 25px;
+        margin-bottom: 0;
         cursor: pointer;
         vertical-align: top;
-
+        text-align: center;
     }
 
     app-media-center .user-card div {

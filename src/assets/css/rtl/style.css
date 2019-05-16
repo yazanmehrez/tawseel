@@ -2502,8 +2502,19 @@ nav .search {
     margin: 0 10px;
 }
 
-.xgallery{
+.xgallery {
     margin: auto;
     width: 80%;
     height: auto;
+}
+
+.n-c {
+    padding: 15px;
+    background: #f5f4f4;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.news-results {
+    text-align: right;
 }

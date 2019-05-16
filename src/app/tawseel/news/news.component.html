@@ -56,10 +56,16 @@
         {{'_NotFoundResult' | translate}}
     </div>
     <div class="news-results">
-        <div class="news-card" *ngFor="let news of newsList" [routerLink]="['/details' , news.UniqueName]">
-            <img [src]="news.MainImageFullURL" width="100%">
-            <p>{{news.Summary}}</p>
-            <span>{{_appService.getNormalDate(news.NewsDate) | date:'EEEE, MMMM d, y' }}</span>
+        <div class="news-card" *ngFor="let news of newsList; let i = index"
+             [routerLink]="['/details' , news.UniqueName]">
+            <div class="n-c"
+                 [style.margin-right]="(_appService.currentLanguage == 'en' && (((i+1) % 4) != 0)) ? '20px' : ''"
+                 [style.margin-left]="(_appService.currentLanguage == 'ar' && (((i+1) % 4) != 0)) ? '20px' : ''"
+            >
+                <img [src]="news.MainImageFullURL" width="100%">
+                <p>{{news.Summary}}</p>
+                <span>{{_appService.getNormalDate(news.NewsDate) | date:'EEEE, MMMM d, y' }}</span>
+            </div>
         </div>
     </div>
 
@@ -71,7 +77,8 @@
 
 
             <a class="page" *ngFor="let page of pageCountArray | slice: startPage: endPage ; let i = index"
-               (click)="searchNews(i)" [ngClass]=" activePage === i ? 'active-page' : ''" style="cursor: pointer">{{page}}</a>
+               (click)="searchNews(i)" [ngClass]=" activePage === i ? 'active-page' : ''"
+               style="cursor: pointer">{{page}}</a>
 
             <a class="page fa fa-angle-right" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''"
                (click)="nextPage()"></a>
@@ -84,7 +91,8 @@
 
 
             <a class="page" *ngFor="let page of pageCountArray | slice: startPage: endPage ; let i = index"
-               (click)="searchNews(i)" [ngClass]=" activePage === i ? 'active-page' : ''" style="cursor: pointer">{{page}}</a>
+               (click)="searchNews(i)" [ngClass]=" activePage === i ? 'active-page' : ''"
+               style="cursor: pointer">{{page}}</a>
 
             <a class="page fa fa-angle-left" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''"
                (click)="nextPage()"></a>
@@ -93,7 +101,7 @@
     </div>
 
 
-    <div class="yellow-title sec-b" >
+    <div class="yellow-title sec-b">
         <p (click)="_appService.goBackBrowser()">
             {{'_Back' | translate }}
         </p>

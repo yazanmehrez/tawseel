@@ -2508,3 +2508,14 @@ select::-ms-expand {
     align-items: center;
     margin: 45px 0 -24px 0;
 }
+
+.n-c {
+    padding: 15px;
+    background: #f5f4f4;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.news-results {
+    text-align: left;
+}
