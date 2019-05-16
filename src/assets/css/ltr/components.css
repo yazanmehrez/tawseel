@@ -685,10 +685,19 @@ app-media-center .user-card img {
     padding-left: 35px;
 }
 
-.charter-right {
+.desktop-mohre .charter-right {
     width: 49%;
     display: inline-block;
     float: right;
+    height: 445px;
+
+}
+
+
+.mobile-mohre .charter-right {
+    width: 100%;
+    margin-bottom: 20px;
+    display: inline-block;
     height: 445px;
 
 }

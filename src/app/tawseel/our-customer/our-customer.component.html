@@ -40,17 +40,48 @@
                 </div>
             </div>
             <div class="col-30 col-m" style="text-align:right;margin-top: -30px;">
-                <img [src]="customer?.RelatedEntities[0].FullUrl" style="width: 100%;">
+                <img [src]="customer?.RelatedEntities[1].FullUrl" style="width: 100%;">
             </div>
         </div>
-        <div class="app">
-        <p>{{'_DownloadApp' | translate}}</p>
-        <div>
-            <img class="google-play"  src="assets/images/google-play.jpg" alt="">
-            <img src="assets/images/app-store.jpg" alt="">
-        </div>
-        </div>
+        <div class="mobile-mohre">
+            <div class="first">
+                <img [src]="customer?.RelatedEntities[0].FullUrl" style="width: 50%;">
+            </div>
+            <div class="second">
+                <div class="yellow-title"><p [innerHtml]="customer?.Description"></p></div>
+                <div class="mohre sec-x">
+                    <p [innerHtml]="customer?.content"></p>
 
+                    <div class="steps">
+                        <div class="step">
+                            <div class="col-m">
+                                <span class="numbering">1</span>
+                            </div>
+                            <div class="th">
+                                <p [innerHtml]="customer?.RelatedEntities[0].Title"></p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="col-m">
+                                <span class="numbering">2</span>
+                            </div>
+                            <div class="th">
+                                <p [innerHtml]="customer?.RelatedEntities[1].Title"></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="app">
+            <p>{{'_DownloadApp' | translate}}</p>
+            <div>
+                <img class="google-play"  src="assets/images/google-play.jpg" alt="">
+                <img src="assets/images/app-store.jpg" alt="">
+            </div>
+        </div>
         <div class="desktop-mohre">
             <div class="col-xs-12" style="vertical-align: middle;">
                 <div class="yellow-title">
@@ -87,38 +118,40 @@
 
         </div>
         <div class="mobile-mohre">
-            <div class="first">
-                <img [src]="customer?.RelatedEntities[0].FullUrl" style="width: 50%;">
-            </div>
-            <div class="second">
-                <div class="yellow-title"><p [innerHtml]="customer?.Description"></p></div>
-                <div class="mohre sec-x">
-                    <p [innerHtml]="customer?.content"></p>
+            <div class="col-xs-12" style="vertical-align: middle;">
+                <div class="yellow-title">
+                    <p style="margin-bottom: 8px;">{{commitment.Description}}</p></div>
+                <div class="mohre sec-x font-style" style="margin-bottom: 45px;">
+                    <p>{{commitment.Content}} </p>
+                </div>
+                <div class="service-charter">
+                    <div class="charter-left highlight">
+                        <h3>{{commitment.Title}}</h3>
+                        <div>
+                            <ul>
+                                <li *ngFor="let item of commitment.RelatedEntities">{{item.Title}}</li>
 
-                    <div class="steps">
-                        <div class="step">
-                            <div class="col-m">
-                                <span class="numbering">1</span>
-                            </div>
-                            <div class="th">
-                                <p [innerHtml]="customer?.RelatedEntities[0].Title"></p>
-                            </div>
-                        </div>
-                        <div class="step">
-                            <div class="col-m">
-                                <span class="numbering">2</span>
-                            </div>
-                            <div class="th">
-                                <p [innerHtml]="customer?.RelatedEntities[1].Title"></p>
-
-                            </div>
+                            </ul>
                         </div>
                     </div>
+                    <div class="charter-right highlight">
+                        <h3>{{offer.Title}}</h3>
+                        <ul>
+                            <li *ngFor="let item of offer.RelatedEntities">{{item.Title}}</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="read-more">
+                    <button style="margin: 40px 0;">
+    <span>
+     {{'_Register' | translate}}
+    </span>
+                        <img src="assets/images/arrow-read-more.png" alt=""></button>
                 </div>
             </div>
 
         </div>
-    </div>
 
     <div class="yellow-title sec-b">
         <p (click)="_appService.goBackBrowser()">{{'_Back' | translate}}</p>

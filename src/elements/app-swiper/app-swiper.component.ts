@@ -1,5 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {SwiperConfigInterface} from 'ngx-swiper-wrapper';
+import {AppService} from '../../app/app.service';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
     selector: 'app-swiper',
@@ -24,6 +26,11 @@ export class AppSwiperComponent {
             }
         }
     };
+
+    constructor(public _appService: AppService) {
+
+
+    }
 
     getIndex(index) {
         this.indexInformation = index;
