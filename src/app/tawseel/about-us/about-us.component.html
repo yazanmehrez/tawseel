@@ -1,6 +1,6 @@
 <div class="im-t image-title">
     <img [src]="_appService.topImage" alt="">
-    <span>{{'_AboutTaw-Seel' | translate | nbsp | uppercase }}</span>
+    <span>{{'_AboutTaw-Seel' | translate | uppercase | nbsp}}</span>
 </div>
 <app-breadcrumb [Breadcrumb]="[{title: '_Home', route: '/home'},
                                {title: '_AboutTaw-Seel', route: ''}]"></app-breadcrumb>
@@ -66,20 +66,20 @@
 
     <div class="cards-container container-equal">
         <div class="card">
-                <div class="item  col-20 col-m" *ngFor="let item of about?.RelatedEntities">
+            <div class="item  col-20 col-m" *ngFor="let item of about?.RelatedEntities">
                 <img [src]="item.FullUrl" width="80%">
                 <div class="yellow-title">
                     <p>{{item?.Title}}</p>
                 </div>
-                <p class="font-style"  [innerHtml]="item?.Description">
+                <p class="font-style" [innerHtml]="item?.Description">
                 </p>
             </div>
         </div>
     </div>
 
-    <div class="yellow-title sec-b" >
-    <p (click)="_appService.goBackBrowser()">{{'_Back' | translate}}</p>
-</div>
+    <div class="yellow-title sec-b">
+        <p (click)="_appService.goBackBrowser()">{{'_Back' | translate}}</p>
+    </div>
 
 
 </div>

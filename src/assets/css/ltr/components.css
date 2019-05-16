@@ -459,13 +459,12 @@ app-contact-us .right-section {
 }
 
 app-news .news-card {
-    width: 22.90%;
-    padding: 15px;
+    width: 25%;
+    padding: 0;
     display: inline-block;
-    margin: 15px;
-    background-color: #f5f4f4;
-    border-radius: 20px;
     cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 0;
 }
 
 .logo-right {
@@ -650,9 +649,9 @@ app-media-center .user-card img {
 }
 
 .news-card p{
-    max-height: 210px;
+    max-height: 120px;
     overflow: hidden;
-    height: 210px;
+    height: 120px;
 }
 
 .head {

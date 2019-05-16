@@ -87,8 +87,8 @@ export class NewsComponent implements OnInit {
 
         this.startDate = this.news.startDate;
         this.endDate = this.news.endDate;
-        this.news.startDate = this.datePipe.transform(this.news.startDate, 'MM/dd/yyyy') ? this.datePipe.transform(this.news.startDate, 'MM/dd/yyyy') : this.datePipe.transform(this.minDate, 'MM/dd/yyyy');
-        this.news.endDate = this.datePipe.transform(this.news.endDate, 'MM/dd/yyyy') ? this.datePipe.transform(this.news.endDate, 'MM/dd/yyyy') : this.datePipe.transform(this.maxDate, 'MM/dd/yyyy');
+        this.news.startDate = this.datePipe.transform(this.news.startDate, 'yyyy/MM/dd') ? this.datePipe.transform(this.news.startDate, 'yyyy/MM/dd') : this.datePipe.transform(this.minDate, 'yyyy/MM/dd');
+        this.news.endDate = this.datePipe.transform(this.news.endDate, 'yyyy/MM/dd') ? this.datePipe.transform(this.news.endDate, 'yyyy/MM/dd') : this.datePipe.transform(this.maxDate, 'yyyy/MM/dd');
 
         this.news.pageNumber = pageNumber;
         this.activePage = this.news.pageNumber;

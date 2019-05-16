@@ -13,7 +13,7 @@ export class AppSwiperComponent {
     public config: SwiperConfigInterface = {
         slidesPerView: 6,
         centeredSlides: true,
-        spaceBetween: 40,
+        spaceBetween: 15,
         slideToClickedSlide: true,
         breakpoints: {
             640: {
