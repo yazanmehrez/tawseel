@@ -29,7 +29,6 @@ export class ApiService {
     }
 
 
-
     getGeneralPage(data, ServiceName: string, Type: string): Observable<Object> {
         const headers = new HttpHeaders();
         const lang = localStorage.getItem('language') === 'en' ? 1 : 2;
@@ -59,7 +58,7 @@ export class ApiService {
                 }).pipe(map(res => res));
 
 
-        }else{
+        } else {
 
             return this.http.get(
                 this.apiURL + 'TawseelTacsoft/Services/'
@@ -85,9 +84,40 @@ export class ApiService {
             'application/x-www-form-urlencoded;charset=utf-8');
 
         return this.http.get(this.apiURL + 'TawseelTacsoft/Services/'
-            + ServiceName + '/' + Type + '?clientToNotify=1&WebsiteID=1&LanguageID=' + lang + '&Name= ' + data.name + '&Email=' + data.email + '&Phone=' + data.phone + '&FeedType=' + data.FeedType + '&description=' + data.description  + '&Emirate=' + data.emirate, {
+            + ServiceName + '/' + Type + '?clientToNotify=1&WebsiteID=1&LanguageID=' + lang + '&Name= ' + data.name + '&Email=' + data.email + '&Phone=' + data.phone + '&FeedType=' + data.FeedType + '&description=' + data.description + '&Emirate=' + data.emirate, {
             headers: headers
         }).pipe(map(res => res));
 
     }
+
+    getVisitorPage( ServiceName: string, Type: string): Observable<any> {
+        const headers = new HttpHeaders();
+        const lang = localStorage.getItem('language') === 'en' ? 1 : 2;
+        headers.append('Content-Type',
+            'application/x-www-form-urlencoded;charset=utf-8');
+
+        return this.http.get(this.apiURL + 'TawseelTacsoft/Services/'
+            + ServiceName + '/' + Type + '?WebsiteID=1&LanguageID=' + lang ,
+            {headers: headers
+        }).pipe(map(res => res));
+
+    }
+
+
+
+    public getSearchResultPage(data: News , ServiceName: string, Type: string): Observable<any> {
+        const headers = new HttpHeaders();
+        const lang = localStorage.getItem('language') === 'en' ? 1 : 2;
+        headers.append('Content-Type',
+            'application/x-www-form-urlencoded;charset=utf-8');
+
+        return this.http.get(this.apiURL + 'TawseelTacsoft/Services/'
+            + ServiceName + '/' + Type + '?WebsiteID=1&LanguageID=' + lang +  '&PageSize=' + data.pageSize + '&pageNumber=' + data.pageNumber + '&Keyword=' + data.keyword +  '&CategoryID=' + data.categoryID ,{
+            headers: headers
+        }).pipe(map(res => res));
+
+
+
+    }
+
 }

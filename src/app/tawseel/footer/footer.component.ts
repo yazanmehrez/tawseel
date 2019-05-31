@@ -7,6 +7,8 @@ import {AppService} from '../../app.service';
     styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+    visitor: any;
+    lastUpdate: any;
 
     constructor(public _appService: AppService) {
     }
@@ -15,6 +17,27 @@ export class FooterComponent implements OnInit {
         window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
     }
 
-    ngOnInit() {
+    getTotalVisitor() {
+        this._appService.api.getVisitorTotal().subscribe(response => {
+            this.visitor = response;
+
+        });
     }
+
+    GetLatestModificationDate() {
+        this._appService.api.getLatestModificationDate().subscribe(response => {
+            this.lastUpdate = response;
+
+        });
+    }
+
+    ngOnInit() {
+
+        this.getTotalVisitor();
+        this.GetLatestModificationDate();
+    }
+
 }
+
+
+

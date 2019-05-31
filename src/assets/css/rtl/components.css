@@ -700,6 +700,10 @@ app-media-center .user-card img {
     height: 445px;
 
 }
+
+.btn-main button {
+    margin-left: 10px;
+}
 /*.text-grey-darken1 {*/
 /*padding: 0 256px*/
 /*}*/

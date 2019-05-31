@@ -1,11 +1,11 @@
 <div class="footer_tawseel">
     <div class="top-footer">
         <div class="item">
-           <span class="head">
-                <h4>{{'_SmartApps' | translate}}</h4> <span> {{'_ForSmartService' | translate}}</span>
-           </span>
-            <img src="assets/images/app-store.png" alt="">
-            <img src="assets/images/google-play.png" alt="">
+           <!--<span class="head">-->
+                <!--<h4>{{'_SmartApps' | translate}}</h4> <span> {{'_ForSmartService' | translate}}</span>-->
+           <!--</span>-->
+            <!--<img src="assets/images/app-store.png" alt="">-->
+            <!--<img src="assets/images/google-play.png" alt="">-->
         </div>
         <div class="item">
             <span class="head">
@@ -25,25 +25,25 @@
                 <li routerLink="/about-us">{{'_AboutUs' | translate}}</li>
                 <li routerLink="/our-services">{{'_Services' | translate}}</li>
                 <li routerLink="/FAQ">{{'_FAQ' | translate}}</li>
-                <li>{{'_PrivacyStatment' | translate}}</li>
+                <li routerLink="/privacy-statment">{{'_PrivacyStatment' | translate}}</li>
             </ul>
         </div>
         <div class="item follow-us">
-            <h4>{{'_FollowUs' | translate}}</h4>
-            <i class="fa fa-arrow-up" (click)="scrollUp()"></i>
-            <div class="social">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-youtube"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-linkedin"></i>
-                <i class="fa fa-google-plus"></i>
-            </div>
+            <!--<h4>{{'_FollowUs' | translate}}</h4>-->
+            <!--<i class="fa fa-arrow-up" (click)="scrollUp()"></i>-->
+            <!--<div class="social">-->
+                <!--<i class="fa fa-facebook"></i>-->
+                <!--<i class="fa fa-twitter"></i>-->
+                <!--<i class="fa fa-youtube"></i>-->
+                <!--<i class="fa fa-instagram"></i>-->
+                <!--<i class="fa fa-linkedin"></i>-->
+                <!--<i class="fa fa-google-plus"></i>-->
+            <!--</div>-->
         </div>
     </div>
     <div class="col-sm-12 bottom-footer">
         <p class="copy-right">
-            <span>{{ '_TotalVisitor' | translate}}</span>
+            <span>{{ '_PageLastUpdated' | translate}}{{lastUpdate | date: 'MMMM  d y, h:mm a'}}{{ '_TotalVisitor' | translate}} {{visitor}}</span>
             <span>{{ '_Offer' | translate}}</span>
             <span>{{ '_CopyRight' | translate}}</span>
         </p>

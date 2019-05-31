@@ -109,6 +109,13 @@ export class NewsComponent implements OnInit {
     }
 
 
+    clear(){
+        this.news.keyword = '';
+        this.news.startDate = '';
+        this.news.endDate = '';
+        this.searchNews(0);
+    }
+
     getAllNews() {
         if (this.news.keyword == '') {
             this.searchNews(0);

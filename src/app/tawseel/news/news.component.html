@@ -49,6 +49,10 @@
                 {{'_Search' | translate }}
 
             </button>
+            <button (click)="clear()">
+                {{'_Clear' | translate }}
+
+            </button>
         </div>
     </div>
     <div class="col-sm-12 middle middle-block not-found" *ngIf="newsList == ''"

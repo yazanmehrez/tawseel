@@ -702,7 +702,9 @@ app-media-center .user-card img {
 
 }
 
-
+.btn-main button {
+    margin-right: 10px;
+}
 /*.text-grey-darken1 {*/
      /*padding: 0 256px*/
  /*}*/

@@ -39,7 +39,6 @@ export class DataService {
     }
 
 
-
     getCustomerService(): Observable<Object> {
         return this.api.getGeneralPage('our.customer',
             environment.API_Generic_Content.ServiceName,
@@ -54,13 +53,11 @@ export class DataService {
     }
 
 
-
     getTermsConditionsService(): Observable<Object> {
         return this.api.getGeneralPage('terms.conditions',
             environment.API_Generic_Content.ServiceName,
             environment.API_Generic_Content.GetGenericContentByCategoryUniqueName);
     }
-
 
 
     getContactDataService(): Observable<Object> {
@@ -78,13 +75,13 @@ export class DataService {
 
 
     getDetailsService(id: string): Observable<Object> {
-        return this.api.getGeneralPage( id,
+        return this.api.getGeneralPage(id,
             environment.API_News_Content.ServiceName,
             environment.API_News_Content.GetNewsByUniqueName);
     }
 
     sendFeedbackService(data: Contact): Observable<Object> {
-        return this.api.sendFeedback( data,
+        return this.api.sendFeedback(data,
             environment.API_Feedback_Content.ServiceName,
             environment.API_Feedback_Content.SendFeedBackToClient);
     }
@@ -106,6 +103,28 @@ export class DataService {
         return this.api.getGeneralPage('licensing',
             environment.API_FAQ_Content.ServiceName,
             environment.API_FAQ_Content.SendFeedBackToClient);
+    }
+
+    getVisitorTotal(): Observable<Object> {
+        return this.api.getVisitorPage(
+            environment.API_Helper_Content.ServiceName,
+            environment.API_Helper_Content.GetVisitorCount);
+    }
+
+
+    getLatestModificationDate(): Observable<Object> {
+        return this.api.getVisitorPage(
+            environment.API_Helper_Content.ServiceName,
+            environment.API_Helper_Content.GetLatestModificationDate);
+    }
+
+
+    getSearchResult(data: News): Observable<Object> {
+        return this.api.getSearchResultPage(data ,
+        environment.API_Generic_Content.ServiceName,
+            environment.API_Generic_Content.GetGenericContentBySearchPaged
+        );
+
     }
 
 

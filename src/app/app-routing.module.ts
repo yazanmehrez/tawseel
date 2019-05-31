@@ -15,6 +15,8 @@ import {FaqComponent} from './tawseel/faq/faq.component';
 import {NewsComponent} from './tawseel/news/news.component';
 import {DetailsComponent} from './tawseel/details/details.component';
 import {GeneralComponent} from './tawseel/general/general.component';
+import {SearchResultComponent} from './tawseel/search-result/search-result.component';
+import {PrivacyStatmentComponent} from './tawseel/privacy-statment/privacy-statment.component';
 
 const routes: Routes = [
         {
@@ -38,6 +40,10 @@ const routes: Routes = [
                     component: OurCustomerComponent
                 },
                 {
+                    path: 'search/:id',
+                    component: SearchResultComponent
+                },
+                {
                     path: 'customer-registration',
                     component: CustomerRegistrationComponent
                 },
@@ -56,6 +62,10 @@ const routes: Routes = [
                 {
                     path: 'terms-conditions',
                     component: TermsConditionsComponent
+                },
+                {
+                    path: 'privacy-statment',
+                    component: PrivacyStatmentComponent
                 },
                 {
                     path: 'FAQ',

@@ -83,8 +83,8 @@
                     </li>
                 </ul>
                 <div class="searching">
-                    <input type="text" id="navbar-search" placeholder="{{'_Search' | translate }}">
-                    <i class="fa fa-search"></i>
+                    <input type="text" id="navbar-search" [(ngModel)]="home.keyword"  placeholder="{{'_Search' | translate }}">
+                    <i class="fa fa-search" (click)="search()"></i>
                 </div>
             </div>
             <!--/.nav-collapse -->

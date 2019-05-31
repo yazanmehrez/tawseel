@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {AppService} from '../../app.service';
 import {DeviceDetectorService} from 'ngx-device-detector';
 import {TranslateService} from '@ngx-translate/core';
+import {Router} from '@angular/router';
+import {News} from '../../../classes/news';
 
 @Component({
     selector: 'app-header',
@@ -10,8 +12,11 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
     navbar = [];
+    public home = new News();
 
-    constructor(public _appService: AppService, private deviceService: DeviceDetectorService,
+    constructor(public _appService: AppService,
+                private deviceService: DeviceDetectorService,
+                private router: Router ,
                 private translateService: TranslateService) {
 
         this.translateService.onLangChange.subscribe(lang => {
@@ -19,6 +24,9 @@ export class HeaderComponent implements OnInit {
         });
     }
 
+    search() {
+        this.router.navigate(['/search/' + this.home.keyword]);
+    }
     getNavBarData() {
         this._appService.api.getNavBarService().subscribe(response => {
             this.navbar = response['payload'];

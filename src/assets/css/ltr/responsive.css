@@ -2743,6 +2743,7 @@
     }
 
     .btn-main button {
+        margin-bottom: 10px;
         background-color: #e1bb36;
         -webkit-box-shadow: 4px 6px 0px #e0e0cf;
         box-shadow: 4px 6px 0px #e0e0cf;
@@ -3606,6 +3607,7 @@
     }
 
     .btn-main button {
+        margin-bottom: 10px;
         background-color: #e1bb36;
         -webkit-box-shadow: 4px 6px 0px #e0e0cf;
         box-shadow: 4px 6px 0px #e0e0cf;
@@ -4451,6 +4453,7 @@
     }
 
     .btn-main button {
+        margin-bottom: 10px;
         background-color: #e1bb36;
         -webkit-box-shadow: 4px 6px 0px #e0e0cf;
         box-shadow: 4px 6px 0px #e0e0cf;

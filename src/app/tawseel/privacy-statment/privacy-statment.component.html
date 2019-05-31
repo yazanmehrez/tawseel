@@ -1,0 +1,30 @@
+<div class="im-t image-title">
+  <img [src]="_appService.topImage" alt="">
+  <span>{{'_TermsConditions' | translate | nbsp | uppercase }}</span>
+</div>
+<app-breadcrumb [Breadcrumb]="[{title: '_Home', route: '/home'},
+                               {title: '_TermsConditions', route: ''}]"></app-breadcrumb>
+
+
+<div class="container-equal">
+
+  <ng-container>
+    <!--Desktop View-->
+    <div class="desktop-mohre" *ngIf="conditions != ''">
+      <div class="col-70 col-m f" style="padding-right: 75px;">
+        <div class="mohre sec-x font-style" [innerHtml]="conditions?.Content">
+
+        </div>
+      </div>
+      <div class="col-30 col-m" style="vertical-align: top; text-align:left;margin-top: -30px;">
+        <img class="details-img" [src]="conditions?.MainImageFullURL" style="width: 100%;">
+      </div>
+    </div>
+
+  </ng-container>
+
+
+  <div class="yellow-title sec-b">
+    <p (click)="_appService.goBackBrowser()">{{'_Back' | translate}}</p>
+  </div>
+</div>

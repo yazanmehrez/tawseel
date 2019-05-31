@@ -32,7 +32,8 @@
   "_Inquiry": "Inquiry",
   "_Instagram": "Instagram",
   "_Facebook": "Facebook",
-  "_TotalVisitor": "Page last updated on: August 24 2016 at 10:38     |      Total Visitors: 3434256",
+  "_PageLastUpdated": "Page last updated on  ",
+  "_TotalVisitor": " | Total Visitors:",
   "_Offer": "This site is best viewed in Screen Resolution 1024 x 764 Supports Microsoft Internet Explorer 9.0+, Firefox 2.0+, Safari 4.0+, Opera 6.0+, Chrome",
   "_CopyRight": "© Copyright 2019 Taw-seel All rights reserved",
   "_Back": "BACK",
@@ -106,7 +107,9 @@
   "_ApplyMore": "Apply",
   "_Reason": "Reason",
   "_YourChoice": "Your Choice",
-  "_DownloadApp":"Download the application"
+  "_DownloadApp":"Download the application",
+  "_Clear": "Clear"
+
 }
 
 
