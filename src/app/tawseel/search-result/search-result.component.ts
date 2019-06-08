@@ -75,7 +75,6 @@ export class SearchResultComponent implements OnInit {
   }
 
 
-
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {
       this.search.keyword = this.activatedRoute.snapshot.params.id;
