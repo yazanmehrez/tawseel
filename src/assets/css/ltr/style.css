@@ -2519,3 +2519,10 @@ select::-ms-expand {
 .news-results {
     text-align: left;
 }
+
+.search-results .middle {
+    padding: 10px 5px;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+}

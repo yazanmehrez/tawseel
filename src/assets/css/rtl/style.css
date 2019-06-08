@@ -2518,3 +2518,10 @@ nav .search {
 .news-results {
     text-align: right;
 }
+
+.search-results .middle {
+    padding: 10px 5px;
+    display: flex;
+    flex-flow: column;
+    text-align: right;
+}

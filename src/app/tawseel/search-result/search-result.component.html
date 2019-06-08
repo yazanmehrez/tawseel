@@ -6,7 +6,7 @@
                                {title: '_Search', route: ''}]"></app-breadcrumb>
 
 
-<div class="container-equal">
+<div class="container-equal search-results">
 
   <div class="col-sm-12 middle middle-block not-found" *ngIf="result == ''"
        [style.border]="result == '' ? 'none' : ''">
@@ -16,7 +16,7 @@
   <div class="col-sm-12 middle middle-block head-block" *ngFor="let item of result; let lastEl = last"
        [style.border-bottom]="lastEl? 'none' : ''">
 
-    <div class="col-sm-5 middle">
+    <div class="middle">
       <div class="news-title">{{item.Title}}</div>
       <div [innerHTML]="item.Content"></div>
 
@@ -24,7 +24,7 @@
   </div>
   <div class="col-sm-12" style="text-align: center" *ngIf="pageCount > 0 ">
     <div class="pagination" *ngIf="_appService.currentLanguage == 'en'">
-      <a class="page fa fa-angle-left" [ngClass]="pageCount <= 5 || startPage == 0 ? 'disabled-arrow' : ''"
+      <a class="page arrow fa fa-angle-left" [ngClass]="pageCount <= 5 || startPage == 0 ? 'disabled-arrow' : ''"
          (click)="previousPage()"
       ></a>
 
@@ -33,12 +33,12 @@
          (click)="geSearchResult(i)" [ngClass]=" activePage === i ? 'active-page' : ''"
          style="cursor: pointer">{{page}}</a>
 
-      <a class="page fa fa-angle-right" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''"
+      <a class="page arrow fa fa-angle-right" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''"
          (click)="nextPage()"></a>
 
     </div>
     <div class="pagination" *ngIf="_appService.currentLanguage == 'ar'">
-      <a class="page fa fa-angle-right" [ngClass]="pageCount <= 5 || startPage == 0 ? 'disabled-arrow' : ''"
+      <a class="page arrow fa fa-angle-right" [ngClass]="pageCount <= 5 || startPage == 0 ? 'disabled-arrow' : ''"
          (click)="previousPage()"
       ></a>
 
@@ -47,7 +47,7 @@
          (click)="geSearchResult(i)" [ngClass]=" activePage === i ? 'active-page' : ''"
          style="cursor: pointer">{{page}}</a>
 
-      <a class="page fa fa-angle-left" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''"
+      <a class="page arrow fa fa-angle-left" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''"
          (click)="nextPage()"></a>
 
     </div>
