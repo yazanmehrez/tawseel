@@ -43,7 +43,7 @@ export class AppSlideshowComponent implements AfterViewInit {
             $(this).removeAttr('title');
             $('<div><span class="slider-title">' + self.imageUrls[index].Title + '</span></div>').appendTo(this);
             $('<div><span class="slider-description">' + self.imageUrls[index].Description + '</span></div>').appendTo(this);
-            $('<div><div class="read-more learn-more slide-more" id="' + self.imageUrls[index].ID + '"><button><span>Learn More</span><img src="assets/images/arrow-read-more.png"></button></div></div>').appendTo(this);
+            $('<div><div class="read-more learn-more slide-more" id="' + self.imageUrls[index].ID + '"><button><span>Learn More</span><img src="assets/images/arrow-read-more.PNG"></button></div></div>').appendTo(this);
         });
 
         $(document).on('click', '.slide-more', (event) => {

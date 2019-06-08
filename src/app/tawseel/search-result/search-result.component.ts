@@ -49,30 +49,32 @@ export class SearchResultComponent implements OnInit {
             this.pageCountArray.push(i);
           }
 
-          setTimeout(() => {
-            this.loading = false;
-          }, 2000);
+            setTimeout(() => {
+                this._appService.loading = false;
+            }, 1000);
 
         });
   }
 
-  nextPage(){
+  nextPage() {
 
-    if(this.pageCount != this.endPage) {
+    if (this.pageCount != this.endPage) {
       this.endPage = this.endPage + 1;
-      this.startPage = this.startPage + 1
+      this.startPage = this.startPage + 1;
 
     }
 
   }
 
-  previousePage(){
+  previousPage() {
 
-    if( this.startPage != 0) {
+    if (this.startPage != 0) {
       this.endPage = this.endPage - 1;
-      this.startPage = this.startPage - 1
+      this.startPage = this.startPage - 1;
     }
   }
+
+
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {

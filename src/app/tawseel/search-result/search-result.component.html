@@ -1,83 +1,65 @@
-<section id="about-us" class="media">
-
-  <div class="container">
-    <div class="row line-sm">
-      <div class="col-sm-12 left TOS">
-        <h2>{{'_SearchResult'| translate | uppercase}}</h2>
-      </div>
-      <!--/.col-sm-6-->
-
-      <div class="col-sm-9">
-        <div class="left">
-                    <span>{{'_YouAreHere'| translate}}: <i class="fa fa-home" aria-hidden="true"></i> <span
-                            style="font-weight: 800">{{'_SearchResult'| translate}}</span>
-                    </span>
+<div class="im-t image-title">
+  <img [src]="_appService.topImage" alt="">
+  <span>{{'_MediaCenter' | translate | nbsp | uppercase }}</span>
+</div>
+<app-breadcrumb [Breadcrumb]="[{title: '_Home', route: '/home'},
+                               {title: '_Search', route: ''}]"></app-breadcrumb>
 
 
-        </div>
-      </div>
-      <div class="col-sm-3 slider-font-right">
-        <!--<app-font-slider (fontSize)="sizeIncrease($event)"></app-font-slider>-->
-      </div>
+<div class="container-equal">
+
+  <div class="col-sm-12 middle middle-block not-found" *ngIf="result == ''"
+       [style.border]="result == '' ? 'none' : ''">
+    {{'_NotFoundResult' | translate}}
+  </div>
+
+  <div class="col-sm-12 middle middle-block head-block" *ngFor="let item of result; let lastEl = last"
+       [style.border-bottom]="lastEl? 'none' : ''">
+
+    <div class="col-sm-5 middle">
+      <div class="news-title">{{item.Title}}</div>
+      <div [innerHTML]="item.Content"></div>
 
     </div>
-    <!--/.row-->
   </div>
-  <!--/.container-->
-</section>
-<!--/#middle-->
-
-<section class="content">
-  <div class="container">
-    <div class="row">
-
-      <!--/.col-sm-6-->
-      <div class="col-sm-10">
-
-        <div class="col-sm-12 not-found" *ngIf="result == ''" >
-          {{'_NotFoundResult' | translate}}
-        </div>
-
-        <div class="col-sm-12 middle middle-block head-block" *ngFor="let item of result; let lastEl = last"
-             [style.border-bottom]="lastEl? 'none' : ''">
-          <!--<div class="col-sm-2 middle">-->
-          <!--<img class="related-image" [src]="item.MainImageFullURL">-->
-          <!--</div>-->
-          <div class="col-sm-5 middle">
-            <div class="news-title">{{item.Title}}</div>
-            <div [innerHTML]="item.Content"></div>
-            <!--<div class="read-more" [routerLink]="['details' , item.UniqueName]"-->
-            <!--(click)="mediaCenterService.uniqueName = item.UniqueName ">{{'_ReadMore'|translate}}-->
-            <!--</div>-->
-          </div>
-        </div>
+  <div class="col-sm-12" style="text-align: center" *ngIf="pageCount > 0 ">
+    <div class="pagination" *ngIf="_appService.currentLanguage == 'en'">
+      <a class="page fa fa-angle-left" [ngClass]="pageCount <= 5 || startPage == 0 ? 'disabled-arrow' : ''"
+         (click)="previousPage()"
+      ></a>
 
 
-        <div class="col-sm-12 pagination-block" *ngIf="pageCount > 1 ">
-          <div class="pagination">
-            <a [ngClass]="_appService.language === 'en' ? 'fa fa-chevron-left' : 'fa fa-chevron-right'"
-               (click)="previousePage()"
-               *ngIf="pageCount > 10 "></a>
-            <a *ngIf="pageCount <= 10 "></a>
-            <hr>
-            <span *ngFor="let page of pageCountArray | slice: startPage: endPage ; let i = index">
-                             <a (click)="geSearchResult(i)" [ngClass]=" activePage === i ? 'active' : ''">{{page}}</a>
-                           <hr>
-                        </span>
-            <hr>
+      <a class="page" *ngFor="let page of pageCountArray | slice: startPage: endPage ; let i = index"
+         (click)="geSearchResult(i)" [ngClass]=" activePage === i ? 'active-page' : ''"
+         style="cursor: pointer">{{page}}</a>
 
-            <a [ngClass]="_appService.language === 'en' ? 'fa fa-chevron-right' : 'fa fa-chevron-left'"
-               (click)="nextPage()"
-               *ngIf="pageCount > 10 "></a>
-            <a *ngIf="pageCount <= 10 "></a>
-          </div>
-        </div>
-
-      </div>
+      <a class="page fa fa-angle-right" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''"
+         (click)="nextPage()"></a>
 
     </div>
-    <!--/.row-->
+    <div class="pagination" *ngIf="_appService.currentLanguage == 'ar'">
+      <a class="page fa fa-angle-right" [ngClass]="pageCount <= 5 || startPage == 0 ? 'disabled-arrow' : ''"
+         (click)="previousPage()"
+      ></a>
+
+
+      <a class="page" *ngFor="let page of pageCountArray | slice: startPage: endPage ; let i = index"
+         (click)="geSearchResult(i)" [ngClass]=" activePage === i ? 'active-page' : ''"
+         style="cursor: pointer">{{page}}</a>
+
+      <a class="page fa fa-angle-left" [ngClass]="pageCount <= 5 || endPage == pageCount ? 'disabled-arrow' : ''"
+         (click)="nextPage()"></a>
+
+    </div>
   </div>
-  <!--/.container-->
-</section>
-<!--/#middle-->
+
+
+  <div class="yellow-title sec-b">
+    <p (click)="_appService.goBackBrowser()">
+      {{'_Back' | translate }}
+    </p>
+  </div>
+</div>
+
+
+
