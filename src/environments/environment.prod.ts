@@ -2,6 +2,7 @@ export const environment = {
     production: false,
     API_Generic_Content: {
         ServiceName: 'GenericContentRestService.svc',
+        GetGenericContentBySearchPaged: 'GetGenericContentBySearchPaged',
         GetGenericContentByCategoryUniqueName: 'GetGenericContentByCategoryUniqueName',
         GetGenericContentByUniqueName: 'GetGenericContentByUniqueName',
     },
@@ -21,11 +22,17 @@ export const environment = {
 
     },
 
-
     API_FAQ_Content: {
         ServiceName: 'faqrestservice.svc',
         SendFeedBackToClient: 'GetFAQByCategoryUniqueName',
 
     },
 
+
+    API_Helper_Content: {
+        ServiceName: 'HelperRestService.svc',
+        GetVisitorCount: 'GetVisitorCount',
+        GetLatestModificationDate: 'GetLatestModificationDate'
+
+    },
 };
